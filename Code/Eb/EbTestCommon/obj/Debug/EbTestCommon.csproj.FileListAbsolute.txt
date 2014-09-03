@@ -1,0 +1,5 @@
+D:\work\DEF2\trunk\Output\Bin\Debug\EbTestCommon.dll
+D:\work\DEF2\trunk\Output\Bin\Debug\EbTestCommon.pdb
+D:\work\DEF2\trunk\Code\Eb\EbTestCommon\obj\Debug\EbTestCommon.csprojResolveAssemblyReference.cache
+D:\work\DEF2\trunk\Code\Eb\EbTestCommon\obj\Debug\EbTestCommon.dll
+D:\work\DEF2\trunk\Code\Eb\EbTestCommon\obj\Debug\EbTestCommon.pdb

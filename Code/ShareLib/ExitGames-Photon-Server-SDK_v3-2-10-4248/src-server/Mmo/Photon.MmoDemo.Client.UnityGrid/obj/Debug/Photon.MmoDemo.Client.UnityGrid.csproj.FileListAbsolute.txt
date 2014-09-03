@@ -1,0 +1,14 @@
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.UnityGrid\bin\Debug\Photon.MmoDemo.Client.UnityGrid.dll
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.UnityGrid\bin\Debug\Photon.MmoDemo.Client.UnityGrid.pdb
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.UnityGrid\bin\Debug\Photon.MmoDemo.Client.Unity3D.dll
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.UnityGrid\bin\Debug\Photon.MmoDemo.Common.dll
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.UnityGrid\bin\Debug\Photon3Unity3D.dll
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.UnityGrid\bin\Debug\UnityEditor.dll
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.UnityGrid\bin\Debug\UnityEngine.dll
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.UnityGrid\bin\Debug\Photon3Unity3D.pdb
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.UnityGrid\bin\Debug\Photon3Unity3D.xml
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.UnityGrid\bin\Debug\Photon.MmoDemo.Client.Unity3D.pdb
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.UnityGrid\bin\Debug\Photon.MmoDemo.Common.pdb
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.UnityGrid\obj\Debug\ResolveAssemblyReference.cache
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.UnityGrid\obj\Debug\Photon.MmoDemo.Client.UnityGrid.dll
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.UnityGrid\obj\Debug\Photon.MmoDemo.Client.UnityGrid.pdb

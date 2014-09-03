@@ -1,0 +1,4 @@
+D:\work\DEF2\trunk\Output\Bin\Debug\EsDbCommon.dll
+D:\work\DEF2\trunk\Output\Bin\Debug\EsDbCommon.pdb
+D:\work\DEF2\trunk\Code\Es\EsDbCommon\obj\Debug\EsDbCommon.dll
+D:\work\DEF2\trunk\Code\Es\EsDbCommon\obj\Debug\EsDbCommon.pdb

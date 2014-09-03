@@ -1,0 +1,12 @@
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.SocketServer.Mmo\bin\Debug\Photon.SocketServer.Mmo.dll
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.SocketServer.Mmo\bin\Debug\Photon.SocketServer.Mmo.pdb
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.SocketServer.Mmo\bin\Debug\ExitGamesLibs.dll
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.SocketServer.Mmo\bin\Debug\Photon.SocketServer.dll
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.SocketServer.Mmo\bin\Debug\PhotonHostRuntimeInterfaces.dll
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.SocketServer.Mmo\bin\Debug\Photon.SocketServer.pdb
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.SocketServer.Mmo\bin\Debug\Photon.SocketServer.xml
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.SocketServer.Mmo\bin\Debug\ExitGamesLibs.pdb
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.SocketServer.Mmo\bin\Debug\ExitGamesLibs.xml
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.SocketServer.Mmo\obj\Debug\ResolveAssemblyReference.cache
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.SocketServer.Mmo\obj\Debug\Photon.SocketServer.Mmo.dll
+G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.SocketServer.Mmo\obj\Debug\Photon.SocketServer.Mmo.pdb

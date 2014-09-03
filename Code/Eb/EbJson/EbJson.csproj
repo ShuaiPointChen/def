@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0407C8AF-6D69-4765-8417-883C395552A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eb</RootNamespace>
+    <AssemblyName>EbJson</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Output\Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Output\Bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\ShareLib\UnityEngine_4.3.4f1\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Examples\Serialization\JNBsonSample.cs" />
+    <Compile Include="Examples\Serialization\JNExampleModels.cs" />
+    <Compile Include="Examples\Serialization\JNPolymorphismSample.cs" />
+    <Compile Include="Examples\Serialization\JNSimpleObjectSample.cs" />
+    <Compile Include="Examples\Tests\JsonTestScript.cs" />
+    <Compile Include="Examples\Tests\TestCaseUtils.cs" />
+    <Compile Include="Examples\Tests\TestModels\SampleBase.cs" />
+    <Compile Include="Examples\Tests\TestModels\SampleChild.cs" />
+    <Compile Include="Examples\Tests\TestModels\SampleObject.cs" />
+    <Compile Include="Examples\Tests\TestModels\SimpleClassObject.cs" />
+    <Compile Include="Examples\Tests\TextTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\Aot\EnumerationExtension.cs" />
+    <Compile Include="Source\Bson\BsonBinaryType.cs" />
+    <Compile Include="Source\Bson\BsonBinaryWriter.cs" />
+    <Compile Include="Source\Bson\BsonObjectId.cs" />
+    <Compile Include="Source\Bson\BsonReader.cs" />
+    <Compile Include="Source\Bson\BsonToken.cs" />
+    <Compile Include="Source\Bson\BsonType.cs" />
+    <Compile Include="Source\Bson\BsonWriter.cs" />
+    <Compile Include="Source\ConstructorHandling.cs" />
+    <Compile Include="Source\Converters\BsonObjectIdConverter.cs" />
+    <Compile Include="Source\Converters\CustomCreationConverter.cs" />
+    <Compile Include="Source\Converters\DateTimeConverterBase.cs" />
+    <Compile Include="Source\Converters\IsoDateTimeConverter.cs" />
+    <Compile Include="Source\Converters\JavaScriptDateTimeConverter.cs" />
+    <Compile Include="Source\Converters\JsonDateTimeSerializationMode.cs" />
+    <Compile Include="Source\Converters\KeyValuePairConverter.cs" />
+    <Compile Include="Source\Converters\RegexConverter.cs" />
+    <Compile Include="Source\Converters\StringEnumConverter.cs" />
+    <Compile Include="Source\Converters\XmlNodeConverter.cs" />
+    <Compile Include="Source\DefaultValueHandling.cs" />
+    <Compile Include="Source\IJsonLineInfo.cs" />
+    <Compile Include="Source\JsonArrayAttribute.cs" />
+    <Compile Include="Source\JsonConstructorAttribute.cs" />
+    <Compile Include="Source\JsonContainerAttribute.cs" />
+    <Compile Include="Source\JsonConvert.cs" />
+    <Compile Include="Source\JsonConverter.cs" />
+    <Compile Include="Source\JsonConverterAttribute.cs" />
+    <Compile Include="Source\JsonConverterCollection.cs" />
+    <Compile Include="Source\JsonIgnoreAttribute.cs" />
+    <Compile Include="Source\JsonObjectAttribute.cs" />
+    <Compile Include="Source\JsonPropertyAttribute.cs" />
+    <Compile Include="Source\JsonReader.cs" />
+    <Compile Include="Source\JsonReaderException.cs" />
+    <Compile Include="Source\JsonSerializationException.cs" />
+    <Compile Include="Source\JsonSerializer.cs" />
+    <Compile Include="Source\JsonSerializerSettings.cs" />
+    <Compile Include="Source\JsonTextReader.cs" />
+    <Compile Include="Source\JsonTextWriter.cs" />
+    <Compile Include="Source\JsonToken.cs" />
+    <Compile Include="Source\JsonValidatingReader.cs" />
+    <Compile Include="Source\JsonWriter.cs" />
+    <Compile Include="Source\JsonWriterException.cs" />
+    <Compile Include="Source\Linq\IJEnumerable.cs" />
+    <Compile Include="Source\Linq\JArray.cs" />
+    <Compile Include="Source\Linq\JConstructor.cs" />
+    <Compile Include="Source\Linq\JContainer.cs" />
+    <Compile Include="Source\Linq\JEnumerable.cs" />
+    <Compile Include="Source\Linq\JObject.cs" />
+    <Compile Include="Source\Linq\JPath.cs" />
+    <Compile Include="Source\Linq\JProperty.cs" />
+    <Compile Include="Source\Linq\JPropertyDescriptor.cs" />
+    <Compile Include="Source\Linq\JRaw.cs" />
+    <Compile Include="Source\Linq\JToken.cs" />
+    <Compile Include="Source\Linq\JTokenEqualityComparer.cs" />
+    <Compile Include="Source\Linq\JTokenReader.cs" />
+    <Compile Include="Source\Linq\JTokenType.cs" />
+    <Compile Include="Source\Linq\JTokenWriter.cs" />
+    <Compile Include="Source\Linq\JValue.cs" />
+    <Compile Include="Source\Linq\LinqExtensions.cs" />
+    <Compile Include="Source\MemberSerialization.cs" />
+    <Compile Include="Source\MissingMemberHandling.cs" />
+    <Compile Include="Source\NullValueHandling.cs" />
+    <Compile Include="Source\ObjectCreationHandling.cs" />
+    <Compile Include="Source\ObservableSupport\AddingNewEventArgs.cs" />
+    <Compile Include="Source\ObservableSupport\AddingNewEventHandler.cs" />
+    <Compile Include="Source\ObservableSupport\INotifyCollectionChanged.cs" />
+    <Compile Include="Source\ObservableSupport\INotifyPropertyChanging.cs" />
+    <Compile Include="Source\ObservableSupport\NotifyCollectionChangedAction.cs" />
+    <Compile Include="Source\ObservableSupport\NotifyCollectionChangedEventArgs.cs" />
+    <Compile Include="Source\ObservableSupport\NotifyCollectionChangedEventHandler.cs" />
+    <Compile Include="Source\ObservableSupport\PropertyChangingEventArgs.cs" />
+    <Compile Include="Source\ObservableSupport\PropertyChangingEventHandler.cs" />
+    <Compile Include="Source\PreserveReferencesHandling.cs" />
+    <Compile Include="Source\ReferenceLoopHandling.cs" />
+    <Compile Include="Source\Required.cs" />
+    <Compile Include="Source\Schema\JsonSchema.cs" />
+    <Compile Include="Source\Schema\JsonSchemaBuilder.cs" />
+    <Compile Include="Source\Schema\JsonSchemaConstants.cs" />
+    <Compile Include="Source\Schema\JsonSchemaException.cs" />
+    <Compile Include="Source\Schema\JsonSchemaGenerator.cs" />
+    <Compile Include="Source\Schema\JsonSchemaModel.cs" />
+    <Compile Include="Source\Schema\JsonSchemaModelBuilder.cs" />
+    <Compile Include="Source\Schema\JsonSchemaNode.cs" />
+    <Compile Include="Source\Schema\JsonSchemaNodeCollection.cs" />
+    <Compile Include="Source\Schema\JsonSchemaResolver.cs" />
+    <Compile Include="Source\Schema\JsonSchemaType.cs" />
+    <Compile Include="Source\Schema\JsonSchemaWriter.cs" />
+    <Compile Include="Source\Schema\SchemaExtensions.cs" />
+    <Compile Include="Source\Schema\UndefinedSchemaIdHandling.cs" />
+    <Compile Include="Source\Schema\ValidationEventArgs.cs" />
+    <Compile Include="Source\Schema\ValidationEventHandler.cs" />
+    <Compile Include="Source\Serialization\CachedAttributeGetter.cs" />
+    <Compile Include="Source\Serialization\CamelCasePropertyNamesContractResolver.cs" />
+    <Compile Include="Source\Serialization\DefaultContractResolver.cs" />
+    <Compile Include="Source\Serialization\DefaultReferenceResolver.cs" />
+    <Compile Include="Source\Serialization\DefaultSerializationBinder.cs" />
+    <Compile Include="Source\Serialization\DynamicValueProvider.cs" />
+    <Compile Include="Source\Serialization\ErrorContext.cs" />
+    <Compile Include="Source\Serialization\ErrorEventArgs.cs" />
+    <Compile Include="Source\Serialization\IContractResolver.cs" />
+    <Compile Include="Source\Serialization\IReferenceResolver.cs" />
+    <Compile Include="Source\Serialization\IValueProvider.cs" />
+    <Compile Include="Source\Serialization\JsonArrayContract.cs" />
+    <Compile Include="Source\Serialization\JsonContract.cs" />
+    <Compile Include="Source\Serialization\JsonDictionaryContract.cs" />
+    <Compile Include="Source\Serialization\JsonFormatterConverter.cs" />
+    <Compile Include="Source\Serialization\JsonISerializableContract.cs" />
+    <Compile Include="Source\Serialization\JsonLinqContract.cs" />
+    <Compile Include="Source\Serialization\JsonObjectContract.cs" />
+    <Compile Include="Source\Serialization\JsonPrimitiveContract.cs" />
+    <Compile Include="Source\Serialization\JsonProperty.cs" />
+    <Compile Include="Source\Serialization\JsonPropertyCollection.cs" />
+    <Compile Include="Source\Serialization\JsonSerializerInternalBase.cs" />
+    <Compile Include="Source\Serialization\JsonSerializerInternalReader.cs" />
+    <Compile Include="Source\Serialization\JsonSerializerInternalWriter.cs" />
+    <Compile Include="Source\Serialization\JsonSerializerProxy.cs" />
+    <Compile Include="Source\Serialization\JsonStringContract.cs" />
+    <Compile Include="Source\Serialization\JsonTypeReflector.cs" />
+    <Compile Include="Source\Serialization\LateBoundMetadataTypeAttribute.cs" />
+    <Compile Include="Source\Serialization\ObjectConstructor.cs" />
+    <Compile Include="Source\Serialization\OnErrorAttribute.cs" />
+    <Compile Include="Source\Serialization\ReflectionValueProvider.cs" />
+    <Compile Include="Source\Shims\DataContractAttribute.cs" />
+    <Compile Include="Source\Shims\DataMemberAttribute.cs" />
+    <Compile Include="Source\Shims\EnumMemberAttribute.cs" />
+    <Compile Include="Source\Shims\WP8\FormatterAssemblyStyle.cs" />
+    <Compile Include="Source\Shims\WP8\SerializationBinder.cs" />
+    <Compile Include="Source\TypeNameHandling.cs" />
+    <Compile Include="Source\Utilities\Base64Encoder.cs" />
+    <Compile Include="Source\Utilities\BidirectionalDictionary.cs" />
+    <Compile Include="Source\Utilities\CollectionUtils.cs" />
+    <Compile Include="Source\Utilities\CollectionWrapper.cs" />
+    <Compile Include="Source\Utilities\ConvertUtils.cs" />
+    <Compile Include="Source\Utilities\DateTimeUtils.cs" />
+    <Compile Include="Source\Utilities\DictionaryWrapper.cs" />
+    <Compile Include="Source\Utilities\DynamicReflectionDelegateFactory.cs" />
+    <Compile Include="Source\Utilities\DynamicWrapper.cs" />
+    <Compile Include="Source\Utilities\EnumUtils.cs" />
+    <Compile Include="Source\Utilities\EnumValue.cs" />
+    <Compile Include="Source\Utilities\EnumValues.cs" />
+    <Compile Include="Source\Utilities\ILGeneratorExtensions.cs" />
+    <Compile Include="Source\Utilities\JavaScriptUtils.cs" />
+    <Compile Include="Source\Utilities\LateBoundReflectionDelegateFactory.cs" />
+    <Compile Include="Source\Utilities\ListWrapper.cs" />
+    <Compile Include="Source\Utilities\MathUtils.cs" />
+    <Compile Include="Source\Utilities\MethodCall.cs" />
+    <Compile Include="Source\Utilities\MiscellaneousUtils.cs" />
+    <Compile Include="Source\Utilities\ReflectionDelegateFactory.cs" />
+    <Compile Include="Source\Utilities\ReflectionUtils.cs" />
+    <Compile Include="Source\Utilities\StringBuffer.cs" />
+    <Compile Include="Source\Utilities\StringUtils.cs" />
+    <Compile Include="Source\Utilities\ThreadSafeStore.cs" />
+    <Compile Include="Source\Utilities\ValidationUtils.cs" />
+    <Compile Include="Source\WinRT\Bson\RT_BsonBinaryType.cs" />
+    <Compile Include="Source\WinRT\Bson\RT_BsonBinaryWriter.cs" />
+    <Compile Include="Source\WinRT\Bson\RT_BsonObjectId.cs" />
+    <Compile Include="Source\WinRT\Bson\RT_BsonReader.cs" />
+    <Compile Include="Source\WinRT\Bson\RT_BsonToken.cs" />
+    <Compile Include="Source\WinRT\Bson\RT_BsonType.cs" />
+    <Compile Include="Source\WinRT\Bson\RT_BsonWriter.cs" />
+    <Compile Include="Source\WinRT\Converters\RT_BsonObjectIdConverter.cs" />
+    <Compile Include="Source\WinRT\Converters\RT_CustomCreationConverter.cs" />
+    <Compile Include="Source\WinRT\Converters\RT_DateTimeConverterBase.cs" />
+    <Compile Include="Source\WinRT\Converters\RT_ExpandoObjectConverter.cs" />
+    <Compile Include="Source\WinRT\Converters\RT_IsoDateTimeConverter.cs" />
+    <Compile Include="Source\WinRT\Converters\RT_JavaScriptDateTimeConverter.cs" />
+    <Compile Include="Source\WinRT\Converters\RT_JsonValueConverter.cs" />
+    <Compile Include="Source\WinRT\Converters\RT_KeyValuePairConverter.cs" />
+    <Compile Include="Source\WinRT\Converters\RT_RegexConverter.cs" />
+    <Compile Include="Source\WinRT\Converters\RT_StringEnumConverter.cs" />
+    <Compile Include="Source\WinRT\Converters\RT_VersionConverter.cs" />
+    <Compile Include="Source\WinRT\Converters\RT_XmlNodeConverter.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_IJEnumerable.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JArray.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JConstructor.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JContainer.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JEnumerable.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JObject.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JPath.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JProperty.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JPropertyKeyedCollection.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JRaw.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JToken.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JTokenEqualityComparer.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JTokenReader.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JTokenType.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JTokenWriter.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_JValue.cs" />
+    <Compile Include="Source\WinRT\Linq\RT_LinqExtensions.cs" />
+    <Compile Include="Source\WinRT\RT_ConstructorHandling.cs" />
+    <Compile Include="Source\WinRT\RT_DateFormatHandling.cs" />
+    <Compile Include="Source\WinRT\RT_DateParseHandling.cs" />
+    <Compile Include="Source\WinRT\RT_DateTimeZoneHandling.cs" />
+    <Compile Include="Source\WinRT\RT_DefaultValueHandling.cs" />
+    <Compile Include="Source\WinRT\RT_FloatFormatHandling.cs" />
+    <Compile Include="Source\WinRT\RT_FloatParseHandling.cs" />
+    <Compile Include="Source\WinRT\RT_FormatterAssemblyStyle.cs" />
+    <Compile Include="Source\WinRT\RT_Formatting.cs" />
+    <Compile Include="Source\WinRT\RT_IJsonLineInfo.cs" />
+    <Compile Include="Source\WinRT\RT_JsonArrayAttribute.cs" />
+    <Compile Include="Source\WinRT\RT_JsonConstructorAttribute.cs" />
+    <Compile Include="Source\WinRT\RT_JsonContainerAttribute.cs" />
+    <Compile Include="Source\WinRT\RT_JsonConvert.cs" />
+    <Compile Include="Source\WinRT\RT_JsonConverter.cs" />
+    <Compile Include="Source\WinRT\RT_JsonConverterAttribute.cs" />
+    <Compile Include="Source\WinRT\RT_JsonConverterCollection.cs" />
+    <Compile Include="Source\WinRT\RT_JsonDictionaryAttribute.cs" />
+    <Compile Include="Source\WinRT\RT_JsonException.cs" />
+    <Compile Include="Source\WinRT\RT_JsonExtensionDataAttribute.cs" />
+    <Compile Include="Source\WinRT\RT_JsonIgnoreAttribute.cs" />
+    <Compile Include="Source\WinRT\RT_JsonObjectAttribute.cs" />
+    <Compile Include="Source\WinRT\RT_JsonPosition.cs" />
+    <Compile Include="Source\WinRT\RT_JsonPropertyAttribute.cs" />
+    <Compile Include="Source\WinRT\RT_JsonReader.cs" />
+    <Compile Include="Source\WinRT\RT_JsonReaderException.cs" />
+    <Compile Include="Source\WinRT\RT_JsonSerializationException.cs" />
+    <Compile Include="Source\WinRT\RT_JsonSerializer.cs" />
+    <Compile Include="Source\WinRT\RT_JsonSerializerSettings.cs" />
+    <Compile Include="Source\WinRT\RT_JsonTextReader.cs" />
+    <Compile Include="Source\WinRT\RT_JsonTextWriter.cs" />
+    <Compile Include="Source\WinRT\RT_JsonToken.cs" />
+    <Compile Include="Source\WinRT\RT_JsonValidatingReader.cs" />
+    <Compile Include="Source\WinRT\RT_JsonWriter.cs" />
+    <Compile Include="Source\WinRT\RT_JsonWriterException.cs" />
+    <Compile Include="Source\WinRT\RT_MemberSerialization.cs" />
+    <Compile Include="Source\WinRT\RT_MissingMemberHandling.cs" />
+    <Compile Include="Source\WinRT\RT_NullValueHandling.cs" />
+    <Compile Include="Source\WinRT\RT_ObjectCreationHandling.cs" />
+    <Compile Include="Source\WinRT\RT_PreserveReferencesHandling.cs" />
+    <Compile Include="Source\WinRT\RT_ReferenceLoopHandling.cs" />
+    <Compile Include="Source\WinRT\RT_Required.cs" />
+    <Compile Include="Source\WinRT\RT_SerializationBinder.cs" />
+    <Compile Include="Source\WinRT\RT_StringEscapeHandling.cs" />
+    <Compile Include="Source\WinRT\RT_TraceLevel.cs" />
+    <Compile Include="Source\WinRT\RT_TypeNameHandling.cs" />
+    <Compile Include="Source\WinRT\RT_WriteState.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_JsonSchema.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_JsonSchemaBuilder.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_JsonSchemaConstants.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_JsonSchemaException.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_JsonSchemaGenerator.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_JsonSchemaModel.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_JsonSchemaModelBuilder.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_JsonSchemaNode.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_JsonSchemaNodeCollection.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_JsonSchemaResolver.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_JsonSchemaType.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_JsonSchemaWriter.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_SchemaExtensions.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_UndefinedSchemaIdHandling.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_ValidationEventArgs.cs" />
+    <Compile Include="Source\WinRT\Schema\RT_ValidationEventHandler.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_CachedAttributeGetter.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_CamelCasePropertyNamesContractResolver.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_DefaultContractResolver.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_DefaultReferenceResolver.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_DefaultSerializationBinder.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_ErrorContext.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_ErrorEventArgs.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_ExpressionValueProvider.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_IContractResolver.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_IReferenceResolver.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_ITraceWriter.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_IValueProvider.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonArrayContract.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonContainerContract.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonContract.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonDictionaryContract.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonDynamicContract.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonLinqContract.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonObjectContract.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonPrimitiveContract.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonProperty.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonPropertyCollection.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonSerializerInternalBase.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonSerializerInternalReader.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonSerializerInternalWriter.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonSerializerProxy.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonStringContract.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_JsonTypeReflector.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_MemoryTraceWriter.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_ObjectConstructor.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_OnErrorAttribute.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_ReflectionValueProvider.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_TraceJsonReader.cs" />
+    <Compile Include="Source\WinRT\Serialization\RT_TraceJsonWriter.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_Base64Encoder.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_BidirectionalDictionary.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_CollectionUtils.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_CollectionWrapper.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_ConvertUtils.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_DateTimeParser.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_DateTimeUtils.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_DictionaryWrapper.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_DynamicProxy.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_DynamicProxyMetaObject.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_DynamicUtils.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_EnumUtils.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_EnumValue.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_EnumValues.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_ExpressionReflectionDelegateFactory.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_ImmutableCollectionsUtils.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_JavaScriptUtils.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_LateBoundReflectionDelegateFactory.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_MathUtils.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_MethodCall.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_MiscellaneousUtils.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_ReflectionDelegateFactory.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_ReflectionUtils.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_StringBuffer.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_StringReference.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_StringUtils.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_ThreadSafeStore.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_TypeExtensions.cs" />
+    <Compile Include="Source\WinRT\Utilities\RT_ValidationUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Other\Info.txt" />
+    <Content Include="Other\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

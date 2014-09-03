@@ -1,0 +1,51 @@
+﻿Build started 2014/7/29 10:17:06.
+     1>Project "D:\DEF\trunk\Code\Tool\ZooKeeperC\zookeeper-3.4.6\src\c\Cli.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\Cli.lastbuildstate".
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppClean.targets(74,5): warning : The process cannot access the file 'D:\DEF\trunk\Code\Tool\ZooKeeperC\zookeeper-3.4.6\src\c\Debug\vc100.idb' because it is being used by another process.
+       InitializeBuildStatus:
+         Touching "Debug\Cli.unsuccessfulbuild".
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I\src\c\include /I\src\c /I\src\c\src /I"D:\DEF\trunk\Code\Tool\ZooKeeperC\zookeeper-3.4.6\src\c\src" /I"D:\DEF\trunk\Code\Tool\ZooKeeperC\zookeeper-3.4.6\src\c\include" /I"D:\DEF\trunk\Code\Tool\ZooKeeperC\zookeeper-3.4.6\src\c" /I"D:\DEF\trunk\Code\Tool\ZooKeeperC\zookeeper-3.4.6\src\c\generated" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D THREADED /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt src\cli.c
+         cli.c
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\include\winconfig.h(187): warning C4005: 'EWOULDBLOCK' : macro redefinition
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\errno.h(132) : see previous definition of 'EWOULDBLOCK'
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\include\winconfig.h(188): warning C4005: 'EINPROGRESS' : macro redefinition
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\errno.h(104) : see previous definition of 'EINPROGRESS'
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\src\cli.c(124): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\src\cli.c(280): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(238) : see declaration of 'strdup'
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\src\cli.c(281): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(238) : see declaration of 'strdup'
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\src\cli.c(349): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(238) : see declaration of 'strdup'
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\src\cli.c(369): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(238) : see declaration of 'strdup'
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\src\cli.c(384): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(238) : see declaration of 'strdup'
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\src\cli.c(395): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(238) : see declaration of 'strdup'
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\src\cli.c(426): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(238) : see declaration of 'strdup'
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\src\cli.c(437): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(238) : see declaration of 'strdup'
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\src\cli.c(450): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(238) : see declaration of 'strdup'
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\src\cli.c(543): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\src\cli.c(548): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>d:\def\trunk\code\tool\zookeeperc\zookeeper-3.4.6\src\c\src\cli.c(569): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Cli.exe.embed.manifest.res" Debug\Cli_manifest.rc 
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\DEF\trunk\Code\Debug\Cli.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\DEF\trunk\Code\Tool\ZooKeeperC\zookeeper-3.4.6\src\c\Debug" Ws2_32.lib zookeeper_d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Cli.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\DEF\trunk\Code\Debug\Cli.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\DEF\trunk\Code\Debug\Cli.lib" /MACHINE:X86 Debug\Cli.exe.embed.manifest.res
+         Debug\cli.obj
+     1>LINK : fatal error LNK1104: cannot open file 'zookeeper_d.lib'
+     1>Done Building Project "D:\DEF\trunk\Code\Tool\ZooKeeperC\zookeeper-3.4.6\src\c\Cli.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.96

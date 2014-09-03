@@ -1,0 +1,8 @@
+C:\Program Files (x86)\MySQL\MySQL Connector Net 6.8.3\Samples\Async\cs\obj\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\MySQL\MySQL Connector Net 6.8.3\Samples\Async\cs\bin\Debug\Async.exe
+C:\Program Files (x86)\MySQL\MySQL Connector Net 6.8.3\Samples\Async\cs\bin\Debug\Async.pdb
+C:\Program Files (x86)\MySQL\MySQL Connector Net 6.8.3\Samples\Async\cs\obj\Debug\Async.exe
+C:\Program Files (x86)\MySQL\MySQL Connector Net 6.8.3\Samples\Async\cs\obj\Debug\Async.pdb
+C:\Program Files (x86)\MySQL\MySQL Connector Net 6.8.3\Samples\Async\cs\obj\Debug\Async.Form1.resources
+C:\Program Files (x86)\MySQL\MySQL Connector Net 6.8.3\Samples\Async\cs\obj\Debug\ResGen.read.1.tlog
+C:\Program Files (x86)\MySQL\MySQL Connector Net 6.8.3\Samples\Async\cs\obj\Debug\ResGen.write.1.tlog

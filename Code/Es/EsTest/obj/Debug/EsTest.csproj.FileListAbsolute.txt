@@ -1,0 +1,8 @@
+D:\work\DEF2\trunk\Output\Bin\Debug\EsTest.pdb
+D:\work\DEF2\trunk\Output\Bin\Debug\EsTest.dll
+D:\work\DEF2\trunk\Deploy\EsTest\bin\log4net.config
+D:\work\DEF2\trunk\Deploy\EsTest\bin\EsTest.dll
+D:\work\DEF2\trunk\Deploy\EsTest\bin\EsTest.pdb
+D:\work\DEF2\trunk\Code\Es\EsTest\obj\Debug\EsTest.csprojResolveAssemblyReference.cache
+D:\work\DEF2\trunk\Code\Es\EsTest\obj\Debug\EsTest.dll
+D:\work\DEF2\trunk\Code\Es\EsTest\obj\Debug\EsTest.pdb

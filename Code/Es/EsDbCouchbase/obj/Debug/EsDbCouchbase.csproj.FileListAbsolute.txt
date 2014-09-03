@@ -1,0 +1,7 @@
+D:\work\DEF2\trunk\Output\Bin\Debug\EsDbCouchbase\EsDbCouchbase.dll
+D:\work\DEF2\trunk\Output\Bin\Debug\EsDbCouchbase\EsDbCouchbase.pdb
+D:\work\DEF2\trunk\Code\Es\EsDbCouchbase\obj\Debug\EsDbCouchbase.csprojResolveAssemblyReference.cache
+D:\work\DEF2\trunk\Code\Es\EsDbCouchbase\obj\Debug\EsDbCouchbase.dll
+D:\work\DEF2\trunk\Code\Es\EsDbCouchbase\obj\Debug\EsDbCouchbase.pdb
+D:\work\DEF2\trunk\Output\Bin\Debug\EsDbCouchbase\bin\EsDbCouchbase.dll
+D:\work\DEF2\trunk\Output\Bin\Debug\EsDbCouchbase\bin\EsDbCouchbase.pdb

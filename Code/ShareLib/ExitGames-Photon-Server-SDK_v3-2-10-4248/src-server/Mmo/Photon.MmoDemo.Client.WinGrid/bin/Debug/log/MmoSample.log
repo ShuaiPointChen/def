@@ -1,0 +1,13 @@
+2013-04-19 17:26:50,548 [10] INFO  Photon.MmoDemo.Client.WinGrid.WorldForm - diagnostics: connected
+2013-04-19 17:26:50,994 [10] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - cb437780-5858-4714-83f6-cb13f3d5f3f6: connected
+2013-04-19 17:26:51,158 [10] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - cb437780-5858-4714-83f6-cb13f3d5f3f6: entered world Unity3d-Island
+2013-04-19 17:28:51,461 [10] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 6a6cc912-ca60-4953-addf-869609f469bb: connected
+2013-04-19 17:28:51,481 [10] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 6a6cc912-ca60-4953-addf-869609f469bb: entered world Unity3d-Island
+2013-04-19 17:35:26,505 [8] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - diagnostics: unexpected return Exception
+2013-04-19 17:35:26,549 [8] INFO  Photon.MmoDemo.Client.WinGrid.WorldForm - diagnostics: Disconnect
+2013-04-19 17:35:38,991 [9] INFO  Photon.MmoDemo.Client.WinGrid.WorldForm - diagnostics: connected
+2013-04-19 17:35:39,217 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 01618014-880a-4ebe-852c-23bffb76e441: connected
+2013-04-19 17:35:39,378 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 01618014-880a-4ebe-852c-23bffb76e441: entered world Unity3d-Island
+2013-04-19 17:44:16,400 [9] INFO  Photon.MmoDemo.Client.WinGrid.WorldForm - diagnostics: connected
+2013-04-19 17:44:16,648 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - fcec2735-8708-4357-a88b-a87cc16c76f2: connected
+2013-04-19 17:44:16,789 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - fcec2735-8708-4357-a88b-a87cc16c76f2: entered world Unity3d-Island

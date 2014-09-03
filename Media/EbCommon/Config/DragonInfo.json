@@ -1,0 +1,36 @@
+{
+	"ListTable": [{
+		"TableName": "Effect",
+		"ListFieldInfo": [{
+			"FieldName": "Id",
+			"FieldType": 1
+		},
+		{
+			"FieldName": "Name",
+			"FieldType": 3
+		}]
+	},
+	{
+		"TableName": "Item",
+		"ListFieldInfo": [{
+			"FieldName": "Id",
+			"FieldType": 1
+		},
+		{
+			"FieldName": "Name",
+			"FieldType": 3
+		}]
+	}],
+	"ListForeignKeyInfo": [{
+		"Table": "Item",
+		"Key": "Effect1",
+		"ForeignTable": "Effect",
+		"ForeignKey": "Id"
+	},
+	{
+		"Table": "Item",
+		"Key": "Effect2",
+		"ForeignTable": "Effect",
+		"ForeignKey": "Id"
+	}]
+}

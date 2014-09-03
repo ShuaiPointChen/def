@@ -1,0 +1,1015 @@
+2014-09-01 22:42:47,722 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-01 22:42:47,750 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-01 22:42:47,754 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-01 22:42:52,510 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-01 22:42:52,511 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-01 22:42:54,569 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-01 22:42:54,571 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 22:42:54,572 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-01 22:42:54,572 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 22:42:54,573 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-01 22:42:54,810 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-01 22:42:54,811 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-01 22:42:54,813 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 22:42:54,814 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 22:42:54,858 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-01 22:42:54,861 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-01 22:42:54,890 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-01 22:42:54,933 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-01 22:42:54,966 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-01 22:42:55,008 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-01 22:42:55,024 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-01 22:42:55,031 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-01 22:42:55,033 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-01 22:42:55,034 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 22:42:55,035 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-01 22:42:55,035 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 22:42:55,035 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-01 22:42:55,221 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-01 22:42:55,222 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-01 22:42:55,223 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 22:42:55,225 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 22:42:55,246 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-01 22:42:55,248 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-01 22:42:55,278 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-01 22:42:55,314 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-01 22:42:55,349 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-01 22:42:55,821 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/MySql.Data.DLL
+2014-09-01 22:42:55,989 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+2014-09-01 22:42:56,038 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+2014-09-01 22:42:56,142 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+2014-09-01 22:43:01,071 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+2014-09-01 22:43:01,419 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Policy', DomainId='3' -- calling Application.Setup
+2014-09-01 22:43:01,676 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-01 22:45:22,020 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-01 22:45:22,052 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-01 22:45:22,056 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-01 22:45:26,562 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-01 22:45:26,563 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-01 22:45:27,666 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-01 22:45:27,667 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 22:45:27,668 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-01 22:45:27,668 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 22:45:27,669 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-01 22:45:27,886 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-01 22:45:27,886 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-01 22:45:27,887 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 22:45:27,888 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 22:45:27,946 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-01 22:45:27,947 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-01 22:45:27,962 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-01 22:45:27,991 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-01 22:45:28,015 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-01 22:45:28,043 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-01 22:45:28,055 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-01 22:45:28,060 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-01 22:45:28,062 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-01 22:45:28,062 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 22:45:28,063 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-01 22:45:28,063 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 22:45:28,063 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-01 22:45:28,151 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-01 22:45:28,153 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-01 22:45:28,154 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 22:45:28,155 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 22:45:28,169 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-01 22:45:28,172 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-01 22:45:28,197 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-01 22:45:28,215 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-01 22:45:28,241 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-01 22:45:28,575 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/MySql.Data.DLL
+2014-09-01 22:45:28,589 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+2014-09-01 22:45:28,599 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+2014-09-01 22:45:28,671 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+2014-09-01 22:45:28,780 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+2014-09-01 22:45:29,052 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Policy', DomainId='3' -- calling Application.Setup
+2014-09-01 22:45:29,258 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-01 22:47:24,472 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-01 22:47:24,499 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-01 22:47:24,502 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-01 22:47:28,771 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-01 22:47:28,772 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-01 22:47:29,894 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-01 22:47:29,895 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 22:47:29,896 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-01 22:47:29,896 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 22:47:29,896 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-01 22:47:30,064 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-01 22:47:30,065 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-01 22:47:30,066 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 22:47:30,067 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 22:47:30,121 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-01 22:47:30,123 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-01 22:47:30,140 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-01 22:47:30,172 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-01 22:47:30,189 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-01 22:47:30,212 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-01 22:47:30,230 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-01 22:47:30,235 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-01 22:47:30,238 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-01 22:47:30,238 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 22:47:30,239 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-01 22:47:30,239 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 22:47:30,240 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-01 22:47:30,328 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-01 22:47:30,329 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-01 22:47:30,329 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 22:47:30,330 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 22:47:30,345 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-01 22:47:30,347 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-01 22:47:30,373 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-01 22:47:30,393 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-01 22:47:30,411 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-01 22:47:30,780 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/MySql.Data.DLL
+2014-09-01 22:47:30,802 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+2014-09-01 22:47:30,813 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+2014-09-01 22:47:30,906 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+2014-09-01 22:47:31,018 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+2014-09-01 22:47:31,282 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Policy', DomainId='3' -- calling Application.Setup
+2014-09-01 22:47:31,493 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-01 23:04:21,828 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-01 23:04:21,854 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-01 23:04:21,857 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-01 23:04:25,849 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-01 23:04:25,849 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-01 23:04:27,491 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-01 23:04:27,492 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:04:27,493 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-01 23:04:27,493 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 23:04:27,493 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-01 23:04:27,644 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-01 23:04:27,645 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-01 23:04:27,646 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:04:27,647 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 23:04:27,709 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-01 23:04:27,710 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-01 23:04:27,747 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-01 23:04:27,772 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-01 23:04:27,787 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-01 23:04:27,807 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-01 23:04:27,820 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-01 23:04:27,825 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-01 23:04:27,827 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-01 23:04:27,827 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:04:27,828 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-01 23:04:27,828 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 23:04:27,828 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-01 23:04:27,910 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-01 23:04:27,911 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-01 23:04:27,912 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:04:27,912 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 23:04:27,924 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-01 23:04:27,926 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-01 23:04:27,947 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-01 23:04:27,961 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-01 23:04:27,979 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-01 23:04:28,302 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/MySql.Data.DLL
+2014-09-01 23:04:28,317 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+2014-09-01 23:04:28,328 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+2014-09-01 23:04:28,384 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+2014-09-01 23:04:28,483 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+2014-09-01 23:04:28,748 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Policy', DomainId='3' -- calling Application.Setup
+2014-09-01 23:04:28,899 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-01 23:07:00,355 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-01 23:07:00,380 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-01 23:07:00,383 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-01 23:07:04,225 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-01 23:07:04,225 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-01 23:07:05,435 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-01 23:07:05,438 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:07:05,439 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-01 23:07:05,440 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 23:07:05,441 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-01 23:07:05,615 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-01 23:07:05,616 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-01 23:07:05,617 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:07:05,617 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 23:07:05,661 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-01 23:07:05,663 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-01 23:07:05,696 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-01 23:07:05,720 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-01 23:07:05,740 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-01 23:07:05,762 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-01 23:07:05,774 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-01 23:07:05,779 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-01 23:07:05,781 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-01 23:07:05,781 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:07:05,781 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-01 23:07:05,782 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 23:07:05,782 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-01 23:07:05,859 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-01 23:07:05,860 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-01 23:07:05,860 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:07:05,861 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 23:07:05,872 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-01 23:07:05,874 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-01 23:07:05,894 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-01 23:07:05,908 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-01 23:07:05,925 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-01 23:07:06,243 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/MySql.Data.DLL
+2014-09-01 23:07:06,255 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+2014-09-01 23:07:06,262 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+2014-09-01 23:07:06,317 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+2014-09-01 23:07:06,516 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+2014-09-01 23:07:07,131 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Policy', DomainId='3' -- calling Application.Setup
+2014-09-01 23:07:07,286 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-01 23:08:52,044 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-01 23:08:52,070 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-01 23:08:52,073 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-01 23:08:56,229 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-01 23:08:56,230 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-01 23:08:57,377 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-01 23:08:57,379 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:08:57,380 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-01 23:08:57,380 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 23:08:57,381 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-01 23:08:57,554 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-01 23:08:57,556 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-01 23:08:57,557 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:08:57,558 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 23:08:57,615 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-01 23:08:57,617 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-01 23:08:57,662 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-01 23:08:57,696 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-01 23:08:57,716 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-01 23:08:57,743 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-01 23:08:57,759 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-01 23:08:57,766 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-01 23:08:57,768 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-01 23:08:57,769 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:08:57,770 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-01 23:08:57,770 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 23:08:57,771 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-01 23:08:57,859 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-01 23:08:57,860 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-01 23:08:57,861 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:08:57,862 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 23:08:57,877 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-01 23:08:57,879 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-01 23:08:57,907 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-01 23:08:57,925 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-01 23:08:57,949 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-01 23:08:58,320 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/MySql.Data.DLL
+2014-09-01 23:08:58,340 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+2014-09-01 23:08:58,348 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+2014-09-01 23:08:58,412 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+2014-09-01 23:08:58,505 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+2014-09-01 23:08:58,787 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Policy', DomainId='3' -- calling Application.Setup
+2014-09-01 23:08:59,041 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-01 23:12:14,262 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-01 23:12:14,292 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-01 23:12:14,295 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-01 23:12:18,952 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-01 23:12:18,952 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-01 23:12:20,439 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-01 23:12:20,441 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:12:20,441 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-01 23:12:20,442 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 23:12:20,442 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-01 23:12:20,633 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-01 23:12:20,634 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-01 23:12:20,635 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:12:20,636 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 23:12:20,682 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-01 23:12:20,683 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-01 23:12:20,719 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-01 23:12:20,743 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-01 23:12:20,759 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-01 23:12:20,783 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-01 23:12:20,802 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-01 23:12:20,808 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-01 23:12:20,811 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-01 23:12:20,811 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:12:20,812 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-01 23:12:20,812 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 23:12:20,813 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-01 23:12:20,911 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-01 23:12:20,912 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-01 23:12:20,913 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:12:20,914 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 23:12:20,926 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-01 23:12:20,928 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-01 23:12:20,961 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-01 23:12:20,978 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-01 23:12:20,998 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-01 23:12:21,341 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/MySql.Data.DLL
+2014-09-01 23:12:21,356 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+2014-09-01 23:12:21,365 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+2014-09-01 23:12:21,440 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+2014-09-01 23:12:21,547 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+2014-09-01 23:12:21,805 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Policy', DomainId='3' -- calling Application.Setup
+2014-09-01 23:12:21,975 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-01 23:18:35,765 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-01 23:18:35,795 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-01 23:18:35,800 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-01 23:18:40,079 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-01 23:18:40,080 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-01 23:18:41,386 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-01 23:18:41,387 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:18:41,388 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-01 23:18:41,388 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 23:18:41,389 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-01 23:18:41,562 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-01 23:18:41,563 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-01 23:18:41,564 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:18:41,565 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 23:18:41,614 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-01 23:18:41,615 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-01 23:18:41,655 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-01 23:18:41,677 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-01 23:18:41,696 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-01 23:18:41,720 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-01 23:18:41,733 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-01 23:18:41,739 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-01 23:18:41,741 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-01 23:18:41,742 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:18:41,742 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-01 23:18:41,742 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 23:18:41,743 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-01 23:18:41,834 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-01 23:18:41,835 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-01 23:18:41,836 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:18:41,837 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 23:18:41,849 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-01 23:18:41,852 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-01 23:18:41,876 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-01 23:18:41,893 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-01 23:18:41,909 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-01 23:18:42,251 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/MySql.Data.DLL
+2014-09-01 23:18:42,265 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+2014-09-01 23:18:42,272 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+2014-09-01 23:18:42,346 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+2014-09-01 23:18:42,446 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+2014-09-01 23:18:42,714 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Policy', DomainId='3' -- calling Application.Setup
+2014-09-01 23:18:42,885 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-01 23:22:04,742 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-01 23:22:04,773 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-01 23:22:04,777 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-01 23:22:09,182 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-01 23:22:09,183 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-01 23:22:10,310 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-01 23:22:10,312 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:22:10,312 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-01 23:22:10,313 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 23:22:10,313 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-01 23:22:10,515 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-01 23:22:10,516 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-01 23:22:10,517 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:22:10,518 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 23:22:10,547 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-01 23:22:10,549 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-01 23:22:10,566 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-01 23:22:10,591 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-01 23:22:10,618 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-01 23:22:10,641 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-01 23:22:10,654 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-01 23:22:10,659 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-01 23:22:10,661 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-01 23:22:10,661 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:22:10,662 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-01 23:22:10,662 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-01 23:22:10,663 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-01 23:22:10,748 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-01 23:22:10,749 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-01 23:22:10,749 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-01 23:22:10,750 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-01 23:22:10,763 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-01 23:22:10,766 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-01 23:22:10,796 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-01 23:22:10,814 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-01 23:22:10,836 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-01 23:22:11,223 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/MySql.Data.DLL
+2014-09-01 23:22:11,238 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+2014-09-01 23:22:11,265 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+2014-09-01 23:22:11,331 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+2014-09-01 23:22:11,432 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+2014-09-01 23:22:11,726 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Policy', DomainId='3' -- calling Application.Setup
+2014-09-01 23:22:11,900 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-02 00:13:10,155 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:13:10,182 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:13:10,185 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:13:14,405 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:13:14,405 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:13:15,847 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:13:15,848 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:13:15,848 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:13:15,849 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:13:15,849 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:13:16,008 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:13:16,009 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:13:16,010 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:13:16,011 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:13:16,193 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:13:16,194 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:13:16,539 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:13:16,568 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:13:16,602 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:13:16,633 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:13:16,656 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:13:16,669 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:13:16,673 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:13:16,676 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:13:16,677 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:13:16,677 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:13:16,678 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:13:16,678 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:13:16,760 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:13:16,760 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:13:16,761 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:13:16,762 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:13:16,778 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:13:16,781 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:13:16,806 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:13:16,825 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:21:08,012 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:21:08,046 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:21:08,050 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:21:12,362 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:21:12,362 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:21:14,789 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:21:14,791 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:21:14,791 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:21:14,792 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:21:14,792 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:21:14,982 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:21:14,983 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:21:14,984 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:21:14,986 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:21:15,040 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:21:15,042 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:21:15,076 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:21:15,098 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:21:15,142 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:21:15,177 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:21:15,199 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:21:15,213 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:21:15,219 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:21:15,221 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:21:15,222 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:21:15,223 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:21:15,223 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:21:15,224 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:21:15,305 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:21:15,306 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:21:15,307 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:21:15,307 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:21:15,319 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:21:15,321 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:21:15,344 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:21:15,363 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:21:15,584 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Xml.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml.resources/v4.0_4.0.0.0_zh-Hans_b77a5c561934e089/System.Xml.resources.dll
+2014-09-02 00:21:16,255 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Microsoft.VisualStudio.Debugger.Runtime, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Debugger.Runtime/12.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.Runtime.dll
+2014-09-02 00:22:08,608 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:22:08,635 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:22:08,638 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:22:12,658 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:22:12,658 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:22:13,776 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:22:13,777 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:22:13,778 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:22:13,778 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:22:13,778 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:22:13,936 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:22:13,938 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:22:13,939 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:22:13,939 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:22:13,967 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:22:13,969 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:22:13,986 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:22:14,160 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:22:14,180 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:22:14,199 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:22:14,221 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:22:14,234 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:22:14,240 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:22:14,242 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:22:14,243 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:22:14,243 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:22:14,243 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:22:14,244 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:22:14,328 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:22:14,329 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:22:14,330 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:22:14,330 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:22:14,342 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:22:14,344 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:22:14,369 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:22:14,389 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:22:14,578 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Xml.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml.resources/v4.0_4.0.0.0_zh-Hans_b77a5c561934e089/System.Xml.resources.dll
+2014-09-02 00:22:15,001 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Microsoft.VisualStudio.Debugger.Runtime, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Debugger.Runtime/12.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.Runtime.dll
+2014-09-02 00:23:09,822 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:23:09,848 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:23:09,851 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:23:14,106 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:23:14,107 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:23:15,205 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:23:15,206 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:23:15,207 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:23:15,207 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:23:15,208 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:23:15,384 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:23:15,385 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:23:15,386 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:23:15,387 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:23:15,426 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:23:15,428 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:23:15,449 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:23:15,620 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:23:15,648 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:23:15,662 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:23:15,690 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:23:15,707 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:23:15,712 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:23:15,714 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:23:15,715 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:23:15,715 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:23:15,716 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:23:15,716 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:23:15,813 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:23:15,814 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:23:15,815 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:23:15,815 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:23:15,828 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:23:15,831 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:23:15,857 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:23:15,879 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:24:30,967 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Xml.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml.resources/v4.0_4.0.0.0_zh-Hans_b77a5c561934e089/System.Xml.resources.dll
+2014-09-02 00:24:31,165 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Microsoft.VisualStudio.Debugger.Runtime, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Debugger.Runtime/12.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.Runtime.dll
+2014-09-02 00:27:13,747 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:27:13,774 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:27:13,777 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:27:17,999 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:27:18,000 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:27:19,121 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:27:19,122 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:27:19,123 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:27:19,123 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:27:19,123 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:27:19,276 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:27:19,277 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:27:19,278 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:27:19,279 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:27:19,300 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:27:19,301 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:27:19,322 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:27:19,497 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:27:19,517 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:27:19,532 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:27:19,559 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:27:19,572 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:27:19,577 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:27:19,580 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:27:19,580 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:27:19,581 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:27:19,581 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:27:19,581 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:27:19,674 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:27:19,675 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:27:19,676 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:27:19,677 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:27:19,688 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:27:19,691 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:27:19,714 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:27:19,732 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:27:31,336 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Xml.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml.resources/v4.0_4.0.0.0_zh-Hans_b77a5c561934e089/System.Xml.resources.dll
+2014-09-02 00:27:31,513 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Microsoft.VisualStudio.Debugger.Runtime, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Debugger.Runtime/12.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.Runtime.dll
+2014-09-02 00:29:54,866 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:29:54,893 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:29:54,896 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:29:59,042 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:29:59,042 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:30:00,140 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:30:00,141 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:30:00,142 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:30:00,143 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:30:00,143 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:30:00,305 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:30:00,306 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:30:00,307 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:30:00,308 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:30:00,356 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:30:00,357 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:30:00,393 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:30:00,424 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:30:00,469 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:30:00,503 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:30:00,529 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:30:00,542 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:30:00,546 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:30:00,549 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:30:00,550 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:30:00,550 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:30:00,551 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:30:00,551 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:30:00,633 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:30:00,633 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:30:00,634 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:30:00,635 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:30:00,647 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:30:00,649 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:30:00,671 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:30:00,692 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:30:00,905 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Xml.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml.resources/v4.0_4.0.0.0_zh-Hans_b77a5c561934e089/System.Xml.resources.dll
+2014-09-02 00:30:01,570 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Microsoft.VisualStudio.Debugger.Runtime, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Debugger.Runtime/12.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.Runtime.dll
+2014-09-02 00:30:52,690 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:30:52,715 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:30:52,719 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:30:56,784 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:30:56,784 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:30:57,898 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:30:57,900 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:30:57,900 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:30:57,901 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:30:57,901 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:30:58,058 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:30:58,059 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:30:58,060 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:30:58,061 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:30:58,090 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:30:58,091 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:30:58,109 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:30:58,137 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:30:58,171 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:30:58,190 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:30:58,212 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:30:58,226 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:30:58,230 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:30:58,232 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:30:58,233 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:30:58,233 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:30:58,234 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:30:58,234 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:30:58,316 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:30:58,317 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:30:58,318 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:30:58,318 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:30:58,330 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:30:58,332 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:30:58,355 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:30:58,375 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:30:58,569 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Xml.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml.resources/v4.0_4.0.0.0_zh-Hans_b77a5c561934e089/System.Xml.resources.dll
+2014-09-02 00:30:58,654 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.OnStopRequested()
+2014-09-02 00:30:58,659 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'Policy', DomainId='3' -- calling Application.OnStopRequested()
+2014-09-02 00:30:58,661 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-02 00:30:58,671 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.TearDown()
+2014-09-02 00:30:58,680 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'Policy', DomainId='3' -- calling Application.TearDown()
+2014-09-02 00:34:53,020 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:34:53,049 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:34:53,051 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:34:57,373 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:34:57,373 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:34:58,725 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:34:58,727 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:34:58,727 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:34:58,727 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:34:58,728 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:34:58,895 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:34:58,896 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:34:58,901 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:34:58,903 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:34:58,954 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:34:58,956 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:34:58,986 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:34:59,009 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:34:59,049 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:34:59,080 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:34:59,103 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:34:59,117 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:34:59,121 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:34:59,123 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:34:59,123 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:34:59,124 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:34:59,124 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:34:59,125 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:34:59,210 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:34:59,211 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:34:59,211 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:34:59,212 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:34:59,224 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:34:59,227 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:34:59,250 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:34:59,269 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:34:59,469 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Xml.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml.resources/v4.0_4.0.0.0_zh-Hans_b77a5c561934e089/System.Xml.resources.dll
+2014-09-02 00:34:59,552 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.OnStopRequested()
+2014-09-02 00:34:59,556 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'Policy', DomainId='3' -- calling Application.OnStopRequested()
+2014-09-02 00:34:59,559 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-02 00:34:59,568 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.TearDown()
+2014-09-02 00:34:59,576 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'Policy', DomainId='3' -- calling Application.TearDown()
+2014-09-02 00:36:24,029 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:36:24,054 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:36:24,057 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:36:28,279 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:36:28,279 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:36:29,399 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:36:29,400 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:36:29,401 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:36:29,401 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:36:29,401 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:36:29,566 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:36:29,567 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:36:29,568 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:36:29,569 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:36:29,599 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:36:29,601 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:36:29,620 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:36:29,647 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:36:29,664 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:36:29,683 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:36:29,709 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:36:29,724 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:36:29,729 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:36:29,731 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:36:29,731 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:36:29,732 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:36:29,732 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:36:29,732 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:36:29,815 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:36:29,815 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:36:29,816 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:36:29,817 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:36:29,829 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:36:29,832 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:36:29,857 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:36:29,876 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:36:30,082 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Xml.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml.resources/v4.0_4.0.0.0_zh-Hans_b77a5c561934e089/System.Xml.resources.dll
+2014-09-02 00:36:30,170 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.OnStopRequested()
+2014-09-02 00:36:30,175 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'Policy', DomainId='3' -- calling Application.OnStopRequested()
+2014-09-02 00:36:30,177 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-02 00:36:30,187 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.TearDown()
+2014-09-02 00:36:30,196 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'Policy', DomainId='3' -- calling Application.TearDown()
+2014-09-02 00:37:09,385 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:37:09,411 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:37:09,414 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:37:13,466 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:37:13,466 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:37:14,591 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:37:14,592 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:37:14,593 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:37:14,593 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:37:14,593 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:37:14,755 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:37:14,756 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:37:14,757 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:37:14,758 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:37:14,804 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:37:14,806 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:37:14,840 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:37:14,868 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:37:14,891 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:37:14,910 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:37:14,933 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:37:14,948 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:37:14,952 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:37:14,954 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:37:14,955 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:37:14,955 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:37:14,956 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:37:14,956 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:37:15,037 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:37:15,038 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:37:15,039 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:37:15,040 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:37:15,052 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:37:15,054 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:37:15,077 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:37:15,097 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:37:15,289 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Xml.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml.resources/v4.0_4.0.0.0_zh-Hans_b77a5c561934e089/System.Xml.resources.dll
+2014-09-02 00:37:15,863 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Microsoft.VisualStudio.Debugger.Runtime, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Debugger.Runtime/12.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.Runtime.dll
+2014-09-02 00:41:09,213 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:41:09,240 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:41:09,243 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:41:13,292 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:41:13,292 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:41:15,098 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:41:15,099 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:41:15,099 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:41:15,100 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:41:15,100 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:41:15,265 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:41:15,266 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:41:15,267 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:41:15,268 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:41:15,288 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:41:15,290 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:41:15,310 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:41:15,334 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:41:15,351 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:41:15,364 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:41:15,389 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:41:15,403 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:41:15,407 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:41:15,410 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:41:15,410 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:41:15,411 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:41:15,411 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:41:15,411 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:41:15,495 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:41:15,496 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:41:15,497 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:41:15,498 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:41:15,511 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:41:15,513 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:41:15,536 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:41:15,555 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:41:15,767 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Xml.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml.resources/v4.0_4.0.0.0_zh-Hans_b77a5c561934e089/System.Xml.resources.dll
+2014-09-02 00:41:16,354 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Microsoft.VisualStudio.Debugger.Runtime, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Debugger.Runtime/12.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.Runtime.dll
+2014-09-02 00:41:58,288 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:41:58,314 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:41:58,317 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:42:02,461 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:42:02,461 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:42:03,581 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:42:03,582 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:42:03,583 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:42:03,583 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:42:03,584 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:42:03,757 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:42:03,763 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:42:03,764 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:42:03,765 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:42:03,788 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:42:03,789 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:42:03,811 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:42:03,971 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:42:03,992 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:42:04,006 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:42:04,029 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:42:04,043 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:42:04,047 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:42:04,050 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:42:04,051 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:42:04,052 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:42:04,052 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:42:04,053 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:42:04,133 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:42:04,134 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:42:04,135 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:42:04,136 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:42:04,147 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:42:04,150 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:42:04,176 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:42:04,196 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:43:46,708 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:43:46,733 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:43:46,736 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:43:50,951 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:43:50,951 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:43:52,094 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:43:52,096 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:43:52,097 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:43:52,097 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:43:52,097 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:43:52,260 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:43:52,261 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:43:52,262 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:43:52,263 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:43:52,307 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:43:52,308 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:43:52,360 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:43:52,384 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:43:52,425 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:43:52,459 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:43:52,482 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:43:52,495 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:43:52,499 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:43:52,502 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:43:52,502 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:43:52,503 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:43:52,503 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:43:52,504 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:43:52,586 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:43:52,586 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:43:52,587 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:43:52,588 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:43:52,600 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:43:52,603 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:43:52,626 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:43:52,645 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:43:52,904 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.OnStopRequested()
+2014-09-02 00:43:52,909 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'Policy', DomainId='3' -- calling Application.OnStopRequested()
+2014-09-02 00:43:52,911 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-02 00:43:52,920 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.TearDown()
+2014-09-02 00:43:52,928 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'Policy', DomainId='3' -- calling Application.TearDown()
+2014-09-02 00:45:10,332 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:45:10,359 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:45:10,362 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:45:14,351 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:45:14,351 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:45:15,484 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:45:15,486 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:45:15,486 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:45:15,487 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:45:15,487 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:45:15,724 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:45:15,725 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:45:15,726 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:45:15,727 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:45:15,750 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:45:15,752 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:45:15,770 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:45:15,935 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:45:15,960 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:45:15,977 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:45:16,000 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:45:16,016 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:45:16,021 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:45:16,022 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:45:16,023 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:45:16,024 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:45:16,024 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:45:16,024 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:45:16,123 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:45:16,124 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:45:16,125 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:45:16,126 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:45:16,138 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:45:16,140 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:45:16,165 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:45:16,183 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:46:44,017 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:46:44,041 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:46:44,044 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:46:48,085 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:46:48,085 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:46:49,382 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:46:49,384 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:46:49,384 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:46:49,385 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:46:49,385 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:46:49,545 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:46:49,547 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:46:49,548 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:46:49,549 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:46:49,589 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:46:49,591 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:46:49,626 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:46:49,794 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:46:49,820 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:46:49,834 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:46:49,857 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:46:49,871 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:46:49,875 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:46:49,877 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:46:49,878 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:46:49,878 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:46:49,878 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:46:49,879 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:46:49,960 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:46:49,961 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:46:49,962 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:46:49,963 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:46:49,975 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:46:49,978 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:46:50,000 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:46:50,019 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:46:52,900 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Microsoft.VisualStudio.Debugger.Runtime, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Debugger.Runtime/12.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.Runtime.dll
+2014-09-02 00:46:57,770 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/MySql.Data.DLL
+2014-09-02 00:46:57,833 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+2014-09-02 00:46:57,847 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+2014-09-02 00:46:58,035 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+2014-09-02 00:46:58,156 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+2014-09-02 00:46:58,451 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Policy', DomainId='3' -- calling Application.Setup
+2014-09-02 00:46:58,609 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-02 00:49:04,276 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-02 00:49:04,303 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-02 00:49:04,306 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-02 00:49:08,591 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2014-09-02 00:49:08,592 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2014-09-02 00:49:09,708 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'EsUCenter' , assemblyName = 'EsUCenter'
+2014-09-02 00:49:09,710 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:49:09,710 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin;bin_win64;Shared;'
+2014-09-02 00:49:09,711 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:49:09,711 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin\Cache'
+2014-09-02 00:49:09,874 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter'
+2014-09-02 00:49:09,875 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\EsUCenter\bin'
+2014-09-02 00:49:09,876 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:49:09,877 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:49:09,898 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsUCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsUCenter.DLL
+2014-09-02 00:49:09,900 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2014-09-02 00:49:09,920 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsEngine.DLL
+2014-09-02 00:49:09,945 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/Photon.SocketServer.DLL
+2014-09-02 00:49:09,962 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EbCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EbCommon.DLL
+2014-09-02 00:49:09,978 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: EsZkLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/EsZkLib.DLL
+2014-09-02 00:49:10,007 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGamesLibs.DLL
+2014-09-02 00:49:10,020 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-02 00:49:10,025 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'EsUCenter', assemblyName = 'EsUCenter', typeName = 'UCenterApp'
+2014-09-02 00:49:10,027 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2014-09-02 00:49:10,028 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:49:10,028 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin;bin_win64;Shared;'
+2014-09-02 00:49:10,029 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2014-09-02 00:49:10,029 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2014-09-02 00:49:10,111 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'D:\work\DEF2\trunk\Deploy\Policy'
+2014-09-02 00:49:10,112 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'D:\work\DEF2\trunk\Deploy\Policy\bin'
+2014-09-02 00:49:10,112 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'D:\work\DEF2\trunk\Deploy'
+2014-09-02 00:49:10,113 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'D:\work\DEF2\trunk\Deploy\bin_win64\log'
+2014-09-02 00:49:10,126 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///D:/work/DEF2/trunk/Deploy/Policy/bin/Policy.Application.DLL
+2014-09-02 00:49:10,129 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2014-09-02 00:49:10,152 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'EsUCenter', DomainId='2' -- calling Application.Setup
+2014-09-02 00:49:10,174 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-02 00:49:10,529 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d from file:///D:/work/DEF2/trunk/Deploy/EsUCenter/bin/MySql.Data.DLL
+2014-09-02 00:49:10,544 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+2014-09-02 00:49:10,552 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+2014-09-02 00:49:10,613 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+2014-09-02 00:49:10,721 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+2014-09-02 00:49:10,967 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Policy', DomainId='3' -- calling Application.Setup
+2014-09-02 00:49:11,126 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'DefaultDomain', DomainId='1'

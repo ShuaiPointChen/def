@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A1A0894-DC8E-4D16-B920-064B77C9E781}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eb</RootNamespace>
+    <AssemblyName>EbCommon</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\..\Output\Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command="cp  ${TargetDir}/${TargetName} ${SolutionDir}/../Client/Assets/Plugins" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\..\Output\Bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterExecute" command="" workingdir="" />
+        <Command type="AfterBuild" command="" workingdir="" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSLightEvil35">
+      <HintPath>..\..\ShareLib\CSLightEvil\CSLightEvil35.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\ShareLib\PngReaderDLL\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Pngcs">
+      <HintPath>..\..\ShareLib\PngReaderDLL\Pngcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BehaviorTree\Actions\BehaviorAction.cs" />
+    <Compile Include="BehaviorTree\BehaviorComponent.cs" />
+    <Compile Include="BehaviorTree\BehaviorTree.cs" />
+    <Compile Include="BehaviorTree\Blackboard.cs" />
+    <Compile Include="BehaviorTree\Composites\PartialSelector.cs" />
+    <Compile Include="BehaviorTree\Composites\PartialSequence.cs" />
+    <Compile Include="BehaviorTree\Composites\RandomSelector.cs" />
+    <Compile Include="BehaviorTree\Composites\RootSelector.cs" />
+    <Compile Include="BehaviorTree\Composites\Selector.cs" />
+    <Compile Include="BehaviorTree\Composites\Sequence.cs" />
+    <Compile Include="BehaviorTree\Composites\StatefulSelector.cs" />
+    <Compile Include="BehaviorTree\Composites\StatefulSequence.cs" />
+    <Compile Include="BehaviorTree\Conditionals\Conditional.cs" />
+    <Compile Include="BehaviorTree\Decorators\DecoratorCounter.cs" />
+    <Compile Include="BehaviorTree\Decorators\DecoratorInverter.cs" />
+    <Compile Include="BehaviorTree\Decorators\DecoratorRandom.cs" />
+    <Compile Include="BehaviorTree\Decorators\DecoratorTimer.cs" />
+    <Compile Include="CommonType.cs" />
+    <Compile Include="Data\EbData.cs" />
+    <Compile Include="Data\EbDataInfo.cs" />
+    <Compile Include="Data\EbDataMgr.cs" />
+    <Compile Include="DefUCenterSession.cs" />
+    <Compile Include="Entity\Component.cs" />
+    <Compile Include="Entity\ComponentAttr.cs" />
+    <Compile Include="Entity\ComponentFactory.cs" />
+    <Compile Include="Entity\Entity.cs" />
+    <Compile Include="Entity\ComponentDef.cs" />
+    <Compile Include="Entity\EntityDef.cs" />
+    <Compile Include="Entity\EntityEvent.cs" />
+    <Compile Include="Entity\EntityMgrListener.cs" />
+    <Compile Include="Entity\PropAttr.cs" />
+    <Compile Include="Main\EbDoubleLinkList2.cs" />
+    <Compile Include="Main\EbFileStream.cs" />
+    <Compile Include="Entity\EntityMgr.cs" />
+    <Compile Include="Entity\EntitySerializerJson.cs" />
+    <Compile Include="Entity\EntitySerializerJsonString.cs" />
+    <Compile Include="Entity\RpcDispatch.cs" />
+    <Compile Include="Entity\EntitySerializer.cs" />
+    <Compile Include="Entity\EntitySerializerMgr.cs" />
+    <Compile Include="Entity\EntityType.cs" />
+    <Compile Include="Entity\Prop.cs" />
+    <Compile Include="Entity\PropDef.cs" />
+    <Compile Include="Entity\RpcSession.cs" />
+    <Compile Include="Fsm\EbEvent.cs" />
+    <Compile Include="Fsm\EbFsm.cs" />
+    <Compile Include="Fsm\EbState.cs" />
+    <Compile Include="Main\EbBase64Decoder.cs" />
+    <Compile Include="Main\EbBase64Encoder.cs" />
+    <Compile Include="Main\EbJsonHelper.cs" />
+    <Compile Include="Main\EbLog.cs" />
+    <Compile Include="Main\EbDoubleLinkList.cs" />
+    <Compile Include="Main\EbTimerShaft.cs" />
+    <Compile Include="Math\EbAngle.cs" />
+    <Compile Include="Math\EbAngleCursor.cs" />
+    <Compile Include="Math\EbBoundingBox.cs" />
+    <Compile Include="Math\EbMath.cs" />
+    <Compile Include="Math\EbVector2.cs" />
+    <Compile Include="Math\EbVector3.cs" />
+    <Compile Include="Node\INodeClientListener.cs" />
+    <Compile Include="Node\INodeClientScript.cs" />
+    <Compile Include="Node\INodeEffect.cs" />
+    <Compile Include="Node\INodeServerListener.cs" />
+    <Compile Include="Node\INodeServerScript.cs" />
+    <Compile Include="Node\INodeTrigger.cs" />
+    <Compile Include="Node\INodeTriggerCondition.cs" />
+    <Compile Include="Node\MsgMgr.cs" />
+    <Compile Include="Node\Node.cs" />
+    <Compile Include="Node\NodeConfig.cs" />
+    <Compile Include="Node\NodeDefXml\DataScenario.cs" />
+    <Compile Include="Node\NodeDefXml\DirectRemote.cs" />
+    <Compile Include="Node\NodeDefXml\EditNodeData.cs" />
+    <Compile Include="Node\NodeDefXml\FakeRemote.cs" />
+    <Compile Include="Node\NodeDefXml\Interface.cs" />
+    <Compile Include="Node\NodeDefXml\NodeData.cs" />
+    <Compile Include="Node\NodeDefXml\StackTrace.cs" />
+    <Compile Include="Node\NodeDefXml\SVNRemote.cs" />
+    <Compile Include="Node\NodeEffectMgr.cs" />
+    <Compile Include="Node\NodeMgr.cs" />
+    <Compile Include="Node\NodePath.cs" />
+    <Compile Include="Node\NodeScriptMgr.cs" />
+    <Compile Include="Node\NodeStateInit.cs" />
+    <Compile Include="Node\NodeStateRelease.cs" />
+    <Compile Include="Node\NodeStateRun.cs" />
+    <Compile Include="Node\NodeStateStart.cs" />
+    <Compile Include="Node\NodeStateStop.cs" />
+    <Compile Include="Node\NodeSys.cs" />
+    <Compile Include="Node\NodeTriggerConditionMgr.cs" />
+    <Compile Include="Node\NodeTriggerMgr.cs" />
+    <Compile Include="Node\NodeType.cs" />
+    <Compile Include="Scene\EbAtar.cs" />
+    <Compile Include="Scene\EbAstarAssistant.cs" />
+    <Compile Include="Scene\EbGrid.cs" />
+    <Compile Include="Scene\EbSceneType.cs" />
+    <Compile Include="Scene\EbPixelLoader.cs" />
+    <Compile Include="Scene\EbPixelLoaderPng.cs" />
+    <Compile Include="Scene\EbPixelNav.cs" />
+    <Compile Include="Scene\EbGridRegion.cs" />
+    <Compile Include="Scene\EbRoute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Script\EbScriptMgr.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EbJson\EbJson.csproj">
+      <Project>{0407c8af-6d69-4765-8417-883c395552a3}</Project>
+      <Name>EbJson</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EbSqlite\EbSqlite.csproj">
+      <Project>{47b5d60f-be8d-4ccf-8125-800b991a6502}</Project>
+      <Name>EbSqlite</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

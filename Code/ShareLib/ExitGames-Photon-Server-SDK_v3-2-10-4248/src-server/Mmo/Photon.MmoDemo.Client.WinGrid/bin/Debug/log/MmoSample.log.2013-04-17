@@ -1,0 +1,321 @@
+2013-04-17 14:11:51,765 [9] INFO  Photon.MmoDemo.Client.WinGrid.WorldForm - diagnostics: connected
+2013-04-17 14:11:52,147 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 135e335c-e71f-45d4-a926-eacc9274fc48: connected
+2013-04-17 14:11:52,287 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 135e335c-e71f-45d4-a926-eacc9274fc48: entered world Unity3d-Island
+2013-04-17 14:12:54,794 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 4b98a8d6-dfd2-4a6f-8915-fbbc403b87f9: connected
+2013-04-17 14:12:54,830 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 4b98a8d6-dfd2-4a6f-8915-fbbc403b87f9: entered world Unity3d-Island
+2013-04-17 14:12:56,551 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - c5753e39-3f26-447d-a7a7-4e6d8643ca0a: connected
+2013-04-17 14:12:56,587 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - c5753e39-3f26-447d-a7a7-4e6d8643ca0a: entered world Unity3d-Island
+2013-04-17 14:12:57,521 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 73392615-5ade-4590-863f-ec0fda5aaf7f: connected
+2013-04-17 14:12:57,558 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 73392615-5ade-4590-863f-ec0fda5aaf7f: entered world Unity3d-Island
+2013-04-17 14:12:57,742 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - baa92523-98aa-4727-bd7f-fd08bf5aff35: connected
+2013-04-17 14:12:57,778 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - baa92523-98aa-4727-bd7f-fd08bf5aff35: entered world Unity3d-Island
+2013-04-17 14:12:57,963 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 865a1a18-25bd-4274-9e57-758b4a9ae973: connected
+2013-04-17 14:12:57,999 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 865a1a18-25bd-4274-9e57-758b4a9ae973: entered world Unity3d-Island
+2013-04-17 14:12:58,220 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 689e5a74-6d4c-4ffc-a9c2-a1ac102dbea4: connected
+2013-04-17 14:12:58,256 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 689e5a74-6d4c-4ffc-a9c2-a1ac102dbea4: entered world Unity3d-Island
+2013-04-17 14:12:58,515 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:12:59,003 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:12:59,951 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:00,644 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:01,510 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:02,163 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:02,845 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:03,669 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 487f0c52-e820-4146-b3aa-f47824d65825: connected
+2013-04-17 14:13:03,705 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 487f0c52-e820-4146-b3aa-f47824d65825: entered world Unity3d-Island
+2013-04-17 14:13:05,062 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 156dfb76-20e9-41ff-8e8c-0a4905370e7e: connected
+2013-04-17 14:13:05,097 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 156dfb76-20e9-41ff-8e8c-0a4905370e7e: entered world Unity3d-Island
+2013-04-17 14:13:06,996 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 905d78d8-6780-4c7e-a6a8-3ecd1a170524: connected
+2013-04-17 14:13:07,032 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 905d78d8-6780-4c7e-a6a8-3ecd1a170524: entered world Unity3d-Island
+2013-04-17 14:13:09,571 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - ef77cc03-9fec-44ae-9fdb-6cfcb47c17be: connected
+2013-04-17 14:13:09,606 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - ef77cc03-9fec-44ae-9fdb-6cfcb47c17be: entered world Unity3d-Island
+2013-04-17 14:13:11,834 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 754c0adc-eee0-493b-ab71-5459a45a04c6: connected
+2013-04-17 14:13:11,870 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 754c0adc-eee0-493b-ab71-5459a45a04c6: entered world Unity3d-Island
+2013-04-17 14:13:13,385 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 860cf369-f7f3-4ced-bae5-d49021be5bb5: connected
+2013-04-17 14:13:13,422 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 860cf369-f7f3-4ced-bae5-d49021be5bb5: entered world Unity3d-Island
+2013-04-17 14:13:14,157 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - a3db1666-725a-4019-896c-923cb532d455: connected
+2013-04-17 14:13:14,193 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - a3db1666-725a-4019-896c-923cb532d455: entered world Unity3d-Island
+2013-04-17 14:13:14,343 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 70b184ae-0e68-4754-9139-57c9de1f35ad: connected
+2013-04-17 14:13:14,379 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 70b184ae-0e68-4754-9139-57c9de1f35ad: entered world Unity3d-Island
+2013-04-17 14:13:14,528 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 243a314a-1755-4a77-980f-b8f751654ef3: connected
+2013-04-17 14:13:14,569 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 243a314a-1755-4a77-980f-b8f751654ef3: entered world Unity3d-Island
+2013-04-17 14:13:14,677 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - b5a4aafb-f160-4032-96e6-54940e427b33: connected
+2013-04-17 14:13:14,719 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - b5a4aafb-f160-4032-96e6-54940e427b33: entered world Unity3d-Island
+2013-04-17 14:13:14,827 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 44201cc4-ad78-4b2d-a1b5-95dd542e11fe: connected
+2013-04-17 14:13:14,869 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 44201cc4-ad78-4b2d-a1b5-95dd542e11fe: entered world Unity3d-Island
+2013-04-17 14:13:14,978 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 2175fe6a-f5c4-4eaa-b584-9c094a15226f: connected
+2013-04-17 14:13:15,023 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 2175fe6a-f5c4-4eaa-b584-9c094a15226f: entered world Unity3d-Island
+2013-04-17 14:13:15,133 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 65a8dbf7-f5e1-47d5-a34e-4bc9fc8cb95a: connected
+2013-04-17 14:13:15,169 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 65a8dbf7-f5e1-47d5-a34e-4bc9fc8cb95a: entered world Unity3d-Island
+2013-04-17 14:13:15,321 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 19b06452-ac4e-4e7c-a8b1-7b0fedaa64a1: connected
+2013-04-17 14:13:15,368 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 19b06452-ac4e-4e7c-a8b1-7b0fedaa64a1: entered world Unity3d-Island
+2013-04-17 14:13:15,479 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - ef0b810a-9a1e-4ab8-9df0-1acadfae4740: connected
+2013-04-17 14:13:15,521 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - ef0b810a-9a1e-4ab8-9df0-1acadfae4740: entered world Unity3d-Island
+2013-04-17 14:13:15,631 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 09720f56-1d72-417e-8b8e-dad239cc378e: connected
+2013-04-17 14:13:15,668 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 09720f56-1d72-417e-8b8e-dad239cc378e: entered world Unity3d-Island
+2013-04-17 14:13:16,813 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 07366ddd-c78e-40a9-9ff8-1cd5ab1ef2d8: connected
+2013-04-17 14:13:16,850 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 07366ddd-c78e-40a9-9ff8-1cd5ab1ef2d8: entered world Unity3d-Island
+2013-04-17 14:13:19,668 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 7a1cb1a2-62ce-4536-9e97-21687fcd5290: connected
+2013-04-17 14:13:19,705 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 7a1cb1a2-62ce-4536-9e97-21687fcd5290: entered world Unity3d-Island
+2013-04-17 14:13:20,857 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 9880e85c-3a9a-4f30-b76d-4d328e390eee: connected
+2013-04-17 14:13:20,894 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 9880e85c-3a9a-4f30-b76d-4d328e390eee: entered world Unity3d-Island
+2013-04-17 14:13:21,096 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 4dc423c6-554b-4690-ab00-cf7157ee6362: DisconnectByServerUserLimit
+2013-04-17 14:13:21,254 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 29967e1f-1685-42b6-9103-87accf7d0c91: DisconnectByServerUserLimit
+2013-04-17 14:13:21,408 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - c3bba103-de5b-4bc2-9aea-af1e6102c760: DisconnectByServerUserLimit
+2013-04-17 14:13:21,563 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 60686d06-3ca0-4c00-aaec-97f1c8df5d52: DisconnectByServerUserLimit
+2013-04-17 14:13:21,717 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 20814d41-0064-4206-9a20-ca24cd4d380d: DisconnectByServerUserLimit
+2013-04-17 14:13:21,834 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 347d1784-3520-49cc-ba27-fc423cb3c0aa: DisconnectByServerUserLimit
+2013-04-17 14:13:21,999 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 63c0eea4-b065-4062-b0a4-b782b5bc116b: DisconnectByServerUserLimit
+2013-04-17 14:13:22,160 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 5f2e251a-5227-4c30-a186-de502ea19a77: DisconnectByServerUserLimit
+2013-04-17 14:13:22,315 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - d059c3f4-7441-48b7-b56f-33be18332423: DisconnectByServerUserLimit
+2013-04-17 14:13:22,470 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 6ae96f68-c8b2-443b-afb2-d39e8e843e6d: DisconnectByServerUserLimit
+2013-04-17 14:13:22,625 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - dd0d89ec-0446-4519-965a-b5f0c12b1528: DisconnectByServerUserLimit
+2013-04-17 14:13:22,780 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 0cb34aea-2614-42ae-9d15-e0357a3e9d2a: DisconnectByServerUserLimit
+2013-04-17 14:13:22,951 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 60073879-6bc6-46ba-86cf-820a8d5a7a38: DisconnectByServerUserLimit
+2013-04-17 14:13:23,109 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 19df438f-d5fd-41a5-97ec-dc3d9a1ffec4: DisconnectByServerUserLimit
+2013-04-17 14:13:23,269 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 143f8544-2d2e-4c53-b706-be85d7666e2f: DisconnectByServerUserLimit
+2013-04-17 14:13:23,427 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - c12bfe19-18ac-47ad-aa28-c7d5c2801e19: DisconnectByServerUserLimit
+2013-04-17 14:13:23,583 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 230c22a8-394e-44c4-8eb2-24b7a3fd1aaa: DisconnectByServerUserLimit
+2013-04-17 14:13:23,740 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 21c2d043-fc91-413a-883d-5185ce75e0b2: DisconnectByServerUserLimit
+2013-04-17 14:13:23,896 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 4ec0a4a1-56d4-44dd-a95d-ee56e12b7757: DisconnectByServerUserLimit
+2013-04-17 14:13:24,015 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 81593be3-254a-426c-9e91-a9bf1a5c8197: DisconnectByServerUserLimit
+2013-04-17 14:13:24,186 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 89507d71-c382-4f21-92a5-842ae1f899c1: DisconnectByServerUserLimit
+2013-04-17 14:13:24,351 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - f71c1ce2-cb84-4178-bd75-1a95c6ae1b89: DisconnectByServerUserLimit
+2013-04-17 14:13:24,513 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 93b9ceb2-a4b7-4bb1-8a9b-024582b060b1: DisconnectByServerUserLimit
+2013-04-17 14:13:24,672 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 0d978efb-71bb-4240-8c65-bdc8f2e693dd: DisconnectByServerUserLimit
+2013-04-17 14:13:24,842 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 5a167f1f-676f-4395-af39-e14a508f89a1: DisconnectByServerUserLimit
+2013-04-17 14:13:25,010 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - e39d19cf-12bd-4f8b-a1c1-e643802ee9e2: DisconnectByServerUserLimit
+2013-04-17 14:13:25,201 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 982d3fac-083b-4196-bb68-99758e727b86: DisconnectByServerUserLimit
+2013-04-17 14:13:42,550 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:42,708 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:44,721 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:45,130 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:45,281 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:45,474 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:45,666 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:45,823 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:46,017 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:46,173 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:46,364 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:46,554 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:46,744 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:13:46,897 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:14:12,842 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:14:16,805 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:14:16,991 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:14:17,214 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:14:17,937 [9] ERROR Photon.MmoDemo.Client.WinGrid.WorldForm - System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.ExitGames.Client.Photon.IPhotonPeerListener.OnEvent(EventData event) 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 166
+   在 ExitGames.Client.Photon.PeerBase.DeserializeMessageAndCallback(Byte[] inBuff) 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PeerBase.cs:行号 501
+   在 ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\EnetPeer.cs:行号 440
+   在 ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 1023
+   在 ExitGames.Client.Photon.PhotonPeer.Service() 位置 c:\dev\photon-sdk-dotnet\PhotonDotNet\PhotonPeer.cs:行号 936
+   在 Photon.MmoDemo.Client.WinGrid.WorldForm.UpdateDiagnostics() 位置 g:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\src-server\Mmo\Photon.MmoDemo.Client.WinGrid\WorldForm.cs:行号 879
+2013-04-17 14:14:21,625 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - c5ea37e0-b37d-47dc-96f6-14683e43e140: connected
+2013-04-17 14:14:21,660 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - c5ea37e0-b37d-47dc-96f6-14683e43e140: entered world Unity3d-Island
+2013-04-17 14:14:28,136 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 915ac4a1-c112-4faf-81a3-e74b76cf65ae: connected
+2013-04-17 14:14:28,172 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 915ac4a1-c112-4faf-81a3-e74b76cf65ae: entered world Unity3d-Island
+2013-04-17 14:25:38,670 [9] INFO  Photon.MmoDemo.Client.WinGrid.WorldForm - diagnostics: connected
+2013-04-17 14:25:38,847 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 1057da12-de1c-40df-8ca9-bc9fc89f0d46: connected
+2013-04-17 14:25:38,890 [9] INFO  Photon.MmoDemo.Client.WinGrid.GameTabPage - 1057da12-de1c-40df-8ca9-bc9fc89f0d46: entered world Unity3d-Island

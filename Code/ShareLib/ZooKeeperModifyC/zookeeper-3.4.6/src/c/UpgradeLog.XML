@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="zookeeper">
+</Property><Property Name="Solution File" Value="D:\DEF\trunk\Code\Tool\ZooKeeperC\zookeeper-3.4.6\src\c\zookeeper.sln">
+</Property><Property Name="User Options File" Value="D:\DEF\trunk\Code\Tool\ZooKeeperC\zookeeper-3.4.6\src\c\zookeeper.suo">
+</Property><Property Name="Date" Value="2014年7月16日">
+</Property><Property Name="Time" Value="14:36">
+</Property></Properties><Event ErrorLevel="2" Project="" Source="zookeeper.sln" Description="Error creating backup file: D:\DEF\trunk\Code\Tool\ZooKeeperC\zookeeper-3.4.6\src\c\zookeeper.sln.old">
+</Event><Event ErrorLevel="2" Project="" Source="zookeeper.suo" Description="Error creating backup file: D:\DEF\trunk\Code\Tool\ZooKeeperC\zookeeper-3.4.6\src\c\zookeeper.suo.old">
+</Event><Event ErrorLevel="0" Project="zookeeper" Source="zookeeper.vcproj" Description="Converting project file 'D:\DEF\trunk\Code\Tool\ZooKeeperC\zookeeper-3.4.6\src\c\zookeeper.vcproj'.">
+</Event><Event ErrorLevel="1" Project="zookeeper" Source="zookeeper.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="zookeeper" Source="zookeeper.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="zookeeper" Source="zookeeper.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="zookeeper" Source="zookeeper.vcproj" Description="Done converting to new project file 'D:\DEF\trunk\Code\Tool\ZooKeeperC\zookeeper-3.4.6\src\c\zookeeper.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="zookeeper" Source="zookeeper.vcproj" Description="Converted">
+</Event><Event ErrorLevel="3" Project="Cli" Source="Cli.vcxproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="zookeeper.sln" Description="The solution file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="" Source="zookeeper.sln" Description="No Conversion Required">
+</Event></UpgradeLog>

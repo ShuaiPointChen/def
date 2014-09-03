@@ -1,0 +1,6 @@
+D:\work\DEF2\trunk\Output\Bin\Debug\EbTest.exe.config
+D:\work\DEF2\trunk\Output\Bin\Debug\EbTest.exe
+D:\work\DEF2\trunk\Output\Bin\Debug\EbTest.pdb
+D:\work\DEF2\trunk\Code\Eb\EbTest\obj\Debug\EbTest.csprojResolveAssemblyReference.cache
+D:\work\DEF2\trunk\Code\Eb\EbTest\obj\Debug\EbTest.exe
+D:\work\DEF2\trunk\Code\Eb\EbTest\obj\Debug\EbTest.pdb

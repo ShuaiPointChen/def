@@ -1,0 +1,4 @@
+D:\work\DEF2\trunk\Output\Bin\Debug\EbSqlite.dll
+D:\work\DEF2\trunk\Output\Bin\Debug\EbSqlite.pdb
+D:\work\DEF2\trunk\Code\Eb\EbSqlite\obj\Debug\EbSqlite.dll
+D:\work\DEF2\trunk\Code\Eb\EbSqlite\obj\Debug\EbSqlite.pdb

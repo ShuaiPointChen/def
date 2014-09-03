@@ -1,0 +1,158 @@
+2013-04-11 20:26:59,245 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2013-04-11 20:26:59,266 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2013-04-11 20:26:59,270 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2013-04-11 20:27:02,884 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2013-04-11 20:27:02,885 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2013-04-11 20:27:04,038 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'MmoDemo' , assemblyName = 'Photon.MmoDemo.Server'
+2013-04-11 20:27:04,040 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-11 20:27:04,042 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\MmoDemo\bin;bin_win64;Shared;'
+2013-04-11 20:27:04,043 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2013-04-11 20:27:04,044 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\MmoDemo\bin\Cache'
+2013-04-11 20:27:04,183 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\MmoDemo'
+2013-04-11 20:27:04,185 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\MmoDemo\bin'
+2013-04-11 20:27:04,186 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-11 20:27:04,188 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\bin_win64\log'
+2013-04-11 20:27:04,222 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.MmoDemo.Server, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/MmoDemo/bin/Photon.MmoDemo.Server.DLL
+2013-04-11 20:27:04,224 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2013-04-11 20:27:04,268 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/MmoDemo/bin/Photon.SocketServer.DLL
+2013-04-11 20:27:04,309 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/MmoDemo/bin/ExitGamesLibs.DLL
+2013-04-11 20:27:04,321 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2013-04-11 20:27:04,327 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'MmoDemo', assemblyName = 'Photon.MmoDemo.Server', typeName = 'Photon.MmoDemo.Server.PhotonApplication'
+2013-04-11 20:27:04,329 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2013-04-11 20:27:04,331 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-11 20:27:04,332 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\Policy\bin;bin_win64;Shared;'
+2013-04-11 20:27:04,334 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2013-04-11 20:27:04,335 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2013-04-11 20:27:04,381 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\Policy'
+2013-04-11 20:27:04,383 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\Policy\bin'
+2013-04-11 20:27:04,385 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-11 20:27:04,387 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\bin_win64\log'
+2013-04-11 20:27:04,396 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/Policy/bin/Policy.Application.DLL
+2013-04-11 20:27:04,399 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2013-04-11 20:27:04,401 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'CounterPublisher' , assemblyName = 'CounterPublisher'
+2013-04-11 20:27:04,403 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-11 20:27:04,404 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher\bin;bin_win64;Shared;'
+2013-04-11 20:27:04,406 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher\bin\CounterPublisher.dll.config'
+2013-04-11 20:27:04,407 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher\bin\Cache'
+2013-04-11 20:27:04,493 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher'
+2013-04-11 20:27:04,495 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher\bin'
+2013-04-11 20:27:04,496 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-11 20:27:04,498 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\bin_win64\log'
+2013-04-11 20:27:04,520 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: CounterPublisher, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/CounterPublisher/bin/CounterPublisher.DLL
+2013-04-11 20:27:04,523 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2013-04-11 20:27:04,544 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/CounterPublisher/bin/Photon.SocketServer.DLL
+2013-04-11 20:27:04,563 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/CounterPublisher/bin/ExitGamesLibs.DLL
+2013-04-11 20:27:04,574 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2013-04-11 20:27:04,577 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'CounterPublisher', assemblyName = 'CounterPublisher', typeName = 'Photon.CounterPublisher.Application'
+2013-04-11 20:27:04,581 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'CounterPublisher', DomainId='4' -- calling Application.OnStopRequested()
+2013-04-11 20:27:04,588 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'MmoDemo', DomainId='2' -- calling Application.OnStopRequested()
+2013-04-11 20:27:04,594 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'Policy', DomainId='3' -- calling Application.OnStopRequested()
+2013-04-11 20:27:04,597 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'DefaultDomain', DomainId='1'
+2013-04-11 20:27:04,599 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'CounterPublisher', DomainId='4' -- calling Application.TearDown()
+2013-04-11 20:27:04,602 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'MmoDemo', DomainId='2' -- calling Application.TearDown()
+2013-04-11 20:27:04,605 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'Policy', DomainId='3' -- calling Application.TearDown()
+2013-04-12 11:17:10,287 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2013-04-12 11:17:10,323 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2013-04-12 11:17:10,329 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2013-04-12 11:17:15,427 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2013-04-12 11:17:15,429 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2013-04-12 11:17:16,756 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'MmoDemo' , assemblyName = 'Photon.MmoDemo.Server'
+2013-04-12 11:17:16,759 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-12 11:17:16,761 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\MmoDemo\bin;bin_win64;Shared;'
+2013-04-12 11:17:16,762 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2013-04-12 11:17:16,764 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\MmoDemo\bin\Cache'
+2013-04-12 11:17:16,986 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\MmoDemo'
+2013-04-12 11:17:16,988 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\MmoDemo\bin'
+2013-04-12 11:17:16,990 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-12 11:17:16,992 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\bin_win64\log'
+2013-04-12 11:17:17,054 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.MmoDemo.Server, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/MmoDemo/bin/Photon.MmoDemo.Server.DLL
+2013-04-12 11:17:17,057 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2013-04-12 11:17:17,145 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/MmoDemo/bin/Photon.SocketServer.DLL
+2013-04-12 11:17:17,203 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/MmoDemo/bin/ExitGamesLibs.DLL
+2013-04-12 11:17:17,283 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2013-04-12 11:17:17,295 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'MmoDemo', assemblyName = 'Photon.MmoDemo.Server', typeName = 'Photon.MmoDemo.Server.PhotonApplication'
+2013-04-12 11:17:17,298 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2013-04-12 11:17:17,300 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-12 11:17:17,301 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\Policy\bin;bin_win64;Shared;'
+2013-04-12 11:17:17,303 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2013-04-12 11:17:17,305 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2013-04-12 11:17:17,379 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\Policy'
+2013-04-12 11:17:17,381 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\Policy\bin'
+2013-04-12 11:17:17,382 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-12 11:17:17,384 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\bin_win64\log'
+2013-04-12 11:17:17,403 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/Policy/bin/Policy.Application.DLL
+2013-04-12 11:17:17,406 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2013-04-12 11:17:17,408 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'CounterPublisher' , assemblyName = 'CounterPublisher'
+2013-04-12 11:17:17,410 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-12 11:17:17,411 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher\bin;bin_win64;Shared;'
+2013-04-12 11:17:17,413 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher\bin\CounterPublisher.dll.config'
+2013-04-12 11:17:17,414 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher\bin\Cache'
+2013-04-12 11:17:17,679 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher'
+2013-04-12 11:17:17,682 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher\bin'
+2013-04-12 11:17:17,684 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-12 11:17:17,686 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\bin_win64\log'
+2013-04-12 11:17:17,732 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: CounterPublisher, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/CounterPublisher/bin/CounterPublisher.DLL
+2013-04-12 11:17:17,735 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2013-04-12 11:17:17,791 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/CounterPublisher/bin/Photon.SocketServer.DLL
+2013-04-12 11:17:17,846 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/CounterPublisher/bin/ExitGamesLibs.DLL
+2013-04-12 11:17:17,858 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2013-04-12 11:17:17,861 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'CounterPublisher', assemblyName = 'CounterPublisher', typeName = 'Photon.CounterPublisher.Application'
+2013-04-12 11:17:17,867 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'CounterPublisher', DomainId='4' -- calling Application.OnStopRequested()
+2013-04-12 11:17:17,884 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'MmoDemo', DomainId='2' -- calling Application.OnStopRequested()
+2013-04-12 11:17:17,891 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'Policy', DomainId='3' -- calling Application.OnStopRequested()
+2013-04-12 11:17:17,894 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'DefaultDomain', DomainId='1'
+2013-04-12 11:17:17,897 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'CounterPublisher', DomainId='4' -- calling Application.TearDown()
+2013-04-12 11:17:17,901 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'MmoDemo', DomainId='2' -- calling Application.TearDown()
+2013-04-12 11:17:17,905 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'Policy', DomainId='3' -- calling Application.TearDown()
+2013-04-12 11:18:25,239 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2013-04-12 11:18:25,262 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2013-04-12 11:18:25,267 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2013-04-12 11:18:29,002 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: No license file was found - starting with Bootstrap License.
+2013-04-12 11:18:29,004 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: no; max connections: 20; valid IPs: any
+2013-04-12 11:18:30,154 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'MmoDemo' , assemblyName = 'Photon.MmoDemo.Server'
+2013-04-12 11:18:30,157 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-12 11:18:30,159 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\MmoDemo\bin;bin_win64;Shared;'
+2013-04-12 11:18:30,161 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2013-04-12 11:18:30,163 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\MmoDemo\bin\Cache'
+2013-04-12 11:18:30,250 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\MmoDemo'
+2013-04-12 11:18:30,252 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\MmoDemo\bin'
+2013-04-12 11:18:30,254 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-12 11:18:30,256 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\bin_win64\log'
+2013-04-12 11:18:30,281 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.MmoDemo.Server, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/MmoDemo/bin/Photon.MmoDemo.Server.DLL
+2013-04-12 11:18:30,284 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2013-04-12 11:18:30,304 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/MmoDemo/bin/Photon.SocketServer.DLL
+2013-04-12 11:18:30,323 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/MmoDemo/bin/ExitGamesLibs.DLL
+2013-04-12 11:18:30,335 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2013-04-12 11:18:30,340 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'MmoDemo', assemblyName = 'Photon.MmoDemo.Server', typeName = 'Photon.MmoDemo.Server.PhotonApplication'
+2013-04-12 11:18:30,343 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Policy' , assemblyName = 'Policy.Application'
+2013-04-12 11:18:30,344 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-12 11:18:30,346 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\Policy\bin;bin_win64;Shared;'
+2013-04-12 11:18:30,348 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = ''
+2013-04-12 11:18:30,349 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = ''
+2013-04-12 11:18:30,396 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\Policy'
+2013-04-12 11:18:30,398 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\Policy\bin'
+2013-04-12 11:18:30,400 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-12 11:18:30,402 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\bin_win64\log'
+2013-04-12 11:18:30,412 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Policy.Application, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/Policy/bin/Policy.Application.DLL
+2013-04-12 11:18:30,415 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Policy', assemblyName = 'Policy.Application', typeName = 'Exitgames.Realtime.Policy.Application.Policy'
+2013-04-12 11:18:30,418 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'CounterPublisher' , assemblyName = 'CounterPublisher'
+2013-04-12 11:18:30,420 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-12 11:18:30,421 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher\bin;bin_win64;Shared;'
+2013-04-12 11:18:30,423 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher\bin\CounterPublisher.dll.config'
+2013-04-12 11:18:30,424 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher\bin\Cache'
+2013-04-12 11:18:30,511 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher'
+2013-04-12 11:18:30,513 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher\bin'
+2013-04-12 11:18:30,515 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy'
+2013-04-12 11:18:30,516 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\bin_win64\log'
+2013-04-12 11:18:30,540 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: CounterPublisher, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=null from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/CounterPublisher/bin/CounterPublisher.DLL
+2013-04-12 11:18:30,542 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.2.10.4248
+2013-04-12 11:18:30,563 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.2.10.4248, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/CounterPublisher/bin/Photon.SocketServer.DLL
+2013-04-12 11:18:30,582 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/CounterPublisher/bin/ExitGamesLibs.DLL
+2013-04-12 11:18:30,594 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2013-04-12 11:18:30,597 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'CounterPublisher', assemblyName = 'CounterPublisher', typeName = 'Photon.CounterPublisher.Application'
+2013-04-12 11:18:30,618 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'CounterPublisher', DomainId='4' -- calling Application.Setup
+2013-04-12 11:18:30,642 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/CounterPublisher/bin/ExitGames.Logging.Log4Net.DLL
+2013-04-12 11:18:37,797 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'MmoDemo', DomainId='2' -- calling Application.Setup
+2013-04-12 11:18:37,830 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=0.9.9.5, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///G:/ProjectX/trunk/Photon/ExitGames-Photon-Server-SDK_v3-2-10-4248/deploy/MmoDemo/bin/ExitGames.Logging.Log4Net.DLL
+2013-04-12 11:18:38,148 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Policy', DomainId='3' -- calling Application.Setup
+2013-04-12 11:18:38,278 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'DefaultDomain', DomainId='1'

@@ -1,0 +1,20 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MySQL Connector/Net</title>
+</head>
+<body class="vendor-book">
+    <div class="details">
+        <span class="vendor">Oracle</span>
+        <span class="locale">en-us</span>
+        <span class="product">MySQL Connector/Net</span>
+        <span class="name">MySQL Connector/Net</span>
+    </div>
+    <div class="package-list">
+        <div class="package">
+            <!-- NOTE: The "name" span value cannot contain any periods! -->
+            <span class="name">ConnectorNET</span>
+            <a class="current-link" href="ConnectorNET.mshc">ConnectorNET.mshc</a>
+        </div>
+    </div>
+</body>
+</html>

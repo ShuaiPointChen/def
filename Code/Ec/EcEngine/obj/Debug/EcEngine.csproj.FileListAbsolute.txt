@@ -1,0 +1,5 @@
+D:\work\DEF2\trunk\Output\Bin\Debug\EcEngine.dll
+D:\work\DEF2\trunk\Output\Bin\Debug\EcEngine.pdb
+D:\work\DEF2\trunk\Code\Ec\EcEngine\obj\Debug\EcEngine.csprojResolveAssemblyReference.cache
+D:\work\DEF2\trunk\Code\Ec\EcEngine\obj\Debug\EcEngine.dll
+D:\work\DEF2\trunk\Code\Ec\EcEngine\obj\Debug\EcEngine.pdb

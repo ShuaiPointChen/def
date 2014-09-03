@@ -1,0 +1,5 @@
+D:\work\DEF2\trunk\Output\Bin\Debug\EbCommon.dll
+D:\work\DEF2\trunk\Output\Bin\Debug\EbCommon.pdb
+D:\work\DEF2\trunk\Code\Eb\EbCommon\obj\Debug\EbCommon.csprojResolveAssemblyReference.cache
+D:\work\DEF2\trunk\Code\Eb\EbCommon\obj\Debug\EbCommon.dll
+D:\work\DEF2\trunk\Code\Eb\EbCommon\obj\Debug\EbCommon.pdb

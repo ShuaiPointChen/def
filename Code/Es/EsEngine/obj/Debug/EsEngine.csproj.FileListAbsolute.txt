@@ -1,0 +1,5 @@
+D:\work\DEF2\trunk\Output\Bin\Debug\EsEngine.dll
+D:\work\DEF2\trunk\Output\Bin\Debug\EsEngine.pdb
+D:\work\DEF2\trunk\Code\Es\EsEngine\obj\Debug\EsEngine.csprojResolveAssemblyReference.cache
+D:\work\DEF2\trunk\Code\Es\EsEngine\obj\Debug\EsEngine.dll
+D:\work\DEF2\trunk\Code\Es\EsEngine\obj\Debug\EsEngine.pdb

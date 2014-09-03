@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{427D42BD-615D-4340-B8A4-7C2153603A2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eb</RootNamespace>
+    <AssemblyName>EbVib</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Output\Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Output\Bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseStruct\ViConstValue.cs" />
+    <Compile Include="BaseStruct\ViDoubleLink1.cs" />
+    <Compile Include="BaseStruct\ViDoubleLink2.cs" />
+    <Compile Include="BaseStruct\ViDoubleLink3.cs" />
+    <Compile Include="BaseStruct\ViPriorityValue.cs" />
+    <Compile Include="BaseStruct\ViProvider.cs" />
+    <Compile Include="BaseStruct\ViRefList1.cs" />
+    <Compile Include="BaseStruct\ViRefList2.cs" />
+    <Compile Include="BaseStruct\ViSimpleVector.cs" />
+    <Compile Include="BaseStruct\ViTuple.cs" />
+    <Compile Include="DataEx\ViReceiveDataArray.cs" />
+    <Compile Include="DataEx\ViReceiveDataDictionary.cs" />
+    <Compile Include="DataEx\ViReceiveDataEvent.cs" />
+    <Compile Include="DataEx\ViReceiveDataKey.cs" />
+    <Compile Include="DataEx\ViReceiveDataNode.cs" />
+    <Compile Include="DataEx\ViReceiveDataSet.cs" />
+    <Compile Include="DataEx\ViReceiveDataSimple.cs" />
+    <Compile Include="DataEx\ViReceiveDataString.cs" />
+    <Compile Include="DataEx\ViReceiveDataVector3.cs" />
+    <Compile Include="GameClient\Camera\ViCameraDistance.cs" />
+    <Compile Include="GameClient\Control\ViRoundObjects.cs" />
+    <Compile Include="GameClient\Data\ViVisualData.cs" />
+    <Compile Include="GameClient\Express\ViExpress.cs" />
+    <Compile Include="GameClient\Express\ViSpaceExpress.cs" />
+    <Compile Include="GameClient\Mouse\ViMouseHandler.cs" />
+    <Compile Include="GameClient\Mouse\ViMouseHandler_1.cs" />
+    <Compile Include="GameClient\Mouse\ViMouseHandler_2.cs" />
+    <Compile Include="GameClient\Mouse\ViMouseHandler_3.cs" />
+    <Compile Include="GameClient\ViAngleCursor.cs" />
+    <Compile Include="GameClient\ViAuraVisual.cs" />
+    <Compile Include="GameClient\ViAvatarDurationVisual.cs" />
+    <Compile Include="GameClient\ViDirectionCursor.cs" />
+    <Compile Include="GameClient\ViGameUnit.cs" />
+    <Compile Include="GameClient\ViGameUnitCellInvoker.cs" />
+    <Compile Include="GameClient\ViGameUnitClientExecer.cs" />
+    <Compile Include="GameClient\ViGameUnitCommandInvoker.cs" />
+    <Compile Include="GameClient\ViGameUnitSerialize.cs" />
+    <Compile Include="GameClient\ViRotateCursor.cs" />
+    <Compile Include="GameClient\ViStateConditionNotifier.cs" />
+    <Compile Include="GameClient\ViWordFilter.cs" />
+    <Compile Include="GameCommon\Event\ViCallback.cs" />
+    <Compile Include="GameCommon\Event\ViCallback0.cs" />
+    <Compile Include="GameCommon\Event\ViCallback1.cs" />
+    <Compile Include="GameCommon\Event\ViCallback2.cs" />
+    <Compile Include="GameCommon\Event\ViFrameEndCallback.cs" />
+    <Compile Include="GameCommon\Event\ViTupleCallback.cs" />
+    <Compile Include="GameCommon\Geo\ViArea.cs" />
+    <Compile Include="GameCommon\Geo\ViGeographicObject.cs" />
+    <Compile Include="GameCommon\Loader\ViAsynLoader.cs" />
+    <Compile Include="GameCommon\Loader\ViAsynLoaderList.cs" />
+    <Compile Include="GameCommon\Log\ViLogEx.cs" />
+    <Compile Include="GameCommon\Motor\ViGravityMotor.cs" />
+    <Compile Include="GameCommon\Motor\ViMotorInterface.cs" />
+    <Compile Include="GameCommon\Motor\ViPlaneMotor.cs" />
+    <Compile Include="GameCommon\Motor\ViTrackMotor.cs" />
+    <Compile Include="GameCommon\Notifier\ViDistanceNotifier.cs" />
+    <Compile Include="GameCommon\Notifier\ViNotifierInterface.cs" />
+    <Compile Include="GameCommon\Ptr\ViRefPtr.cs" />
+    <Compile Include="GameCommon\Tick\ViLodTick.cs" />
+    <Compile Include="GameCommon\Tick\ViTick.cs" />
+    <Compile Include="GameCommon\Time\ViTimeNodeEx.cs" />
+    <Compile Include="GameCommon\Time\ViTimer.cs" />
+    <Compile Include="GameCommon\Time\ViTimerInstance.cs" />
+    <Compile Include="GameCommon\Value\ViValueDisMod.cs" />
+    <Compile Include="GameCommon\Value\ViValueInherit.cs" />
+    <Compile Include="GameCommon\Value\ViValueMapping.cs" />
+    <Compile Include="GameCommon\ViActionState.cs" />
+    <Compile Include="GameCommon\ViCommonDefine.cs" />
+    <Compile Include="GameCommon\ViEntityCommandInvoker.cs" />
+    <Compile Include="GameCommon\ViRoute.cs" />
+    <Compile Include="GameShare\ViConstValueReader.cs" />
+    <Compile Include="GameShare\ViGameLogicConfig.cs" />
+    <Compile Include="GameShare\ViGameLogicDataEx.cs" />
+    <Compile Include="GameShare\ViGameLogicEntityType.cs" />
+    <Compile Include="GameShare\ViGameUnitMethodEnum.cs" />
+    <Compile Include="GameShare\ViGameUnitProperty.cs" />
+    <Compile Include="GameShare\ViGameUnitPropertyIndex.cs" />
+    <Compile Include="GameShare\ViMiscData.cs" />
+    <Compile Include="GameShare\ViSpellDefine.cs" />
+    <Compile Include="GameShare\ViSpellStruct.cs" />
+    <Compile Include="GameShare\ViUnitDefine.cs" />
+    <Compile Include="GameShare\ViUnitStruct.cs" />
+    <Compile Include="Math\ViAngle.cs" />
+    <Compile Include="Math\ViDistanceInterpolation.cs" />
+    <Compile Include="Math\ViMathDefine.cs" />
+    <Compile Include="Math\ViQuaternion.cs" />
+    <Compile Include="Math\ViVector3.cs" />
+    <Compile Include="Navigate\ViAstar.cs" />
+    <Compile Include="Navigate\ViAstarAssisstant.cs" />
+    <Compile Include="Navigate\ViPixelNavigator.cs" />
+    <Compile Include="Net\ViMailbox.cs" />
+    <Compile Include="Net\ViNet.cs" />
+    <Compile Include="Net\ViTcpClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rpc\ViRPCACK.cs" />
+    <Compile Include="Rpc\ViRPCCallback.cs" />
+    <Compile Include="Rpc\ViRPCCallbackSerialize.cs" />
+    <Compile Include="Rpc\ViRPCExecer.cs" />
+    <Compile Include="System\Entity\ViEntity.cs" />
+    <Compile Include="System\Entity\ViEntityManager.cs" />
+    <Compile Include="System\Entity\ViEntitySerialize.cs" />
+    <Compile Include="System\ViBinaryReader.cs" />
+    <Compile Include="System\ViBitConverter.cs" />
+    <Compile Include="System\ViConstValueDefine.cs" />
+    <Compile Include="System\ViDebuger.cs" />
+    <Compile Include="System\ViEnum32.cs" />
+    <Compile Include="System\ViForeignKey32.cs" />
+    <Compile Include="System\ViIStream.cs" />
+    <Compile Include="System\ViMask32.cs" />
+    <Compile Include="System\ViOStream.cs" />
+    <Compile Include="System\ViRandom.cs" />
+    <Compile Include="System\ViSealedData.cs" />
+    <Compile Include="System\ViStaticArray.cs" />
+    <Compile Include="System\ViStreamReader.cs" />
+    <Compile Include="System\ViStringIStream.cs" />
+    <Compile Include="System\ViSystemSerialize.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

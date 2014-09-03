@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<GraphSettings>
+
+  <DefaultSettings width="300" height="200"/>
+
+  <Graphs>
+
+    <!-- System counters -->
+    <add sender="*" fileName="CPUTotal.png" title="CPU Total Usage %" timeSpan="00:10:00" lowerLimit="0" upperLimit="100">
+      <Items>
+        <add fileName="System.CpuTotal.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue"/>
+      </Items>
+    </add>
+
+    <add sender="*" fileName="CPU.png" title="CPU Usage %" timeSpan="00:10:00" lowerLimit="0" upperLimit="100">
+      <Items>
+        <add fileName="System.Cpu.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue"/>
+      </Items>
+    </add>
+
+    <add sender="*" fileName="Memory.png" title="Available Memory (MB)" timeSpan="00:10:00">
+      <Items>
+        <add fileName="System.Memory.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue"/>
+      </Items>
+    </add>
+
+    <!-- Photon SocketServer counter -->
+    <add sender="*" fileName="BytesInPerSecond.png" title="Bytes In/Sec" timeSpan="00:10:00">
+      <Items>
+        <add fileName="SocketServer.BytesInPerSecond.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue"/>
+      </Items>
+    </add>
+
+    <add sender="*" fileName="BytesOutPerSecond.png" title="Bytes Out/Sec" timeSpan="00:10:00">
+      <Items>
+        <add fileName="SocketServer.BytesOutPerSecond.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue"/>
+      </Items>
+    </add>
+
+    <add sender="*" fileName="UdpPeers.png" title="UDP Peers" timeSpan="00:10:00">
+      <Items>
+        <add fileName="SocketServer.UdpPeers.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue"/>
+      </Items>
+    </add>
+
+    <add sender="*" fileName="TcpPeers.png" title="TCP Peers" timeSpan="00:10:00">
+      <Items>
+        <add fileName="SocketServer.TcpPeers.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue"/>
+      </Items>
+    </add>
+
+    <add sender="*" fileName="CommandsResentPerSecond.png" title="Commands resent/sec" timeSpan="00:10:00">
+      <Items>
+        <add fileName="SocketServer.CommandsResentPerSecond.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue"/>
+      </Items>
+    </add>
+
+    <add sender="*" fileName="TimeoutDisconnectPerSecond.png" title="Timeout disconnect/sec" timeSpan="00:10:00">
+      <Items>
+        <add fileName="SocketServer.TimeoutDisconnectPerSecond.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue"/>
+      </Items>
+    </add>
+
+    <!--<add sender="*" fileName="CPU.png" width="300" height="200" title="CPU Usage %" timeSpan="00:10:00" lowerLimit="0" upperLimit="100">
+      <Items>
+        <add fileName="System.CpuTotal.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Green" legend="Cpu Total %" />
+        <add fileName="System.Cpu.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue" legend="Cpu Instance %" />
+      </Items>
+    </add>-->
+
+    <!-- Lite counter -->
+    <add sender="*" fileName="Lite\OpReceivePerSec.png" title="Command requests in/s" timeSpan="00:10:00">
+      <Items>
+        <add fileName="Lite.OpReceivePerSec.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue"/>
+      </Items>
+    </add>
+
+    <add sender="*" fileName="Lite\OpResponsePerSec.png" title="Command response out/s" timeSpan="00:10:00">
+      <Items>
+        <add fileName="Lite.OpResponsePerSec.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue"/>
+      </Items>
+    </add>
+
+    <add sender="*" fileName="Lite\EventsSentPerSec.png" title="Events out/s" timeSpan="00:10:00">
+      <Items>
+        <add fileName="Lite.EventsSentPerSec.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue"/>
+      </Items>
+    </add>
+
+    <add sender="*" fileName="Lite\AvrgOpExecTime.png" title="Avg. execution time in ms" timeSpan="00:10:00">
+      <Items>
+        <add fileName="Lite.AvrgOpExecTime.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue"/>
+      </Items>
+    </add>
+
+    <add sender="*" fileName="Lite\SessionCount.png" title="Connected peers" timeSpan="00:10:00">
+      <Items>
+        <add fileName="Lite.SessionCount.rrd" dataSource="GAUGE" cf="AVERAGE" type="Area" color="Blue"/>
+      </Items>
+    </add>
+    
+  </Graphs>
+</GraphSettings>

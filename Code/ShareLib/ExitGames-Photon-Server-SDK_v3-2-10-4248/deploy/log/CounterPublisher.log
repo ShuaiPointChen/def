@@ -1,0 +1,3 @@
+2013-04-12 11:18:37,768 [1] INFO  Photon.SocketServer.Diagnostics.CounterPublisher [(null)] - CounterPublisher started on: 255.255.255.255:40001
+2013-04-12 11:18:37,794 [1] INFO  Photon.SocketServer.ApplicationBase [(null)] - Application start: AppId=CounterPublisher; AppPath=G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\CounterPublisher, Type=Photon.CounterPublisher.Application 
+2013-04-12 11:18:37,795 [1] INFO  Photon.SocketServer.Diagnostics.CounterPublisher [(null)] - CounterPublisher started on: 255.255.255.255:40001

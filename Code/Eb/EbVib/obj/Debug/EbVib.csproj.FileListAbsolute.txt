@@ -1,0 +1,4 @@
+D:\work\DEF2\trunk\Output\Bin\Debug\EbVib.dll
+D:\work\DEF2\trunk\Output\Bin\Debug\EbVib.pdb
+D:\work\DEF2\trunk\Code\Eb\EbVib\obj\Debug\EbVib.dll
+D:\work\DEF2\trunk\Code\Eb\EbVib\obj\Debug\EbVib.pdb

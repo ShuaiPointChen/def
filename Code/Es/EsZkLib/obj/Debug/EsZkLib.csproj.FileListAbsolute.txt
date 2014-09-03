@@ -1,0 +1,5 @@
+D:\work\DEF2\trunk\Output\Bin\Debug\EsZkLib.dll
+D:\work\DEF2\trunk\Output\Bin\Debug\EsZkLib.pdb
+D:\work\DEF2\trunk\Code\Es\EsZkLib\obj\Debug\EsZkLib.dll
+D:\work\DEF2\trunk\Code\Es\EsZkLib\obj\Debug\EsZkLib.pdb
+D:\work\DEF2\trunk\Code\Es\EsZkLib\obj\Debug\EsZkLib.csprojResolveAssemblyReference.cache

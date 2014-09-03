@@ -1,0 +1,19 @@
+2013-04-12 11:18:38,253 [1] INFO  Exitgames.Realtime.Policy.Application.Policy [(null)] - Application start. AppId: Policy ApplicationPath: G:\ProjectX\trunk\Photon\ExitGames-Photon-Server-SDK_v3-2-10-4248\deploy\Policy
+2013-04-12 11:18:38,273 [1] INFO  Exitgames.Realtime.Policy.Application.Policy [(null)] - Policy file: 
+<cross-domain-policy>
+	<allow-access-from domain="*" to-ports="5055,5056,5057,4530,4531,4532,9090,9091,9092" />
+</cross-domain-policy>
+2013-04-12 11:18:38,277 [1] INFO  Exitgames.Realtime.Policy.Application.Policy [(null)] - Policy file: 
+<?xml version="1.0" encoding="utf-8"?>
+<access-policy>
+  <cross-domain-access>
+    <policy>
+      <allow-from>
+        <domain uri="*" />
+      </allow-from>
+      <grant-to>
+        <socket-resource port="4530-4532" protocol="tcp" />
+      </grant-to>
+    </policy>
+  </cross-domain-access>
+</access-policy>
