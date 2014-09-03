@@ -2,3 +2,8 @@ D:\work\DEF2\trunk\Output\Bin\Debug\EsDbCommon.dll
 D:\work\DEF2\trunk\Output\Bin\Debug\EsDbCommon.pdb
 D:\work\DEF2\trunk\Code\Es\EsDbCommon\obj\Debug\EsDbCommon.dll
 D:\work\DEF2\trunk\Code\Es\EsDbCommon\obj\Debug\EsDbCommon.pdb
+D:\github\def\Output\Bin\Debug\EsDbCommon.dll
+D:\github\def\Output\Bin\Debug\EsDbCommon.pdb
+D:\github\def\Code\Es\EsDbCommon\obj\Debug\EsDbCommon.csprojResolveAssemblyReference.cache
+D:\github\def\Code\Es\EsDbCommon\obj\Debug\EsDbCommon.dll
+D:\github\def\Code\Es\EsDbCommon\obj\Debug\EsDbCommon.pdb

@@ -4,3 +4,9 @@ D:\work\DEF2\trunk\Output\Bin\Debug\EbTest.pdb
 D:\work\DEF2\trunk\Code\Eb\EbTest\obj\Debug\EbTest.csprojResolveAssemblyReference.cache
 D:\work\DEF2\trunk\Code\Eb\EbTest\obj\Debug\EbTest.exe
 D:\work\DEF2\trunk\Code\Eb\EbTest\obj\Debug\EbTest.pdb
+D:\github\def\Output\Bin\Debug\EbTest.exe.config
+D:\github\def\Output\Bin\Debug\EbTest.exe
+D:\github\def\Output\Bin\Debug\EbTest.pdb
+D:\github\def\Code\Eb\EbTest\obj\Debug\EbTest.csprojResolveAssemblyReference.cache
+D:\github\def\Code\Eb\EbTest\obj\Debug\EbTest.exe
+D:\github\def\Code\Eb\EbTest\obj\Debug\EbTest.pdb

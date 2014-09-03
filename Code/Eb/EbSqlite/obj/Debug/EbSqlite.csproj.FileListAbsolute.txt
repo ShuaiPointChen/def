@@ -2,3 +2,8 @@ D:\work\DEF2\trunk\Output\Bin\Debug\EbSqlite.dll
 D:\work\DEF2\trunk\Output\Bin\Debug\EbSqlite.pdb
 D:\work\DEF2\trunk\Code\Eb\EbSqlite\obj\Debug\EbSqlite.dll
 D:\work\DEF2\trunk\Code\Eb\EbSqlite\obj\Debug\EbSqlite.pdb
+D:\github\def\Output\Bin\Debug\EbSqlite.dll
+D:\github\def\Output\Bin\Debug\EbSqlite.pdb
+D:\github\def\Code\Eb\EbSqlite\obj\Debug\EbSqlite.csprojResolveAssemblyReference.cache
+D:\github\def\Code\Eb\EbSqlite\obj\Debug\EbSqlite.dll
+D:\github\def\Code\Eb\EbSqlite\obj\Debug\EbSqlite.pdb

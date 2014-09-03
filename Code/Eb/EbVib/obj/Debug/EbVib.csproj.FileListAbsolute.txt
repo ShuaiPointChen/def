@@ -2,3 +2,7 @@ D:\work\DEF2\trunk\Output\Bin\Debug\EbVib.dll
 D:\work\DEF2\trunk\Output\Bin\Debug\EbVib.pdb
 D:\work\DEF2\trunk\Code\Eb\EbVib\obj\Debug\EbVib.dll
 D:\work\DEF2\trunk\Code\Eb\EbVib\obj\Debug\EbVib.pdb
+D:\github\def\Output\Bin\Debug\EbVib.dll
+D:\github\def\Output\Bin\Debug\EbVib.pdb
+D:\github\def\Code\Eb\EbVib\obj\Debug\EbVib.dll
+D:\github\def\Code\Eb\EbVib\obj\Debug\EbVib.pdb

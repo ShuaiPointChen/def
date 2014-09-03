@@ -2,3 +2,8 @@ D:\work\DEF2\trunk\Output\Bin\Debug\EbJson.dll
 D:\work\DEF2\trunk\Output\Bin\Debug\EbJson.pdb
 D:\work\DEF2\trunk\Code\Eb\EbJson\obj\Debug\EbJson.dll
 D:\work\DEF2\trunk\Code\Eb\EbJson\obj\Debug\EbJson.pdb
+D:\github\def\Output\Bin\Debug\EbJson.dll
+D:\github\def\Output\Bin\Debug\EbJson.pdb
+D:\github\def\Code\Eb\EbJson\obj\Debug\EbJson.csprojResolveAssemblyReference.cache
+D:\github\def\Code\Eb\EbJson\obj\Debug\EbJson.dll
+D:\github\def\Code\Eb\EbJson\obj\Debug\EbJson.pdb

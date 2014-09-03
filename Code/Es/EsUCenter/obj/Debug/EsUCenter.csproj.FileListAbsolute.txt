@@ -6,3 +6,9 @@ D:\work\DEF2\trunk\Code\Es\EsUCenter\obj\Debug\EsUCenter.pdb
 D:\work\DEF2\trunk\Deploy\EsUCenter\bin\log4net.config
 D:\work\DEF2\trunk\Deploy\EsUCenter\bin\EsUCenter.dll
 D:\work\DEF2\trunk\Deploy\EsUCenter\bin\EsUCenter.pdb
+D:\github\def\Deploy\EsUCenter\bin\log4net.config
+D:\github\def\Deploy\EsUCenter\bin\EsUCenter.dll
+D:\github\def\Deploy\EsUCenter\bin\EsUCenter.pdb
+D:\github\def\Code\Es\EsUCenter\obj\Debug\EsUCenter.csprojResolveAssemblyReference.cache
+D:\github\def\Code\Es\EsUCenter\obj\Debug\EsUCenter.dll
+D:\github\def\Code\Es\EsUCenter\obj\Debug\EsUCenter.pdb
