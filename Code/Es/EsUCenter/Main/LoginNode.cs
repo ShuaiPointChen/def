@@ -295,9 +295,9 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
                         // 目前只有账号信息和当前longin id放入ZooKeeper.
                         string dt = info.account + "," + mCoApp.NodeId;
                         info.gateId = ser.id;
-                        mCoApp.getZk().awriteData(ser.loginNode, dt);
+                        mCoApp.getZk().awriteData(ser.loginNode, dt , null);
                         EbLog.Note("send to gate node :" + ser.loginNode + ",account:" + dt);
-                        mCoApp.getZk().acreate(ser.loginLockNode, "", ZK_CONST.ZOO_EPHEMERAL);
+                        mCoApp.getZk().acreate(ser.loginLockNode, "", ZK_CONST.ZOO_EPHEMERAL, null);
                         EbLog.Note("set remote lock :" + ser.loginLockNode + ",account:" + dt);
 
                         ser.bloginLock = true;
@@ -413,12 +413,6 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
     }
 
     //-------------------------------------------------------------------------
-    public ConcurrentDictionary<string, ClientLoginInfo> LoginPlayerQueue()
-    {
-        return mLoginPlayerQueue;
-    }
-
-    //-------------------------------------------------------------------------
     /// <summary>
     /// 初始化Login Server.
     /// 1. 监听服务器组的其他服务器是否介入.
@@ -426,9 +420,10 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
     /// <param name="server"></param>
     private void OnInitSingleServer(string server)
     {
-        mCoApp.getZk().subscribeChildChanges(ServerPath[(int)eSERVER.GATE_SERVER]);
-        mCoApp.getZk().subscribeChildChanges(ServerPath[(int)eSERVER.ZONE_SERVER]);
-        mCoApp.getZk().subscribeChildChanges(ServerPath[(int)eSERVER.DB_SERVER]);
+        //ZkOnOpeResult result = (ZkOnOpeResult)mCoApp.getZk().getZkOpeResult();
+        mCoApp.getZk().subscribeChildChanges(ServerPath[(int)eSERVER.GATE_SERVER] , null , null);
+        mCoApp.getZk().subscribeChildChanges(ServerPath[(int)eSERVER.ZONE_SERVER], null, null);
+        mCoApp.getZk().subscribeChildChanges(ServerPath[(int)eSERVER.DB_SERVER], null, null);
         EbLog.Note("DB connection , server: " + server + "connection string :" + DbConnectionStr);
         connection = new MySqlConnection(DbConnectionStr);
 

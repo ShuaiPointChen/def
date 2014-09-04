@@ -64,7 +64,7 @@
     <Compile Include="Main\LoginUCenterSession.cs" />
     <Compile Include="Main\UCenterApp.cs" />
     <Compile Include="Main\UCenterEntityMgrListener.cs" />
-    <Compile Include="Main\ZkOnOpeResult.cs" />
+    <Compile Include="Main\UCenterZkWatcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

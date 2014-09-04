@@ -70,6 +70,7 @@
     <Compile Include="Main\ServerNodeStateStop.cs" />
     <Compile Include="Main\ServerType.cs" />
     <Compile Include="UCenterLib\ServerUCenter.cs" />
+    <Compile Include="UCenterLib\ServerUCenterZkWatcher.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Eb\EbCommon\EbCommon.csproj">

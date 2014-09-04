@@ -14,10 +14,8 @@ public class TestServerApp : PhotonApp
     }
 
     //---------------------------------------------------------------------
-    protected override void init(out IZkOnOpeResult zk_listener,
-        out EntityMgrListener entitymgr_listener, out string servercfg_filename)
+    protected override void init(out EntityMgrListener entitymgr_listener, out string servercfg_filename)
     {
-        zk_listener = null;
         entitymgr_listener = null;
         servercfg_filename = "";
     }

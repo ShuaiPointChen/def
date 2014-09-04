@@ -48,45 +48,58 @@ namespace Zk
 
         //---------------------------------------------------------------------
         //mode : ZK_CONST.ZOO_EPHEMERAL , ZK_CONST.ZOO_SEQUENCE
-        public int acreate(string path, string data, int mode, zookeeper.string_completion_t handler)
+        public int acreate(string path, string data, int mode, zookeeper.string_completion_t handler , int id = 0)
         {
             if (data == null) data = "";
+
+            IntPtr idPtr = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(IntPtr)));
+            Marshal.WriteInt32(idPtr, id);
+
             return zookeeper.zoo_acreate(mZookeeper, path, data, data.Length,
-                           ZK_CONST.ZOO_OPEN_ACL_UNSAFE, mode, handler,
-                           Marshal.StringToHGlobalAnsi(path));
+                           ZK_CONST.ZOO_OPEN_ACL_UNSAFE, mode, handler,idPtr);
         }
 
         //---------------------------------------------------------------------
-        public int adelete(string path, zookeeper.void_completion_t handler)
+        public int adelete(string path, zookeeper.void_completion_t handler, int id = 0)
         {
-            return zookeeper.zoo_adelete(mZookeeper, path, -1, handler, Marshal.StringToHGlobalAnsi(path));
+            IntPtr idPtr = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(IntPtr)));
+            Marshal.WriteInt32(idPtr, id);
+            return zookeeper.zoo_adelete(mZookeeper, path, -1, handler, idPtr);
         }
 
         //---------------------------------------------------------------------
-        public int aexists(string path, bool watch, zookeeper.stat_completion_t handler)
+        public int aexists(string path, bool watch, zookeeper.stat_completion_t handler, int id = 0)
         {
+            IntPtr idPtr = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(IntPtr)));
+            Marshal.WriteInt32(idPtr, id);
             return zookeeper.zoo_aexists(mZookeeper, path,
-                    watch ? ZK_CONST.ADD_WATCH : ZK_CONST.NOT_WATCH, handler, Marshal.StringToHGlobalAnsi(path));
+                    watch ? ZK_CONST.ADD_WATCH : ZK_CONST.NOT_WATCH, handler, idPtr);
         }
 
         //---------------------------------------------------------------------
-        public int agetChildren(string path, bool watch, zookeeper.strings_completion_t handler)
+        public int agetChildren(string path, bool watch, zookeeper.strings_completion_t handler, int id = 0)
         {
+            IntPtr idPtr = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(IntPtr)));
+            Marshal.WriteInt32(idPtr, id);
             return zookeeper.zoo_aget_children(mZookeeper, path,
-                watch ? ZK_CONST.ADD_WATCH : ZK_CONST.NOT_WATCH, handler, Marshal.StringToHGlobalAnsi(path));
+                watch ? ZK_CONST.ADD_WATCH : ZK_CONST.NOT_WATCH, handler, idPtr);
         }
 
         //---------------------------------------------------------------------
-        public int areadData(string path, bool watch, zookeeper.data_completion_t handler)
+        public int areadData(string path, bool watch, zookeeper.data_completion_t handler, int id = 0)
         {
+            IntPtr idPtr = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(IntPtr)));
+            Marshal.WriteInt32(idPtr, id);
             return zookeeper.zoo_aget(mZookeeper, path,
-                watch ? ZK_CONST.ADD_WATCH : ZK_CONST.NOT_WATCH, handler, Marshal.StringToHGlobalAnsi(path));
+                watch ? ZK_CONST.ADD_WATCH : ZK_CONST.NOT_WATCH, handler, idPtr);
         }
 
         //---------------------------------------------------------------------
-        public int awriteData(string path, string data, zookeeper.stat_completion_t handler)
+        public int awriteData(string path, string data, zookeeper.stat_completion_t handler, int id = 0)
         {
-            return zookeeper.zoo_aset(mZookeeper, path, data, data.Length, -1, handler, Marshal.StringToHGlobalAnsi(path));
+            IntPtr idPtr = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(IntPtr)));
+            Marshal.WriteInt32(idPtr, id);
+            return zookeeper.zoo_aset(mZookeeper, path, data, data.Length, -1, handler, idPtr);
         }
 
         //---------------------------------------------------------------------

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Runtime.InteropServices;
 
 namespace Zk
@@ -381,7 +382,12 @@ namespace Zk
             string temp = Marshal.PtrToStringAnsi(data, Marshal.ReadInt32(lenght));
             return temp;
         }
-
+        //---------------------------------------------------------------------
+        public static int getInt(IntPtr data)
+        {
+            if (null == data) return -1;
+            return Marshal.ReadInt32(data);
+        }
         //---------------------------------------------------------------------
         public static string error2str(int cd)
         {
@@ -420,6 +426,12 @@ namespace Zk
             Marshal.FreeHGlobal(bufferHandler);
             return structObject;
         }
+
+        private static int _IncreaseId = 0 ;
+        public static int generateId()
+         {
+           return  Interlocked.Increment(ref _IncreaseId);
+         }
 
         //---------------------------------------------------------------------
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]

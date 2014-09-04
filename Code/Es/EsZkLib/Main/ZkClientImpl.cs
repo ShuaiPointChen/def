@@ -16,33 +16,50 @@ namespace Zk
     {
         //---------------------------------------------------------------------
         protected CZkConnection mConnection = null;
-        private List<string> _childListener = new List<string>();
-        private List<string> _dataListener = new List<string>();
-        private List<string> _existsListener = new List<string>();
         private bool _shutdownTriggered;
         private static volatile int _eventId = 0;
+        private List<handler_func> _handlerList = new List<handler_func>();
+        private Dictionary<string, zkHandlerParam> _childListener = new Dictionary<string, zkHandlerParam>();
+        private Dictionary<string, zkHandlerParam> _dataListener = new Dictionary<string, zkHandlerParam>();
+        private Dictionary<string, zkHandlerParam> _existsListener = new Dictionary<string, zkHandlerParam>();
         private ConcurrentQueue<ResponseEvent> _events = new ConcurrentQueue<ResponseEvent>();
         private ConcurrentQueue<WatchedEvent> _watchEvents = new ConcurrentQueue<WatchedEvent>();
-        private IZkOnOpeResult onOpeResult = null;
+        private ConcurrentDictionary<int, zkHandlerParam> _handlerDic = new ConcurrentDictionary<int, zkHandlerParam>();
+
+        //private IZkOnOpeResult onOpeResult = null;
 
         //---------------------------------------------------------------------
-        public ZkClient(string serverstring, IZkOnOpeResult ope)
-            : this(serverstring, int.MaxValue >> 2, ope)
+        //public void setZkOpeResult(IZkOnOpeResult ope)
+        //{
+        //    onOpeResult = ope;
+        //}
+
+        //---------------------------------------------------------------------
+        //public IZkOnOpeResult getZkOpeResult()
+        //{
+        //    return onOpeResult;
+        //}
+        //---------------------------------------------------------------------
+        //public ZkClient(string serverstring, IZkOnOpeResult ope)
+        public ZkClient(string serverstring)
+            : this(serverstring, int.MaxValue >> 2)
         {
         }
 
         //---------------------------------------------------------------------
-        public ZkClient(string zkServers, int connectionTimeout, IZkOnOpeResult ope)
-            : this(new CZkConnection(zkServers), connectionTimeout, ope)
+        //public ZkClient(string zkServers, int connectionTimeout, IZkOnOpeResult ope)
+        public ZkClient(string zkServers, int connectionTimeout)
+            : this(new CZkConnection(zkServers), connectionTimeout)
         {
         }
 
         //---------------------------------------------------------------------
-        public ZkClient(CZkConnection zkConnection, int connectionTimeout, IZkOnOpeResult ope)
+        //public ZkClient(CZkConnection zkConnection, int connectionTimeout, IZkOnOpeResult ope)
+        public ZkClient(CZkConnection zkConnection, int connectionTimeout)
         {
             ZK_CONST.Init();
             mConnection = zkConnection;
-            onOpeResult = ope;
+            //onOpeResult = ope;
             connect(connectionTimeout, watchFunction);
         }
 
@@ -55,102 +72,121 @@ namespace Zk
         //---------------------------------------------------------------------
         private void _deleteCompletion(int rc, IntPtr data)
         {
-            string path = zookeeper.getString(data);
+            //string path = zookeeper.getString(data);
+            int id = zookeeper.getInt(data);
             if (data != IntPtr.Zero) zookeeper.FreeMem(data); data = IntPtr.Zero;
             if (rc != 0)
             {
-                EbLog.Note("_deleteCompletion failed :" + path + "reason:" + zookeeper.error2str(rc));
-                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_DELETE_OP, rc, path, null, null));
+                EbLog.Note("_deleteCompletion failed :" + id + "reason:" + zookeeper.error2str(rc));
+                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_DELETE_OP, rc, null, id, null));
             }
         }
 
         //---------------------------------------------------------------------
         private void _existsCompletion(int rc, IntPtr stat, IntPtr data)
         {
-            string path = zookeeper.getString(data);
+            int id = zookeeper.getInt(data);
             if (data != IntPtr.Zero) zookeeper.FreeMem(data); data = IntPtr.Zero;
             if (rc != 0)
             {
 
             }
-            _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_EXISTS_OP, rc, path, null, null));
+            _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_EXISTS_OP, rc,  null, id, null));
         }
 
         //---------------------------------------------------------------------
         private void _setCompletion(int rc, IntPtr stat, IntPtr data)
         {
-            string path = zookeeper.getString(data);
+            int id = zookeeper.getInt(data);
             if (data != IntPtr.Zero) zookeeper.FreeMem(data); data = IntPtr.Zero;
             if (rc != 0)
             {
-                EbLog.Note("_setCompletion failed :" + path + "reason:" + zookeeper.error2str(rc));
-                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_SETDATA_OP, rc, path, null, null));
+                EbLog.Note("_setCompletion failed :" + id + "reason:" + zookeeper.error2str(rc));
+                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_SETDATA_OP, rc, null, id, null));
             }
         }
 
         //---------------------------------------------------------------------
         private void _createCompletion(int rc, IntPtr value, IntPtr data)
         {
-            string path = zookeeper.getString(data);
+            int id = zookeeper.getInt(data);
             if (data != IntPtr.Zero) zookeeper.FreeMem(data); data = IntPtr.Zero;
             if (rc != 0)
             {
-                EbLog.Note("_createCompletion failed :" + path + "reason:" + zookeeper.error2str(rc));
-                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_CREATE_OP, rc, path, null, null));
+                EbLog.Note("_createCompletion failed :" + id + "reason:" + zookeeper.error2str(rc));
+                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_CREATE_OP, rc, null, id, null));
             }
             else
             {
-                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_CREATE_OP, rc, path, zookeeper.getString(value), null));
+                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_CREATE_OP, rc, zookeeper.getString(value), id ,  null));
             }
         }
 
         //---------------------------------------------------------------------
         private void _getCompletion(int rc, IntPtr value, int value_len, IntPtr stat, IntPtr data)
         {
-            string path = zookeeper.getString(data);
+            int id = zookeeper.getInt(data);
             if (data != IntPtr.Zero) zookeeper.FreeMem(data); data = IntPtr.Zero;
             if (rc != 0)
             {
-                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_GETDATA_OP, rc, path, null, null));
-                EbLog.Note("_getCompletion failed :" + path + "reason:" + zookeeper.error2str(rc));
+                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_GETDATA_OP, rc, null, id ,null));
+                EbLog.Note("_getCompletion failed :" + id + "reason:" + zookeeper.error2str(rc));
             }
             else
             {
                 string val = zookeeper.getString2(value, value_len);
-                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_GETDATA_OP, rc, path, val, null));
+                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_GETDATA_OP, rc, val, id, null));
             }
         }
 
         //---------------------------------------------------------------------
         private void _getChildrenCompletion(int rc, IntPtr strings, IntPtr data)
         {
-            string path = zookeeper.getString(data);
+            int id = zookeeper.getInt(data);
             if (data != IntPtr.Zero) zookeeper.FreeMem(data); data = IntPtr.Zero;
             if (rc != 0)
             {
-                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_GETCHILDREN_OP, rc, path, null, null));
-                EbLog.Note("_getChildrenCompletion failed :" + path + "reason:" + zookeeper.error2str(rc));
+                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_GETCHILDREN_OP, rc, null, id, null));
+                EbLog.Note("_getChildrenCompletion failed :" + id + "reason:" + zookeeper.error2str(rc));
             }
             else
             {
-                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_GETCHILDREN_OP, rc, path, null, zookeeper.getString_vector(strings)));
+                _events.Enqueue(new ResponseEvent((int)ZOO_OPE.ZOO_GETCHILDREN_OP, rc, null, id, zookeeper.getString_vector(strings)));
             }
         }
 
         //---------------------------------------------------------------------
-        protected int agetChildren(string path, bool watch)
+        protected int agetChildren(string path, bool watch, zkOpeHandler handler = null, Dictionary<string, object> param = null)
         {
-            return mConnection.agetChildren(path, watch, _getChildrenCompletion);
+            int id = 0;
+            if (handler != null)
+            {
+                id = zookeeper.generateId();
+                zkHandlerParam hp = new zkHandlerParam();
+                hp.handler = handler;
+                hp.param = param;
+                _handlerDic.TryAdd( id , hp);
+            }
+            return mConnection.agetChildren(path, watch, _getChildrenCompletion , id);
         }
 
         //---------------------------------------------------------------------
-        public int aexists(string path, bool watch)
+        public int aexists(string path, bool watch, zkOpeHandler handler = null, Dictionary<string, object> param = null)
         {
-            return mConnection.aexists(path, watch, _existsCompletion);
+            int id = 0;
+            if (handler != null)
+            {
+                id = zookeeper.generateId();
+                zkHandlerParam hp = new zkHandlerParam();
+                hp.handler = handler;
+                hp.param = param;
+                _handlerDic.TryAdd(id, hp);
+            }
+            return mConnection.aexists(path, watch, _existsCompletion, id);
         }
 
         //---------------------------------------------------------------------
-        public int acreate(string path, string data, int mode)
+        public int acreate(string path, string data, int mode, zkOpeHandler handler = null, Dictionary<string, object> param = null)
         {
             if (path == null || data == null)
             {
@@ -158,34 +194,73 @@ namespace Zk
                 return -1;
             }
             EbLog.Note("acreate node :" + path);
-            return mConnection.acreate(path, data, mode, _createCompletion);
-        }
-
-        //---------------------------------------------------------------------
-        public int adelete(string path)
-        {
-            return mConnection.adelete(path, _deleteCompletion);
-        }
-
-        //---------------------------------------------------------------------
-        public int areadData(string path, bool watch)
-        {
-            return mConnection.areadData(path, watch, _getCompletion);
-        }
-
-        //---------------------------------------------------------------------
-        public int awriteData(string path, string data)
-        {
-            return mConnection.awriteData(path, data, _setCompletion);
-        }
-
-        //---------------------------------------------------------------------
-        public void subscribeChildChanges(string path)
-        {
-            if (path != null && path != "" && !_childListener.Contains(path))
+            int id = 0;
+            if (handler != null)
             {
-                _childListener.Add(path);
-                awatchForChilds(path);
+                id = zookeeper.generateId();
+                zkHandlerParam hp = new zkHandlerParam();
+                hp.handler = handler;
+                hp.param = param;
+                _handlerDic.TryAdd(id, hp);
+            }
+            return mConnection.acreate(path, data, mode, _createCompletion, id);
+        }
+
+        //---------------------------------------------------------------------
+        public int adelete(string path, zkOpeHandler handler = null, Dictionary<string, object> param = null)
+        {
+            int id = 0;
+            if (handler != null)
+            {
+                id = zookeeper.generateId();
+                zkHandlerParam hp = new zkHandlerParam();
+                hp.handler = handler;
+                hp.param = param;
+                _handlerDic.TryAdd(id, hp);
+            }
+            return mConnection.adelete(path, _deleteCompletion, id);
+        }
+
+        //---------------------------------------------------------------------
+        public int areadData(string path, bool watch, zkOpeHandler handler = null, Dictionary<string, object> param = null)
+        {
+            int id = 0;
+            if (handler != null)
+            {
+                id = zookeeper.generateId();
+                zkHandlerParam hp = new zkHandlerParam();
+                hp.handler = handler;
+                hp.param = param;
+                _handlerDic.TryAdd(id, hp);
+            }
+            return mConnection.areadData(path, watch, _getCompletion, id);
+        }
+
+        //---------------------------------------------------------------------
+        public int awriteData(string path, string data, zkOpeHandler handler = null, Dictionary<string, object> param = null)
+        {
+            int id = 0;
+            if (handler != null)
+            {
+                id = zookeeper.generateId();
+                zkHandlerParam hp = new zkHandlerParam();
+                hp.handler = handler;
+                hp.param = param;
+                _handlerDic.TryAdd(id, hp);
+            }
+            return mConnection.awriteData(path, data, _setCompletion, id);
+        }
+
+        //---------------------------------------------------------------------
+        public void subscribeChildChanges(string path, zkOpeHandler handler = null, Dictionary<string, object> param = null)
+        {
+            if (path != null && path != "" && !_childListener.ContainsKey(path))
+            {
+                zkHandlerParam hp = new zkHandlerParam();
+                hp.handler = handler;
+                hp.param = param;
+                _childListener.Add(path , hp);
+                awatchForChilds(path, handler);
                 EbLog.Note("Subscribed child changes for:" + path);
             }
         }
@@ -193,7 +268,7 @@ namespace Zk
         //---------------------------------------------------------------------
         public void unsubscribeChildChanges(string path)
         {
-            if (_childListener.Contains(path))
+            if (_childListener.ContainsKey(path))
             {
                 _childListener.Remove(path);
                 EbLog.Note("unsubscribe child changes for " + path);
@@ -201,12 +276,15 @@ namespace Zk
         }
 
         //---------------------------------------------------------------------
-        public void subscribeDataChanges(string path)
+        public void subscribeDataChanges(string path, zkOpeHandler handler = null, Dictionary<string, object> param = null)
         {
-            if (path != null && path != "" && !_dataListener.Contains(path))
+            if (path != null && path != "" && !_dataListener.ContainsKey(path))
             {
                 EbLog.Note("Subscribed Data changes for:" + path);
-                _dataListener.Add(path);
+                zkHandlerParam hp = new zkHandlerParam();
+                hp.handler = handler;
+                hp.param = param;
+                _dataListener.Add(path, hp);
                 areadData(path, true);
             }
         }
@@ -214,7 +292,7 @@ namespace Zk
         //---------------------------------------------------------------------
         public void unsubscribeDataChanges(string path)
         {
-            if (_dataListener.Contains(path))
+            if (_dataListener.ContainsKey(path))
             {
                 _dataListener.Remove(path);
                 EbLog.Note("unsubscribe Data changes for " + path);
@@ -222,12 +300,15 @@ namespace Zk
         }
 
         //---------------------------------------------------------------------
-        public void subscribeExists(string path)
+        public void subscribeExists(string path, zkOpeHandler handler = null, Dictionary<string, object> param = null)
         {
-            if (path != null && path != "" && !_existsListener.Contains(path))
+            if (path != null && path != "" && !_existsListener.ContainsKey(path))
             {
                 EbLog.Note("Subscribed Exists changes for:" + path);
-                _existsListener.Add(path);
+                zkHandlerParam hp = new zkHandlerParam();
+                hp.handler = handler;
+                hp.param = param;
+                _existsListener.Add(path, hp);
                 aexists(path, true);
             }
         }
@@ -235,7 +316,7 @@ namespace Zk
         //---------------------------------------------------------------------
         public void unsubscribeExists(string path)
         {
-            if (_existsListener.Contains(path))
+            if (_existsListener.ContainsKey(path))
             {
                 _existsListener.Remove(path);
                 EbLog.Note("unsubscribe Exists changes for " + path);
@@ -243,10 +324,10 @@ namespace Zk
         }
 
         //---------------------------------------------------------------------
-        public int awatchForChilds(string path)
+        public int awatchForChilds(string path, zkOpeHandler handler = null, Dictionary<string, object> param = null)
         {
             //exists(path, true);
-            return agetChildren(path, true);
+            return agetChildren(path, true, handler , param);
         }
 
         //---------------------------------------------------------------------
@@ -272,17 +353,23 @@ namespace Zk
             }
 
             // 持续监听.
-            if (_childListener.Contains(path))
+            if (_childListener.ContainsKey(path))
             {
-                awatchForChilds(path);
+                zkHandlerParam hp;
+                _childListener.TryGetValue(path, out hp);
+                awatchForChilds(path, hp.handler , hp.param);
             }
-            if (_dataListener.Contains(path))
+            if (_dataListener.ContainsKey(path))
             {
-                areadData(path, true);
+                zkHandlerParam hp;
+                _childListener.TryGetValue(path, out hp);
+                areadData(path, true, hp.handler, hp.param);
             }
-            if (_existsListener.Contains(path))
+            if (_existsListener.ContainsKey(path))
             {
-                aexists(path, true);
+                zkHandlerParam hp;
+                _childListener.TryGetValue(path, out hp);
+                aexists(path, true, hp.handler, hp.param);
             }
 
             WatchedEvent ev = new WatchedEvent(state, type, path);
@@ -335,33 +422,47 @@ namespace Zk
 
                 if (null == response) continue;
 
-                if (response.returnCode != (int)Zk.ZOO_ERRORS.ZOK)
+                //if (response.returnCode != (int)Zk.ZOO_ERRORS.ZOK)
+                if(response.id <= 0)
                 {
-                    EbLog.Error("Zk.ZkClient.update ,path:" + response.path + ",Reason:" + ((Zk.ZOO_ERRORS)response.returnCode).ToString());
+                    EbLog.Note("Zk.ZkClient.update ,path:" + response.id + ",Reason:" + ((Zk.ZOO_ERRORS)response.returnCode).ToString());
                     continue;
                 }
-
+                zkHandlerParam hp = null;
+                //_handlerDic.TryGetValue(response.id, out handler);
+                _handlerDic.TryRemove(response.id, out hp);
+                if (null == hp || null == hp.handler)
+                {
+                    EbLog.Error("zk update error , hp or handler is null !");
+                    continue;
+                }
                 int eventId = _eventId++;
-                EbLog.Note("Delivering event #" + eventId + ",type:" + ((ZOO_OPE)(response.opeType)).ToString() + ",path:" + response.path);
+                EbLog.Note("Delivering event #" + eventId + ",type:" + ((ZOO_OPE)(response.opeType)).ToString() + ",id:" + response.id);
                 switch ((ZOO_OPE)response.opeType)
                 {
                     case ZOO_OPE.ZOO_CREATE_OP:
-                        onOpeResult.onCreated(response.path, response.data, response.returnCode);
+                        //onOpeResult.onCreated(response.path, response.data, response.returnCode);
+                        hp.handler(response.returnCode,  response.data, null , hp.param);
                         break;
                     case ZOO_OPE.ZOO_DELETE_OP:
-                        onOpeResult.onDeleted(response.path, response.returnCode);
+                        //onOpeResult.onDeleted(response.path, response.returnCode);
+                        hp.handler(response.returnCode, null, null, hp.param);
                         break;
                     case ZOO_OPE.ZOO_EXISTS_OP:
-                        onOpeResult.onExists(response.path, response.returnCode);
+                        //onOpeResult.onExists(response.path, response.returnCode);
+                        hp.handler(response.returnCode, null, null, hp.param);
                         break;
                     case ZOO_OPE.ZOO_GETDATA_OP:
-                        onOpeResult.onGet(response.path, response.returnCode, response.data);
+                        //onOpeResult.onGet(response.path, response.returnCode, response.data);
+                        hp.handler(response.returnCode, response.data, null, hp.param);
                         break;
                     case ZOO_OPE.ZOO_SETDATA_OP:
-                        onOpeResult.onSet(response.path, response.returnCode);
+                        //onOpeResult.onSet(response.path, response.returnCode);
+                        hp.handler(response.returnCode, null, null, hp.param);
                         break;
                     case ZOO_OPE.ZOO_GETCHILDREN_OP:
-                        onOpeResult.onGetChildren(response.path, response.returnCode, response.children);
+                        //onOpeResult.onGetChildren(response.path, response.returnCode, response.children);
+                        hp.handler(response.returnCode, null, response.children, hp.param);
                         break;
                 }
 
@@ -375,7 +476,16 @@ namespace Zk
                 if (null == wcEvent) continue;
                 int eventId = _eventId++;
                 EbLog.Note("Delivering event #" + eventId + "," + wcEvent);
-                onOpeResult.handler(wcEvent);
+                //if(null != onOpeResult)
+                //{
+                foreach (var func in _handlerList)
+                {
+                    // 如果已经处理了，就不用遍历了.
+                    if (func(wcEvent))
+                        break;
+                }
+                //onOpeResult.handler(wcEvent);
+                //}
                 EbLog.Note("Delivering event #" + eventId + " done");
             }
         }
@@ -405,27 +515,37 @@ namespace Zk
         }
 
         //---------------------------------------------------------------------
+        /// <summary>
+        /// 添加响应zk的函数.
+        /// </summary>
+        /// <param name="handler"></param>
+        public void addHandler(handler_func handler)
+        {
+            _handlerList.Add(handler);
+        }
+
+        //---------------------------------------------------------------------
         public void dumpWatchPath()
         {
             EbLog.Note("watch for children, count:" + _childListener.Count);
             int index = 0;
-            foreach (string child in _childListener)
+            foreach (var child in _childListener)
             {
-                EbLog.Note("index #" + index + ":" + child);
+                EbLog.Note("index #" + index + ":" + child.Key);
             }
 
             index = 0;
             EbLog.Note("watch for data, count:" + _dataListener.Count);
-            foreach (string data in _dataListener)
+            foreach (var data in _dataListener)
             {
-                EbLog.Note("index #" + index + ":" + data);
+                EbLog.Note("index #" + index + ":" + data.Key);
             }
 
             index = 0;
             EbLog.Note("watch for exists, count:" + _existsListener.Count);
-            foreach (string data in _existsListener)
+            foreach (var data in _existsListener)
             {
-                EbLog.Note("index #" + index + ":" + data);
+                EbLog.Note("index #" + index + ":" + data.Key);
             }
         }
 

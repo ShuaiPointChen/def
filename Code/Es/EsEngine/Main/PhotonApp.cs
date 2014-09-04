@@ -49,6 +49,7 @@ namespace Es
         private uint mNodeId = 0;
         private byte mNodeType = 0;
         private string mNodeTypeString = "";
+        private string mProjectName = "";
         private IZkClient mZkClient;
         private ServerNodeZkInfo mServerNodeZkInfo;
 
@@ -57,6 +58,7 @@ namespace Es
         public uint NodeId { get { return mNodeId; } }
         public byte NodeType { get { return mNodeType; } }
         public string NodeTypeString { get { return mNodeTypeString; } }
+        public string ProjectName { get { return mProjectName; } }
         public IZkClient ZkClient { get { return mZkClient; } }
         public EntityMgr EntityMgr { get { return mEntityMgr; } }
 
@@ -129,17 +131,16 @@ namespace Es
             EbLog.Note("PhotonApp.Setup()");
 
             // 获取初始化数据
-            IZkOnOpeResult zk_listener;
             EntityMgrListener entitymgr_listener;
             string servercfg_filename;
-            init(out zk_listener, out entitymgr_listener, out servercfg_filename);
+            init(out entitymgr_listener, out servercfg_filename);
             _parseServerCfg(servercfg_filename);
 
             // 创建ZkClient
             string host_name = Dns.GetHostName();
             IPAddress ip_addr = Dns.Resolve(host_name).AddressList[0];//获得当前IP地址
             string localnode_ipport = ip_addr.ToString() + ":" + NodePort;
-            mZkClient = new ZkClient(mServerNodeZkInfo.ip_port, zk_listener);
+            mZkClient = new ZkClient(mServerNodeZkInfo.ip_port);
 
             // 向ZkServer获取NodeId
             string zk_node = mZkClient.screate(mServerNodeZkInfo.servernode_path +
@@ -201,8 +202,7 @@ namespace Es
         protected abstract void regComponentFactory(EntityMgr entity_mgr);
 
         //---------------------------------------------------------------------
-        protected abstract void init(out IZkOnOpeResult zk_listener,
-            out EntityMgrListener entitymgr_listener, out string servercfg_filename);
+        protected abstract void init(out EntityMgrListener entitymgr_listener, out string servercfg_filename);
 
         //---------------------------------------------------------------------
         protected abstract void onInit(EntityMgr entity_mgr);
@@ -276,6 +276,7 @@ namespace Es
             mServerNodeZkInfo.servernode_path = node_zkinfo.Attributes["ServerNodePath"].Value;
 
             XmlNode node_serverinfo = doc.SelectSingleNode("Server/ServerInfo");
+            mProjectName = node_serverinfo.Attributes["ProjectName"].Value;
             mNodeType = byte.Parse(node_serverinfo.Attributes["NodeType"].Value);
             mNodeTypeString = node_serverinfo.Attributes["NodeTypeString"].Value;
             mNodePort = int.Parse(node_serverinfo.Attributes["NodePort"].Value);

@@ -33,10 +33,8 @@ public class UCenterApp : PhotonApp
     }
 
     //-------------------------------------------------------------------------
-    protected override void init(out IZkOnOpeResult zk_listener,
-        out EntityMgrListener entitymgr_listener, out string servercfg_filename)
+    protected override void init(out EntityMgrListener entitymgr_listener, out string servercfg_filename)
     {
-        zk_listener = new ZkOnOpeResult();
         entitymgr_listener = new UCenterEntityMgrListener();
 
         string path = Path.Combine(this.BinaryPath, "../../../Media/EsUCenter/Config/EsUCenter.xml");

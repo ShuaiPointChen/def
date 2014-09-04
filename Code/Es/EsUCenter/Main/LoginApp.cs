@@ -37,6 +37,7 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
     // 读配置文件.
     public string mLoginNodeInfoPath = "/Login/LoginNodeInfo";
     UCenterApp mUCenterApp = (UCenterApp)ApplicationBase.Instance;
+    UCenterZkWatcher mZkWatcher;
 
     //-------------------------------------------------------------------------
     public uint NodeId { get { return mUCenterApp.NodeId; } }
@@ -53,7 +54,11 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
         {
             OnGetNodeInfo(data);
         }
-        mUCenterApp.ZkClient.subscribeDataChanges(mLoginNodeInfoPath);
+
+        mZkWatcher = new UCenterZkWatcher(this);
+        PhotonApp photon_app = (PhotonApp)ApplicationBase.Instance;
+        photon_app.ZkClient.addHandler(mZkWatcher.handler);
+        mUCenterApp.ZkClient.subscribeDataChanges(mLoginNodeInfoPath, mZkWatcher.onLoginNodeInfo);
     }
 
     //-------------------------------------------------------------------------
