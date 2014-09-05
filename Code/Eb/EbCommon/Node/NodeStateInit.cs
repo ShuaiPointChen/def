@@ -7,7 +7,7 @@ using Eb;
 class CNodeStateInit : EbState
 {
     //-------------------------------------------------------------------------
-    CNode mNode = null;
+    CNode mNode;
 
     //-------------------------------------------------------------------------
     public CNodeStateInit(CNode node)

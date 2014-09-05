@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 using EventDataXML;
+using Eb;
 
 public abstract class INodeClientScript
 {
     //-------------------------------------------------------------------------
-    INodeClientScriptFactory mFactory = null;
+    INodeClientScriptFactory mFactory;
     protected CNode mNode;
 
     //-------------------------------------------------------------------------

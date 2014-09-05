@@ -9,16 +9,17 @@ using Eb;
 public class CNodeSys : IDisposable
 {
     //-------------------------------------------------------------------------
-    private string mNodeSysMediaPath = "";
-    private Dictionary<string, CNodeMgr> mMapNodeMgr = new Dictionary<string, CNodeMgr>();// key=玩家guid，每个玩家拥有一个CNodeMgr
-    private Dictionary<int, string> mMapNodeDefFile = new Dictionary<int, string>();
-    private CNodeScriptMgr mNodeScriptMgr = null;
-    private CNodeEffectMgr mNodeEffectMgr = null;
-    private CNodeTriggerMgr mNodeTriggerMgr = null;
-    private CNodeTriggerConditionMgr mNodeTriggerConditionMgr = null;
-    private CNodeConfig mNodeConfig = new CNodeConfig();
-    private bool mIsClient = false;
-    private bool mbTestMode = false;
+    string mNodeSysMediaPath = "";
+    // key=玩家guid，每个玩家拥有一个CNodeMgr
+    Dictionary<string, CNodeMgr> mMapNodeMgr = new Dictionary<string, CNodeMgr>();
+    Dictionary<int, string> mMapNodeDefFile = new Dictionary<int, string>();
+    CNodeScriptMgr mNodeScriptMgr = null;
+    CNodeEffectMgr mNodeEffectMgr = null;
+    CNodeTriggerMgr mNodeTriggerMgr = null;
+    CNodeTriggerConditionMgr mNodeTriggerConditionMgr = null;
+    CNodeConfig mNodeConfig = new CNodeConfig();
+    bool mIsClient = false;
+    bool mbTestMode = false;
 
     //-------------------------------------------------------------------------
     ~CNodeSys()

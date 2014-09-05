@@ -7,9 +7,9 @@ using Eb;
 class CNodeStateRelease : EbState
 {
     //-------------------------------------------------------------------------
-    CNode mNode = null;
-    INodeServerScript mNodeServerScript = null;
-    INodeClientScript mNodeClientScript = null;
+    CNode mNode;
+    INodeServerScript mNodeServerScript;
+    INodeClientScript mNodeClientScript;
 
     //-------------------------------------------------------------------------
     public CNodeStateRelease(CNode node)

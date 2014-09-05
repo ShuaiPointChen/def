@@ -24,11 +24,6 @@ namespace EventDataXML
         public string GetName()
         {
             return Key;
-            //if(Index==null)
-            //    return Key;
-            //if (Index == "")
-            //    return Key;
-            //return Key + "(" + Index + ")";
         }
     }
 
@@ -52,14 +47,14 @@ namespace EventDataXML
         public string Key = "";
         [XmlAttribute]
         public string Index = null;
+
         public string GetName()
         {
-            if (Index == null)
-                return Key;
-            if (Index == "")
-                return Key;
+            if (Index == null) return Key;
+            if (Index == "") return Key;
             return Key + "(" + Index + ")";
         }
+
         [XmlElement("Property")]
         public List<Property> Propertys = new List<Property>();
         [XmlElement("Group")]
@@ -251,7 +246,8 @@ namespace EventDataXML
     public class EventDef : Group
     {
         [XmlAttribute]
-        public int BaseTypeDef = 0;//基础类型定义
+        public int BaseTypeDef = 0;// 基础类型定义
+
         public EventDef()
         {
             Key = null;
@@ -323,6 +319,7 @@ namespace EventDataXML
         public string Key = "";
         [XmlAttribute]
         public string Index = null;
+
         public string GetName()
         {
             if (Index == null)
@@ -334,6 +331,7 @@ namespace EventDataXML
 
         [XmlElement("Property")]
         public List<Property> Propertys = new List<Property>();
+
         public override string ToString()
         {
             return "Group(" + (Propertys.Count).ToString() + ")";
@@ -396,22 +394,6 @@ namespace EventDataXML
             System.Xml.Serialization.XmlSerializer s = new System.Xml.Serialization.XmlSerializer(typeof(EventDefQuick));
             s.Serialize(filestream, this);
         }
-
-        //public static EventDefQuick LoadEventData(string filename)
-        //{
-        //    try
-        //    {
-        //        using (var fs = RemoteStream.RemoteStream.DefRemoteStrem.OpenRead(filename, true))
-        //        //using (var fs = System.IO.File.OpenRead(filename))
-        //        {
-        //            return LoadEventData(fs);
-        //        }
-        //    }
-        //    catch
-        //    {
-        //        return null;
-        //    }
-        //}//注释掉可以直接用另一个接口
 
         public void SaveEventData(string filename)
         {

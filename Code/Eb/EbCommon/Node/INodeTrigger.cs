@@ -7,7 +7,7 @@ using Eb;
 public interface INodeTrigger
 {
     //-------------------------------------------------------------------------
-    void setup(CNode entity, int linked_from, int param);
+    void setup(CNode node, int linked_from, int param);
 
     //-------------------------------------------------------------------------
     void reset();
@@ -34,5 +34,5 @@ public interface INodeTriggerFactory
     int getId();
 
     //-------------------------------------------------------------------------
-    INodeTrigger createTrigger(CNode entity, int linked_from, int param);
+    INodeTrigger createTrigger(CNode node, int linked_from, int param);
 }

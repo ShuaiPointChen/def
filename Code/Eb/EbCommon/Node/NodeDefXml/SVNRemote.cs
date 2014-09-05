@@ -15,19 +15,12 @@ namespace RemoteStream
 
         public override bool CanRead
         {
-            get
-            {
-                return true;
-            }
+            get { return true; }
         }
 
         public override bool CanWrite
         {
-            get
-            {
-                return false;
-            }
-
+            get { return false; }
         }
 
         public override void Write(byte[] buffer, int offset, int count)
@@ -70,18 +63,12 @@ namespace RemoteStream
 
         public override bool CanRead
         {
-            get
-            {
-                return false;
-            }
+            get { return false; }
         }
 
         public override bool CanWrite
         {
-            get
-            {
-                return true;
-            }
+            get { return true; }
         }
 
         public override int Read(byte[] buffer, int offset, int count)
@@ -107,10 +94,6 @@ namespace RemoteStream
             }
         }
     }
-
-    //private System.IO.Stream SVNOpenFile(string rootPath)
-    //{
-    //}
 
     public class SVNRemote : IRemoteStream
     {

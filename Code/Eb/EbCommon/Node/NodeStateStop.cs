@@ -7,9 +7,9 @@ using Eb;
 class CNodeStateStop : EbState
 {
     //-------------------------------------------------------------------------
-    CNode mNode = null;
-    INodeServerScript mNodeServerScript = null;
-    INodeClientScript mNodeClientScript = null;
+    CNode mNode;
+    INodeServerScript mNodeServerScript;
+    INodeClientScript mNodeClientScript;
     Dictionary<int, List<Group>> mMapEffectGroup = new Dictionary<int, List<Group>>();
 
     //-------------------------------------------------------------------------

@@ -10,7 +10,7 @@ public interface INodeEffect
     string getId();
 
     //-------------------------------------------------------------------------
-    void setEntity(CNode entity);
+    void setEntity(CNode node);
 
     //-------------------------------------------------------------------------
     void excute(Group xml_group);

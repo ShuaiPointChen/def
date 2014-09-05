@@ -44,16 +44,17 @@ class CMsgMgr
         public int entity_id;
     }
 
-    CNodeSys mEntityEngine = null;
-    CNodeMgr mEntityMgr = null;
+    //-------------------------------------------------------------------------
+    CNodeSys mNodeSys;
+    CNodeMgr mNodeMgr;
     List<_tRegMsg> mListRegMsg = new List<_tRegMsg>();// 存贮消息注册信息
     List<_tTriggerMsg> mListTriggerMsg = new List<_tTriggerMsg>();// 存贮自定义触发器消息注册信息
 
     //-------------------------------------------------------------------------
     public CMsgMgr(CNodeSys node_sys, CNodeMgr node_mgr)
     {
-        mEntityEngine = node_sys;
-        mEntityMgr = node_mgr;
+        mNodeSys = node_sys;
+        mNodeMgr = node_mgr;
     }
 
     //-------------------------------------------------------------------------
@@ -66,7 +67,7 @@ class CMsgMgr
         msg.msg_info.msg_param = msg_param;
         msg.msg_info.msg_paramlist = msg_paramlist;
         msg.msg_type = _eMsgType.Normal;
-        bool is_trigger_msg = mEntityEngine._getTriggerMgr().isTriggerMsg(msg.msg_info.msg_type, msg.msg_info.msg_id);
+        bool is_trigger_msg = mNodeSys._getTriggerMgr().isTriggerMsg(msg.msg_info.msg_type, msg.msg_info.msg_id);
         if (is_trigger_msg)
         {
             msg.msg_type = _eMsgType.Trigger;

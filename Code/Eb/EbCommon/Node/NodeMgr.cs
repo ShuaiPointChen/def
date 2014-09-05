@@ -8,10 +8,10 @@ using Eb;
 public class CNodeMgr : IDisposable
 {
     //-------------------------------------------------------------------------
-    INodeServerListener mpNodeServerListener = null;
-    INodeClientListener mpNodeClientListener = null;
-    CNodeSys mNodeSys = null;
-    Entity mEtPlayer = null;
+    INodeServerListener mpNodeServerListener;
+    INodeClientListener mpNodeClientListener;
+    CNodeSys mNodeSys;
+    Entity mEtPlayer;
     Dictionary<int, CNode> mMapAllNode = new Dictionary<int, CNode>();// 包含运行时所有父和子Node
     Queue<_tNodeOp> mQueNodeOp = new Queue<_tNodeOp>();
     Queue<_tNodeOp> mQueNodeOpRemote = new Queue<_tNodeOp>();

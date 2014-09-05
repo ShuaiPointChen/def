@@ -10,7 +10,7 @@ public interface INodeTriggerCondition
     string getId();
 
     //-------------------------------------------------------------------------
-    void setEntity(CNode entity);
+    void setEntity(CNode node);
 
     //-------------------------------------------------------------------------
     bool excute(Group xml_group);

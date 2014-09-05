@@ -7,9 +7,9 @@ using Eb;
 class CNodeStateStart : EbState
 {
     //-------------------------------------------------------------------------
-    CNode mNode = null;
-    INodeServerScript mNodeServerScript = null;
-    INodeClientScript mNodeClientScript = null;
+    CNode mNode;
+    INodeServerScript mNodeServerScript;
+    INodeClientScript mNodeClientScript;
 
     //-------------------------------------------------------------------------
     public CNodeStateStart(CNode node)

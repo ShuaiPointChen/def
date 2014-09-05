@@ -7,9 +7,9 @@ using Eb;
 public abstract class INodeServerScript
 {
     //-------------------------------------------------------------------------
-    protected INodeServerScriptFactory mFactory = null;
-    protected CNode mNode = null;
-    protected Entity mEntityPlayer = null;
+    protected INodeServerScriptFactory mFactory;
+    protected CNode mNode;
+    protected Entity mEntityPlayer;
 
     //-------------------------------------------------------------------------
     public INodeServerScript(INodeServerScriptFactory factory, CNode node, Entity entity_player)

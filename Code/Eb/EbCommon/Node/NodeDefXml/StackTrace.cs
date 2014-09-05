@@ -10,8 +10,8 @@ namespace EventDataXML
         public string path;
         public string path2;
         public string traceinfo;
-
     }
+
     public static class StackTrace_File
     {
         public static void Delete(string path)
