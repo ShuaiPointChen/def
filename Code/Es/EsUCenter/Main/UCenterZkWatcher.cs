@@ -10,28 +10,28 @@ using Eb;
 using Es;
 using Zk;
 
-
 // 当前ZooKeeper Clinet操作的反馈.
 public class UCenterZkWatcher
 {
     //-------------------------------------------------------------------------
     LoginApp<ComponentDef> mCoApp;
 
+    //-------------------------------------------------------------------------
     public UCenterZkWatcher(IComponent co_app)
     {
         mCoApp = co_app as LoginApp<ComponentDef>;
     }
 
-
+    //-------------------------------------------------------------------------
     public void onLoginNodeInfo(int result, string data, string[] servers, Dictionary<string, object> param)
-   {
-       mCoApp.OnGetNodeInfo(data);
-   }
+    {
+        mCoApp.OnGetNodeInfo(data);
+    }
 
     //-------------------------------------------------------------------------
     void _onOfflineNode(int result, string data, string[] servers, Dictionary<string, object> param)
     {
-        if (result != 0 || data == null) return; 
+        if (result != 0 || data == null) return;
         GateInfo gt = param["gateInfo"] as GateInfo;
         string path = param["path"] as string;
         LoginNode<ComponentDef> info = param["LoginNode"] as LoginNode<ComponentDef>;
@@ -58,31 +58,31 @@ public class UCenterZkWatcher
         GateInfo gt = param["gateInfo"] as GateInfo;
         string path = param["path"] as string;
 
-            if (gt.bloginComLock == false)
-            {
-                EbLog.Error("Error get unlock data: " + path);
-                return ;
-            }
-            string[] resul;
-            char[] charSeparators = new char[] { ',', ':' };
-            resul = data.Split(charSeparators);
-            int index = 0;
-            while (index < resul.Length)
-            {
-                string account = resul[index++];
-                string serverGroup = resul[index++];
-                string logresult = resul[index++];
-                mCoApp.onGateBack(serverGroup, account, logresult);
-            }
-            // 通知gate已经处理了数据.
-            mCoApp.getZk().adelete(gt.loginLockComNode , null);
+        if (gt.bloginComLock == false)
+        {
+            EbLog.Error("Error get unlock data: " + path);
+            return;
+        }
+        string[] resul;
+        char[] charSeparators = new char[] { ',', ':' };
+        resul = data.Split(charSeparators);
+        int index = 0;
+        while (index < resul.Length)
+        {
+            string account = resul[index++];
+            string serverGroup = resul[index++];
+            string logresult = resul[index++];
+            mCoApp.onGateBack(serverGroup, account, logresult);
+        }
+        // 通知gate已经处理了数据.
+        mCoApp.getZk().adelete(gt.loginLockComNode, null);
     }
 
     void _onServerNodeChange(int result, string data, string[] chdn, Dictionary<string, object> param)
     {
 
         LoginNode<ComponentDef> info = param["LoginNode"] as LoginNode<ComponentDef>;
-        string path = param["path"] as string ;
+        string path = param["path"] as string;
         int index = (int)param["index"];
 
         List<string> remoteServer = chdn.ToList();
@@ -213,9 +213,9 @@ public class UCenterZkWatcher
 
                             gtInfo.ipport = si.Ip + ":" + si.Port;
 
-                            mCoApp.getZk().subscribeExists(gtInfo.loginLockNode , null);
-                            mCoApp.getZk().subscribeExists(gtInfo.loginLockComNode,null);
-                            mCoApp.getZk().subscribeExists(gtInfo.offlineLock,null);
+                            mCoApp.getZk().subscribeExists(gtInfo.loginLockNode, null);
+                            mCoApp.getZk().subscribeExists(gtInfo.loginLockComNode, null);
+                            mCoApp.getZk().subscribeExists(gtInfo.offlineLock, null);
 
                             info.mGateInfo.Add(sv, gtInfo);
                         }
@@ -243,7 +243,7 @@ public class UCenterZkWatcher
                     pa["LoginNode"] = info;
                     pa["path"] = path;
                     pa["index"] = index;
-                    mCoApp.getZk().awatchForChilds(path , _onServerNodeChange, pa);
+                    mCoApp.getZk().awatchForChilds(path, _onServerNodeChange, pa);
                     return true;
                 }
             }
@@ -259,7 +259,7 @@ public class UCenterZkWatcher
                         Dictionary<string, object> pa = new Dictionary<string, object>();
                         pa["gateInfo"] = gt;
                         pa["path"] = path;
-                        mCoApp.getZk().areadData(gt.Value.loginComNode, false, _loginComNode , pa);
+                        mCoApp.getZk().areadData(gt.Value.loginComNode, false, _loginComNode, pa);
                     }
                     return true;
                 }
@@ -280,7 +280,7 @@ public class UCenterZkWatcher
                         pa["gateInfo"] = gt;
                         pa["LoginNode"] = info;
                         pa["path"] = path;
-                        mCoApp.getZk().areadData(gt.Value.offlineNode, false, _onOfflineNode , pa );
+                        mCoApp.getZk().areadData(gt.Value.offlineNode, false, _onOfflineNode, pa);
                     }
                     return true;
                 }
