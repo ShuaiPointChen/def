@@ -49,8 +49,8 @@
     <Compile Include="EbCommonEx\PhotonClientPeer.cs" />
     <Compile Include="Main\EcUtility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UCenterLib\ClientUCenter.cs" />
-    <Compile Include="UCenterLib\ClientUCenterSession.cs" />
+    <Compile Include="UCenter\ClientUCenter.cs" />
+    <Compile Include="UCenter\ClientUCenterSession.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Eb\EbCommon\EbCommon.csproj">

@@ -78,11 +78,11 @@
     <Compile Include="BehaviorTree\Decorators\DecoratorInverter.cs" />
     <Compile Include="BehaviorTree\Decorators\DecoratorRandom.cs" />
     <Compile Include="BehaviorTree\Decorators\DecoratorTimer.cs" />
-    <Compile Include="Common\CommonType.cs" />
+    <Compile Include="UCenter\CommonType.cs" />
     <Compile Include="Data\EbData.cs" />
     <Compile Include="Data\EbDataInfo.cs" />
     <Compile Include="Data\EbDataMgr.cs" />
-    <Compile Include="Common\DefUCenterSession.cs" />
+    <Compile Include="UCenter\DefUCenterSession.cs" />
     <Compile Include="Entity\Component.cs" />
     <Compile Include="Entity\ComponentAttr.cs" />
     <Compile Include="Entity\ComponentFactory.cs" />

@@ -69,8 +69,8 @@
     <Compile Include="Main\ServerNodeStateStart.cs" />
     <Compile Include="Main\ServerNodeStateStop.cs" />
     <Compile Include="Main\ServerType.cs" />
-    <Compile Include="UCenterLib\ServerUCenter.cs" />
-    <Compile Include="UCenterLib\ServerUCenterZkWatcher.cs" />
+    <Compile Include="UCenter\ServerUCenter.cs" />
+    <Compile Include="UCenter\ServerUCenterZkWatcher.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Eb\EbCommon\EbCommon.csproj">
