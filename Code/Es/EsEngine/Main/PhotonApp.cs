@@ -47,6 +47,7 @@ namespace Es
         private ConcurrentQueue<SessionEvent> mQueSessionEvent = new ConcurrentQueue<SessionEvent>();
         private int mNodePort = 0;
         private uint mNodeId = 0;
+        private string mNodeIdStr = "";
         private byte mNodeType = 0;
         private string mNodeTypeString = "";
         private string mProjectName = "";
@@ -56,6 +57,7 @@ namespace Es
         //---------------------------------------------------------------------
         public int NodePort { get { return mNodePort; } }
         public uint NodeId { get { return mNodeId; } }
+        public string NodeIdStr { get { return mNodeIdStr; } }
         public byte NodeType { get { return mNodeType; } }
         public string NodeTypeString { get { return mNodeTypeString; } }
         public string ProjectName { get { return mProjectName; } }
@@ -142,13 +144,27 @@ namespace Es
             string localnode_ipport = ip_addr.ToString() + ":" + NodePort;
             mZkClient = new ZkClient(mServerNodeZkInfo.ip_port);
 
+
+            // 创建服务器zk节点.
+            string tempNodeStr = "/"+ProjectName;
+            if (!mZkClient.sexists(tempNodeStr, false))
+            {
+                mZkClient.screate(tempNodeStr, "", ZK_CONST.ZOO_DEFAULT_NODE);
+            }
+            tempNodeStr = tempNodeStr + "/" + NodeTypeString;
+            if (!mZkClient.sexists(tempNodeStr, false))
+            {
+                mZkClient.screate(tempNodeStr, "", ZK_CONST.ZOO_DEFAULT_NODE);
+            }
+            tempNodeStr = tempNodeStr + "/" + localnode_ipport + ",";
+
             // 向ZkServer获取NodeId
-            string zk_node = mZkClient.screate(mServerNodeZkInfo.servernode_path +
-                localnode_ipport + ",", "", ZK_CONST.ZOO_EPHEMERAL | ZK_CONST.ZOO_SEQUENCE);
+            string zk_node = mZkClient.screate(tempNodeStr, "", ZK_CONST.ZOO_EPHEMERAL | ZK_CONST.ZOO_SEQUENCE);
             string last_str = zk_node.Substring(zk_node.LastIndexOf('/') + 1);
             char[] char_separators = new char[] { ',', ':' };
             string[] list_str = last_str.Split(char_separators);
             mNodeId = uint.Parse(list_str[2]);
+            mNodeIdStr = list_str[2];
             EbLog.Note("NodeId=" + mNodeId);
 
             // 创建EntityMgr

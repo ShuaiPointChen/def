@@ -146,6 +146,7 @@ namespace Zk
     public struct ZK_CONST
     {
         //---------------------------------------------------------------------
+        public readonly static int ZOO_DEFAULT_NODE =  0; //默认永久节点.
         public readonly static int ZOO_EPHEMERAL = 1 << 0; //临时节点，断线自动删除.
         public readonly static int ZOO_SEQUENCE = 1 << 1;  //序列号的节点.
         public static readonly int ADD_WATCH = 1;

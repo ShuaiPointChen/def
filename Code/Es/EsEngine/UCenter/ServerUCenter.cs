@@ -53,8 +53,8 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
     delegateOnLogin mFuncOnLogin;
     ServerUCenterZkWatcher mZkWatcher;
     // 这两个参数从配置文件读取.
-    public string mLoginNodeInfoPath = "/Login/LoginNodeInfo";
-    public string mLoginPath = "/Login/LoginServer";
+    //public string mLoginNodeInfoPath = "/Login/LoginNodeInfo";
+    public string mLoginPath = "";
     // login server 通知gateserver的node.
     string mCurLoginNodePath = "";
     string mCurLoginLockPath = "";
@@ -82,13 +82,24 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
         photon_app.ZkClient.addHandler(mZkWatcher.handler);
         ProjectName = photon_app.ProjectName;
 
-        // get login server
-        string data = getZkClient().sread(mLoginNodeInfoPath, true);
-        if (null != data)
-        {
-            _onGetNodeInfo(data);
-        }
+        string preStr = string.Format("{0}{1}{2}{3}{4}{5}{6}" , "/" , _eUCenter.UCenterProjectName.ToString() , "/" , _eConstLoginNode.LoginServices.ToString() + "/" 
+                                     + ProjectName + "/" );
+        mCurLoginNodePath = preStr + _eConstLoginNode.LoginQueue + "/";
+        mCurLoginLockPath = preStr + _eConstLoginNode.LoginQueueLock + "/";
+        mCurLoginCompleteNodePath = preStr + _eConstLoginNode.LoginCompleteQueue + "/";
+        mCurLoginCompleteLockPath = preStr + _eConstLoginNode.LoginCompleteQueueLock + "/";
+        mCurOfflineNodePath = preStr + _eConstLoginNode.PlayerOfflineNode + "/";
+        mCurOfflineLockPath = preStr + _eConstLoginNode.PlayerOfflineLock + "/";
 
+        // get login server
+        //string data = getZkClient().sread(mLoginNodeInfoPath, true);
+        //if (null != data)
+        //{
+        //    _onGetNodeInfo(data);
+        //}
+
+        string loginServerNodePath = "/" + _eUCenter.UCenterProjectName + "/" + _eUCenter.UCenterNodeName;
+        mLoginPath = loginServerNodePath;
         getZkClient().subscribeChildChanges(mLoginPath, _onLoginServerList);
     }
 
@@ -213,13 +224,9 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
             info.ip = resul[0];
             info.port = resul[1];
             info.id = resul[2];
-            string ctlqNode = string.Format("{0}{1},{2}", mCurLoginNodePath, info.id, photon_app.NodeId);
-            string ctlcqNode = string.Format("{0}{1},{2}", mCurLoginCompleteNodePath, info.id, photon_app.NodeId);
-            string offlineNode = string.Format("{0}{1},{2}", mCurOfflineNodePath, info.id, photon_app.NodeId);
-
-            getZkClient().acreate(ctlqNode, "", ZK_CONST.ZOO_EPHEMERAL, null);
-            getZkClient().acreate(ctlcqNode, "", ZK_CONST.ZOO_EPHEMERAL, null);
-            getZkClient().acreate(offlineNode, "", ZK_CONST.ZOO_EPHEMERAL, null);
+            string ctlqNode = string.Format("{0}{1},{2}", mCurLoginNodePath, info.id, photon_app.NodeIdStr);
+            string ctlcqNode = string.Format("{0}{1},{2}", mCurLoginCompleteNodePath, info.id, photon_app.NodeIdStr);
+            string offlineNode = string.Format("{0}{1},{2}", mCurOfflineNodePath, info.id, photon_app.NodeIdStr);
 
             // 以下两个结点用来watch，create.
             string ctlqLock = string.Format("{0}{1},{2}", mCurLoginLockPath, info.id, photon_app.NodeId);
@@ -237,6 +244,10 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
             param["LoginServerInfo"] = info;
             getZkClient().subscribeExists(info.loginLockNode, _onLoginLockChange, pa);
 
+            getZkClient().subscribeExists(info.loginLockNode, null);
+            getZkClient().subscribeExists(info.loginLockComNode, null);
+            getZkClient().subscribeExists(info.offlineLock, null);
+
             mLoginServer.Add(ser, info);
         }
 
@@ -245,40 +256,58 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
         {
             LoginServerInfo info = null;
             mLoginServer.TryGetValue(ser, out info);
-            getZkClient().adelete(info.loginNode, null);
-            getZkClient().adelete(info.loginComNode, null);
+            //getZkClient().adelete(info.loginNode, null);
+            //getZkClient().adelete(info.loginComNode, null);
 
             // 如果是Login server removed , loginLockNode 肯定也会随之消失.
-            if (info.bloginComLock)
-            {
-                getZkClient().adelete(info.loginLockComNode, null);
-            }
+            //if (info.bloginComLock)
+            //{
+            //    getZkClient().adelete(info.loginLockComNode, null);
+            //}
             mLoginServer.Remove(ser);
         }
     }
 
     //------------------------------------------------------------------------------------
-    void _onGetNodeInfo(string data)
+    //void _onGetNodeInfo(string data)
+    //{
+    //    XmlDocument doc = new XmlDocument();
+    //    doc.LoadXml(data);
+    //    XmlNodeList chd = doc.SelectSingleNode("ServerGroups").ChildNodes;
+    //    if (null != chd)
+    //    {
+    //        foreach (XmlNode child in chd)
+    //        {
+    //            if (ProjectName != child.Name) continue;
+
+    //            mCurLoginNodePath = child.Attributes["LoginQueue"].Value;
+    //            mCurLoginLockPath = child.Attributes["LoginQueueLock"].Value;
+    //            mCurLoginCompleteNodePath = child.Attributes["LoginCompleteQueue"].Value;
+    //            mCurLoginCompleteLockPath = child.Attributes["LoginCompleteQueueLock"].Value;
+    //            mCurOfflineNodePath = child.Attributes["PlayerOfflineNode"].Value;
+    //            mCurOfflineLockPath = child.Attributes["PlayerOfflineLock"].Value;
+
+    //            //mZonePath = child.Attributes["ZoneServer"].Value;
+    //        }
+    //    }
+    //}
+
+    public bool onLockNodeDel(string path )
     {
-        XmlDocument doc = new XmlDocument();
-        doc.LoadXml(data);
-        XmlNodeList chd = doc.SelectSingleNode("ServerGroups").ChildNodes;
-        if (null != chd)
+        foreach(var lg in mLoginServer)
         {
-            foreach (XmlNode child in chd)
+            if(path == lg.Value.loginLockComNode)
             {
-                if (ProjectName != child.Name) continue;
-
-                mCurLoginNodePath = child.Attributes["LoginQueue"].Value;
-                mCurLoginLockPath = child.Attributes["LoginQueueLock"].Value;
-                mCurLoginCompleteNodePath = child.Attributes["LoginCompleteQueue"].Value;
-                mCurLoginCompleteLockPath = child.Attributes["LoginCompleteQueueLock"].Value;
-                mCurOfflineNodePath = child.Attributes["PlayerOfflineNode"].Value;
-                mCurOfflineLockPath = child.Attributes["PlayerOfflineLock"].Value;
-
-                //mZonePath = child.Attributes["ZoneServer"].Value;
+                lg.Value.bloginComLock = false;
+                return true;
+            }
+            if (path == lg.Value.offlineLock)
+            {
+                lg.Value.bofflineLock = false;
+                return true;
             }
         }
+        return false;
     }
 
     //------------------------------------------------------------------------------------

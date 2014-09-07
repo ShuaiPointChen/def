@@ -36,6 +36,14 @@ public class ServerUCenterZkWatcher
             return true;
         }
 
+        if ((int)ZOO_EVENT.DELETED_EVENT_DEF == eve.Type)
+        {
+           if(mCoUCenter.onLockNodeDel(eve.Path))
+           {
+               return true;
+           }
+        }
+        
         //mCoUCenter.OnLoginNodeChange(path, (int)ZOO_EVENT.CREATED_EVENT_DEF == eve.Type, null);
         return false;
     }
