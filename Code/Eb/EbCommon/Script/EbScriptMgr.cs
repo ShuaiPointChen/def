@@ -33,7 +33,7 @@ namespace Eb
         //---------------------------------------------------------------------
         public void Log(string str)
         {
-            EbLog.Note(str);
+            //EbLog.Note(str);
         }
 
         //---------------------------------------------------------------------
@@ -67,7 +67,7 @@ namespace Eb
             {
                 string c = System.IO.File.ReadAllText(i);
                 mMapFile[Path.GetFileNameWithoutExtension(i)] = c;
-                EbLog.Note("解析脚本 file_name=" + Path.GetFileNameWithoutExtension(i));
+                //EbLog.Note("解析脚本 file_name=" + Path.GetFileNameWithoutExtension(i));
                 try
                 {
                     tokens = mEnvironment.ParserToken(c);
