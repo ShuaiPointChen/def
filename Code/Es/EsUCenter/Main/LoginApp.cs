@@ -1,35 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.IO;
 using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading;
-using System.Runtime.InteropServices;
 using System.Xml;
 using Photon.SocketServer;
-using Photon.SocketServer.Diagnostics;
-using Photon.SocketServer.ServerToServer;
-using MySql.Data;
-using MySql.Data.MySqlClient;
 using Eb;
 using Es;
 using Zk;
-
-//public enum _eUCenterEtType : short
-//{
-//    EtApp = 0,
-//    EtLogin,
-//    EtSession
-//}
-
-////-----------------------------------------------------------------------------
-//public enum _eUCenterPartType : byte
-//{
-//    UCenter = 0,
-//    Client
-//}
 
 public class LoginApp<T> : Component<T> where T : ComponentDef, new()
 {
@@ -43,6 +19,7 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
     //-------------------------------------------------------------------------
     public uint NodeId { get { return mUCenterApp.NodeId; } }
     public string NodeIdStr { get { return mUCenterApp.NodeIdStr; } }
+
     //-------------------------------------------------------------------------
     public override void init()
     {
@@ -79,6 +56,11 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
     }
 
     //-------------------------------------------------------------------------
+    public override void onChildInit(Entity child)
+    {
+    }
+
+    //-------------------------------------------------------------------------
     public override void handleEvent(object sender, EntityEvent e)
     {
         if (e is EvMainSessionEvent)
@@ -101,35 +83,33 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
 
                 // do nothing
             }
+        }
+    }
 
-            //if (localType == (byte)_ePartType.Login && remoteType == (byte)_ePartType.Client)
-            //{
-            //    string accountName = (string)(vec_param[2]);
-            //    string password = (string)(vec_param[3]);
-            //    string server = (string)(vec_param[4]);
+    //-------------------------------------------------------------------------
+    public IZkClient getZk()
+    {
+        return mUCenterApp.ZkClient;
+    }
 
-            //    //Es.CPhotonServerPeerS peer = (Es.CPhotonServerPeerS)vec_param[5];
-            //    //mLog.InfoFormat("player loging , account:{0},password:{1},server:{2}"
-            //    //    , accountName, password, server);
+    //-------------------------------------------------------------------------
+    public bool addLoginPlayer(string serverGroup, string account, string password, string channel, RpcSession s)
+    {
+        LoginNode<ComponentDef> serverinfo;
+        if (mServerGroup.TryGetValue(serverGroup, out serverinfo))
+        {
+            return serverinfo.addLoginPlayer(account, password, channel, s);
+        }
+        return false;
+    }
 
-            //    if (accountName == "" || password == "" || server == "")
-            //    {
-            //        //mLog.ErrorFormat("player loging , account:{0},password:{1},server:{2}"
-            //        //, accountName, password, server);
-            //        return;
-            //    }
-
-            //    ClientLoginInfo loginInfo = new ClientLoginInfo();
-            //    loginInfo.account = accountName;
-            //    loginInfo.password = password;
-            //    loginInfo.server = server;
-            //    loginInfo.peer = peer;
-
-            //    if (!addLoginPlayer(loginInfo))
-            //    {
-            //        //mLog.ErrorFormat("{0} not exists! ", server);
-            //    }
-            //}
+    //-------------------------------------------------------------------------
+    public void onGateBack(string server, string account, string result)
+    {
+        LoginNode<ComponentDef> serverinfo;
+        if (mServerGroup.TryGetValue(server, out serverinfo))
+        {
+            serverinfo.gateBackPlayerLoginResult(account, result);
         }
     }
 
@@ -160,93 +140,25 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
 
             Dictionary<string, object> pa = new Dictionary<string, object>();
             pa["LoginNode"] = co_node;
-            mUCenterApp.ZkClient.areadData("/" + mUCenterApp.ProjectName + "/"+ _eConstLoginNode.LoginServices.ToString() + "", false, _onGetServersLoginNeedInfo, pa);
-
+            mUCenterApp.ZkClient.areadData("/" + mUCenterApp.ProjectName + "/" +
+                _eConstLoginNode.LoginServices.ToString() + "", false, _onGetServersLoginNeedInfo, pa);
         }
     }
 
+    //-------------------------------------------------------------------------
     private void _onGetServersLoginNeedInfo(int result, string data, string[] chdn, Dictionary<string, object> param)
     {
-        if(result != 0 ) return ;
+        if (result != 0) return;
         LoginNode<ComponentDef> co_node = param["LoginNode"] as LoginNode<ComponentDef>;
         XmlDocument doc = new XmlDocument();
         doc.LoadXml(data);
         XmlNode zkinfo = doc.SelectSingleNode("ServerInfo/Login");
         string loginNode = zkinfo.Attributes["LoginNode"].Value;
-        string  connStr = zkinfo.Attributes["ConnectionString"].Value;
+        string connStr = zkinfo.Attributes["ConnectionString"].Value;
         co_node.onGetLoginInfo(loginNode, connStr);
 
         Dictionary<string, Object> pa = new Dictionary<string, object>();
         pa["LoginNode"] = co_node;
         mUCenterApp.ZkClient.subscribeChildChanges(loginNode, mZkWatcher._onServerNodeChange, pa);
-
-    }
-
-    //-------------------------------------------------------------------------
-    public override void onChildInit(Entity child)
-    {
-    }
-
-    //-------------------------------------------------------------------------
-    public IZkClient getZk()
-    {
-        return mUCenterApp.ZkClient;
-    }
-
-    //-------------------------------------------------------------------------
-    //public void OnGetNodeInfo(string data)
-    //{
-    //    XmlDocument doc = new XmlDocument();
-    //    doc.LoadXml(data);
-    //    XmlNodeList chd = doc.SelectSingleNode("ServerGroups").ChildNodes;
-    //    if (null != chd)
-    //    {
-    //        foreach (XmlNode child in chd)
-    //        {
-    //            if (mServerGroup.ContainsKey(child.Name)) continue;
-
-    //            if (child.NodeType == XmlNodeType.Comment) continue;
-
-    //            Dictionary<string, object> cache_data = new Dictionary<string, object>();
-    //            cache_data["parent"] = this;
-    //            cache_data["LoginQueue"] = child.Attributes["LoginQueue"].Value;
-    //            cache_data["LoginCompleteQueue"] = child.Attributes["LoginCompleteQueue"].Value;
-    //            cache_data["LoginQueueLock"] = child.Attributes["LoginQueueLock"].Value;
-    //            cache_data["LoginCompleteQueueLock"] = child.Attributes["LoginCompleteQueueLock"].Value;
-    //            cache_data["DbConnectionStr"] = child.Attributes["ConnectionString"].Value;
-    //            cache_data["PlayerOfflineNode"] = child.Attributes["PlayerOfflineNode"].Value;
-    //            cache_data["PlayerOfflineLock"] = child.Attributes["PlayerOfflineLock"].Value;
-    //            cache_data["GateServer"] = child.Attributes["GateServer"].Value;
-    //            cache_data["ZoneServer"] = child.Attributes["ZoneServer"].Value;
-    //            cache_data["DBServer"] = child.Attributes["DBServer"].Value;
-    //            cache_data["ConnectionString"] = child.Attributes["ConnectionString"].Value;
-    //            cache_data["ServerGroupName"] = child.Name;
-
-    //            Entity et_node = EntityMgr.createEmptyEntity("EtNode", cache_data, null);
-    //            LoginNode<ComponentDef> co_node = et_node.addComponent<LoginNode<ComponentDef>>();
-    //            mServerGroup[child.Name] = co_node;
-    //        }
-    //    }
-    //}
-
-    //-------------------------------------------------------------------------
-    public bool addLoginPlayer(string serverGroup, string account, string password, string channel, RpcSession s)
-    {
-        LoginNode<ComponentDef> serverinfo;
-        if (mServerGroup.TryGetValue(serverGroup, out serverinfo))
-        {
-            return serverinfo.addLoginPlayer(account, password, channel, s);
-        }
-        return false;
-    }
-
-    //-------------------------------------------------------------------------
-    public void onGateBack(string server, string account, string result)
-    {
-        LoginNode<ComponentDef> serverinfo;
-        if (mServerGroup.TryGetValue(server, out serverinfo))
-        {
-            serverinfo.gateBackPlayerLoginResult(account, result);
-        }
     }
 }

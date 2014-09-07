@@ -56,13 +56,12 @@ public class LoginUCenterSession<T> : Component<T> where T : DefUCenterSession, 
     {
         EbLog.Note("LoginUCenterSession.client2LoginLogin()");
 
-       string account  = (string)map_param[0];
-       string password = (string)map_param[1];
-       string serverGroup = (string)map_param[2];
-       string channel = (string)map_param[3];
+        string account = (string)map_param[0];
+        string password = (string)map_param[1];
+        string serverGroup = (string)map_param[2];
+        string channel = (string)map_param[3];
 
-      LoginApp<ComponentDef> login = EntityMgr.findFirstEntity("EtApp").getComponent<LoginApp<ComponentDef>>();
-      login.addLoginPlayer(serverGroup, account, password, channel ,  s);
-
+        LoginApp<ComponentDef> login = EntityMgr.findFirstEntity("EtApp").getComponent<LoginApp<ComponentDef>>();
+        login.addLoginPlayer(serverGroup, account, password, channel, s);
     }
 }

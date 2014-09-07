@@ -52,7 +52,8 @@ public class ClientUCenter<T> : Component<T>, RpcSessionListener where T : Compo
     //---------------------------------------------------------------------
     public void onSessionConnect(byte node_type_local, byte node_type_remote, RpcSession session)
     {
-        EbLog.Note("onSessionConnect:connect successed !");
+        EbLog.Note("ClientUCenter.onSessionConnect()");
+
         // 发送login请求
         //ushort methdo_id = 2;
         //Dictionary<byte, object> map_param = new Dictionary<byte, object>();
@@ -66,7 +67,7 @@ public class ClientUCenter<T> : Component<T>, RpcSessionListener where T : Compo
     //---------------------------------------------------------------------
     public void onSessionDisconnect(byte node_type_local, byte node_type_remote, RpcSession session)
     {
-        EbLog.Note("onSessionDisconnect: disconnected !");
+        EbLog.Note("ClientUCenter.onSessionDisconnect()");
     }
 
     //---------------------------------------------------------------------
