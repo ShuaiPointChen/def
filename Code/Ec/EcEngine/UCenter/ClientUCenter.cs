@@ -79,7 +79,7 @@ public class ClientUCenter<T> : Component<T>, RpcSessionListener where T : Compo
         }
 
         string ipport = ip + ":" + port;
-        EbLog.Note("connect to login : " + ipport);
+        EbLog.Note("ClientUCenter.login() " + ipport);
         mPeer.Connect(ipport, "EsUCenter");
     }
 }
