@@ -16,10 +16,10 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
     UCenterApp mUCenterApp = (UCenterApp)ApplicationBase.Instance;
     UCenterZkWatcher mZkWatcher;
 
+    public string mServersPath = "";
     //-------------------------------------------------------------------------
     public uint NodeId { get { return mUCenterApp.NodeId; } }
     public string NodeIdStr { get { return mUCenterApp.NodeIdStr; } }
-
     //-------------------------------------------------------------------------
     public override void init()
     {
@@ -27,21 +27,14 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
 
         EntityMgr.getDefaultEventPublisher().addHandler(Entity);
 
-        //string[] child = mUCenterApp.ZkClient.sget_children ("/" + mUCenterApp.ProjectName +"/" +  mLoginNodeInfoPath, true);
+        mServersPath ="/" + mUCenterApp.ProjectName + "/"
+            + _eConstLoginNode.LoginServices.ToString();
 
-        mUCenterApp.ZkClient.subscribeChildChanges("/" + mUCenterApp.ProjectName + "/"
-            + _eConstLoginNode.LoginServices.ToString(), _onServerGroupChange);
-
-        //string data = mUCenterApp.ZkClient.sread(mLoginNodeInfoPath, true);
-        //if (null != data)
-        //{
-        //    OnGetNodeInfo(data);
-        //}
+        mUCenterApp.ZkClient.subscribeChildChanges(mServersPath, onServerGroupChange);
 
         mZkWatcher = new UCenterZkWatcher(this);
         PhotonApp photon_app = (PhotonApp)ApplicationBase.Instance;
         photon_app.ZkClient.addHandler(mZkWatcher.handler);
-        //mUCenterApp.ZkClient.subscribeDataChanges(mLoginNodeInfoPath, mZkWatcher.onLoginNodeInfo);
     }
 
     //-------------------------------------------------------------------------
@@ -52,11 +45,6 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
 
     //-------------------------------------------------------------------------
     public override void update(float elapsed_tm)
-    {
-    }
-
-    //-------------------------------------------------------------------------
-    public override void onChildInit(Entity child)
     {
     }
 
@@ -83,38 +71,40 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
 
                 // do nothing
             }
+
+            //if (localType == (byte)_ePartType.Login && remoteType == (byte)_ePartType.Client)
+            //{
+            //    string accountName = (string)(vec_param[2]);
+            //    string password = (string)(vec_param[3]);
+            //    string server = (string)(vec_param[4]);
+
+            //    //Es.CPhotonServerPeerS peer = (Es.CPhotonServerPeerS)vec_param[5];
+            //    //mLog.InfoFormat("player loging , account:{0},password:{1},server:{2}"
+            //    //    , accountName, password, server);
+
+            //    if (accountName == "" || password == "" || server == "")
+            //    {
+            //        //mLog.ErrorFormat("player loging , account:{0},password:{1},server:{2}"
+            //        //, accountName, password, server);
+            //        return;
+            //    }
+
+            //    ClientLoginInfo loginInfo = new ClientLoginInfo();
+            //    loginInfo.account = accountName;
+            //    loginInfo.password = password;
+            //    loginInfo.server = server;
+            //    loginInfo.peer = peer;
+
+            //    if (!addLoginPlayer(loginInfo))
+            //    {
+            //        //mLog.ErrorFormat("{0} not exists! ", server);
+            //    }
+            //}
         }
     }
 
     //-------------------------------------------------------------------------
-    public IZkClient getZk()
-    {
-        return mUCenterApp.ZkClient;
-    }
-
-    //-------------------------------------------------------------------------
-    public bool addLoginPlayer(string serverGroup, string account, string password, string channel, RpcSession s)
-    {
-        LoginNode<ComponentDef> serverinfo;
-        if (mServerGroup.TryGetValue(serverGroup, out serverinfo))
-        {
-            return serverinfo.addLoginPlayer(account, password, channel, s);
-        }
-        return false;
-    }
-
-    //-------------------------------------------------------------------------
-    public void onGateBack(string server, string account, string result)
-    {
-        LoginNode<ComponentDef> serverinfo;
-        if (mServerGroup.TryGetValue(server, out serverinfo))
-        {
-            serverinfo.gateBackPlayerLoginResult(account, result);
-        }
-    }
-
-    //-------------------------------------------------------------------------
-    private void _onServerGroupChange(int result, string data, string[] chdn, Dictionary<string, object> param)
+    public void onServerGroupChange(int result, string data, string[] chdn, Dictionary<string, object> param)
     {
         if (result != 0) return;
 
@@ -140,25 +130,59 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
 
             Dictionary<string, object> pa = new Dictionary<string, object>();
             pa["LoginNode"] = co_node;
-            mUCenterApp.ZkClient.areadData("/" + mUCenterApp.ProjectName + "/" +
-                _eConstLoginNode.LoginServices.ToString() + "", false, _onGetServersLoginNeedInfo, pa);
+            mUCenterApp.ZkClient.areadData("/" + mUCenterApp.ProjectName + "/" + _eConstLoginNode.LoginServices.ToString() + "/" + sv, false, _onGetServersLoginNeedInfo, pa);
+
         }
     }
 
-    //-------------------------------------------------------------------------
     private void _onGetServersLoginNeedInfo(int result, string data, string[] chdn, Dictionary<string, object> param)
     {
-        if (result != 0) return;
+        if(result != 0 ) return ;
         LoginNode<ComponentDef> co_node = param["LoginNode"] as LoginNode<ComponentDef>;
         XmlDocument doc = new XmlDocument();
         doc.LoadXml(data);
         XmlNode zkinfo = doc.SelectSingleNode("ServerInfo/Login");
         string loginNode = zkinfo.Attributes["LoginNode"].Value;
-        string connStr = zkinfo.Attributes["ConnectionString"].Value;
+        string  connStr = zkinfo.Attributes["ConnectionString"].Value;
         co_node.onGetLoginInfo(loginNode, connStr);
 
         Dictionary<string, Object> pa = new Dictionary<string, object>();
         pa["LoginNode"] = co_node;
+        pa["path"] = loginNode;
         mUCenterApp.ZkClient.subscribeChildChanges(loginNode, mZkWatcher._onServerNodeChange, pa);
+
+    }
+
+    //-------------------------------------------------------------------------
+    public override void onChildInit(Entity child)
+    {
+    }
+
+    //-------------------------------------------------------------------------
+    public IZkClient getZk()
+    {
+        return mUCenterApp.ZkClient;
+    }
+
+
+    //-------------------------------------------------------------------------
+    public bool addLoginPlayer(string serverGroup, string account, string password, string channel, RpcSession s)
+    {
+        LoginNode<ComponentDef> serverinfo;
+        if (mServerGroup.TryGetValue(serverGroup, out serverinfo))
+        {
+            return serverinfo.addLoginPlayer(account, password, channel, s);
+        }
+        return false;
+    }
+
+    //-------------------------------------------------------------------------
+    public void onGateBack(string server, string account, string result)
+    {
+        LoginNode<ComponentDef> serverinfo;
+        if (mServerGroup.TryGetValue(server, out serverinfo))
+        {
+            serverinfo.gateBackPlayerLoginResult(account, result);
+        }
     }
 }

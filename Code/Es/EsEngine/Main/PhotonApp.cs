@@ -238,6 +238,9 @@ namespace Es
             {
                 mStopwatch.Restart();
 
+                //更新zk
+                ZkClient.update();
+
                 // session连接，断开通知
                 SessionEvent se;
                 while (!mQueSessionEvent.IsEmpty)
