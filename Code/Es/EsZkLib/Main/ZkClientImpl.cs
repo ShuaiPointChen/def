@@ -260,7 +260,7 @@ namespace Zk
                 hp.handler = handler;
                 hp.param = param;
                 _childListener.Add(path , hp);
-                awatchForChilds(path, handler);
+                awatchForChilds(path, handler , param);
                 EbLog.Note("Subscribed child changes for:" + path);
             }
         }
@@ -285,7 +285,7 @@ namespace Zk
                 hp.handler = handler;
                 hp.param = param;
                 _dataListener.Add(path, hp);
-                areadData(path, true);
+                areadData(path, true , handler , param);
             }
         }
 
@@ -309,7 +309,7 @@ namespace Zk
                 hp.handler = handler;
                 hp.param = param;
                 _existsListener.Add(path, hp);
-                aexists(path, true);
+                aexists(path, true , handler  , param);
             }
         }
 

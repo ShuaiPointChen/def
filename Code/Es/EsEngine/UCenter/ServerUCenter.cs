@@ -15,16 +15,12 @@ using Eb;
 using Es;
 using Zk;
 
-public class ServerInfo
-{
-    public string Id;     // ZooKeeper 的唯一id
-    public string Ip;     // server的ip
-    public string Port;   // server的port
-}
 
 public class LoginServerInfo
 {
     public string id;
+    public string ip;
+    public string port;
     public string loginLockNode;       // Login --> Gate
     public string loginLockComNode;    // Gate --> Login
     public string loginNode;       // Login --> Gate
@@ -35,8 +31,6 @@ public class LoginServerInfo
     public bool bloginLock = false;
     public bool bloginComLock = false;
     public bool bofflineLock = false;
-    public string ip;
-    public string port;
 }
 
 public class LoginPlayer
@@ -90,13 +84,6 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
         mCurLoginCompleteLockPath = preStr + _eConstLoginNode.LoginCompleteQueueLock + "/";
         mCurOfflineNodePath = preStr + _eConstLoginNode.PlayerOfflineNode + "/";
         mCurOfflineLockPath = preStr + _eConstLoginNode.PlayerOfflineLock + "/";
-
-        // get login server
-        //string data = getZkClient().sread(mLoginNodeInfoPath, true);
-        //if (null != data)
-        //{
-        //    _onGetNodeInfo(data);
-        //}
 
         string loginServerNodePath = "/" + _eUCenter.UCenterProjectName + "/" + _eUCenter.UCenterNodeName;
         mLoginPath = loginServerNodePath;
@@ -244,7 +231,6 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
             param["LoginServerInfo"] = info;
             getZkClient().subscribeExists(info.loginLockNode, _onLoginLockChange, pa);
 
-            getZkClient().subscribeExists(info.loginLockNode, null);
             getZkClient().subscribeExists(info.loginLockComNode, null);
             getZkClient().subscribeExists(info.offlineLock, null);
 
@@ -256,42 +242,14 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
         {
             LoginServerInfo info = null;
             mLoginServer.TryGetValue(ser, out info);
-            //getZkClient().adelete(info.loginNode, null);
-            //getZkClient().adelete(info.loginComNode, null);
 
-            // 如果是Login server removed , loginLockNode 肯定也会随之消失.
-            //if (info.bloginComLock)
-            //{
-            //    getZkClient().adelete(info.loginLockComNode, null);
-            //}
+            getZkClient().unsubscribeExists(info.loginLockComNode);
+            getZkClient().unsubscribeExists(info.offlineLock);
+
             mLoginServer.Remove(ser);
         }
     }
-
     //------------------------------------------------------------------------------------
-    //void _onGetNodeInfo(string data)
-    //{
-    //    XmlDocument doc = new XmlDocument();
-    //    doc.LoadXml(data);
-    //    XmlNodeList chd = doc.SelectSingleNode("ServerGroups").ChildNodes;
-    //    if (null != chd)
-    //    {
-    //        foreach (XmlNode child in chd)
-    //        {
-    //            if (ProjectName != child.Name) continue;
-
-    //            mCurLoginNodePath = child.Attributes["LoginQueue"].Value;
-    //            mCurLoginLockPath = child.Attributes["LoginQueueLock"].Value;
-    //            mCurLoginCompleteNodePath = child.Attributes["LoginCompleteQueue"].Value;
-    //            mCurLoginCompleteLockPath = child.Attributes["LoginCompleteQueueLock"].Value;
-    //            mCurOfflineNodePath = child.Attributes["PlayerOfflineNode"].Value;
-    //            mCurOfflineLockPath = child.Attributes["PlayerOfflineLock"].Value;
-
-    //            //mZonePath = child.Attributes["ZoneServer"].Value;
-    //        }
-    //    }
-    //}
-
     public bool onLockNodeDel(string path )
     {
         foreach(var lg in mLoginServer)
