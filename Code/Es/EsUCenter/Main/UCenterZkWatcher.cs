@@ -55,27 +55,19 @@ public class UCenterZkWatcher
 
     void _loginComNode(int result, string data, string[] servers, Dictionary<string, object> param)
     {
+        _tLoginResponseInfo lgRepInfo = EbJsonHelper.deserialize<_tLoginResponseInfo>(data);
+
         GateInfo gt = param["gateInfo"] as GateInfo;
         string path = param["path"] as string;
 
-            if (gt.bloginComLock == false)
-            {
-                EbLog.Error("Error get unlock data: " + path);
-                return ;
-            }
-            string[] resul;
-            char[] charSeparators = new char[] { ',', ':' };
-            resul = data.Split(charSeparators);
-            int index = 0;
-            while (index < resul.Length)
-            {
-                string account = resul[index++];
-                string serverGroup = resul[index++];
-                string logresult = resul[index++];
-                mCoApp.onGateBack(serverGroup, account, logresult);
-            }
-            // 通知gate已经处理了数据.
-            mCoApp.getZk().adelete(gt.loginLockComNode , null);
+        if (gt.bloginComLock == false)
+        {
+            EbLog.Error("Error get unlock data: " + path);
+            return;
+        }
+        mCoApp.onGateBack(lgRepInfo.server_group, lgRepInfo.acc, lgRepInfo.result, lgRepInfo.map_userdata);
+        // 通知gate已经处理了数据.
+        mCoApp.getZk().adelete(gt.loginLockComNode, null);
     }
 
     public void _onServerNodeChange(int result, string data, string[] chdn, Dictionary<string, object> param)
@@ -183,7 +175,7 @@ public class UCenterZkWatcher
                         gt.Value.bloginComLock = true;
 
                         Dictionary<string, object> pa = new Dictionary<string, object>();
-                        pa["gateInfo"] = gt;
+                        pa["gateInfo"] = gt.Value;
                         pa["path"] = path;
                         mCoApp.getZk().areadData(gt.Value.loginComNode, false, _loginComNode , pa);
                     }

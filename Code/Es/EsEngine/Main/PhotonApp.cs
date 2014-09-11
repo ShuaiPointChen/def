@@ -53,6 +53,7 @@ namespace Es
         private string mProjectName = "";
         private IZkClient mZkClient;
         private ServerNodeZkInfo mServerNodeZkInfo;
+        private string mLocalIpPort = "";
 
         //---------------------------------------------------------------------
         public int NodePort { get { return mNodePort; } }
@@ -61,6 +62,7 @@ namespace Es
         public byte NodeType { get { return mNodeType; } }
         public string NodeTypeString { get { return mNodeTypeString; } }
         public string ProjectName { get { return mProjectName; } }
+        public string LocalIpPort { get { return mLocalIpPort; } }
         public IZkClient ZkClient { get { return mZkClient; } }
         public EntityMgr EntityMgr { get { return mEntityMgr; } }
 
@@ -143,7 +145,7 @@ namespace Es
             IPAddress ip_addr = Dns.Resolve(host_name).AddressList[0];//获得当前IP地址
             string localnode_ipport = ip_addr.ToString() + ":" + NodePort;
             mZkClient = new ZkClient(mServerNodeZkInfo.ip_port);
-
+            mLocalIpPort = localnode_ipport;
 
             // 创建服务器zk节点.
             string tempNodeStr = "/"+ProjectName;

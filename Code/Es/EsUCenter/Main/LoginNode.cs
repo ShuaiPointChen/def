@@ -64,11 +64,13 @@ public class ClientLoginInfo
     public string password;
     public string server;
     public string chanel;
-    public RpcSession session;
+    public IComponent session;
     public string gateId = "";
     public eLogingState state = eLogingState.connect;
     public eLoginResult result = eLoginResult.unknow;
+    public Int64 accountId = 0;
     public string tokenId = "";
+    public Dictionary<byte, object> param = null;
 }
 
 /// <summary>
@@ -150,6 +152,12 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
         EbLog.Note("CellApp.release() EntityType=" + Entity.getEntityType() + " EntityRpcId=" + Entity.getEntityRpcId());
     }
 
+    private static int _IncreaseId = 0;
+    private static int generateId()
+    {
+        return Interlocked.Increment(ref _IncreaseId);
+    }
+
     //-------------------------------------------------------------------------
     //  暂时放这里，应该放入独立线程(防止阻塞用户登陆).
     public override void update(float elapsed_tm)
@@ -175,7 +183,7 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
             if (info.state == eLogingState.connect)
             {
                 eLoginResult rtCode = eLoginResult.accountNotExists;
-                string sql = string.Format("SELECT AccountName, Password , LoginStatus FROM Account WHERE AccountName='{0}';", info.account);
+                string sql = string.Format("SELECT AccountName, Password , LoginStatus , AccountId FROM Account WHERE AccountName='{0}';", info.account);
 
                 EbLog.Note("Login SQL STR :" + sql);
 
@@ -198,6 +206,8 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
                         {
                             // 登录成功.
                             rtCode = eLoginResult.success;
+                            info.tokenId = generateId().ToString();
+                            info.accountId = (long)rdr["AccountId"];
                         }
                         info.result = rtCode;
                     }
@@ -218,6 +228,7 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
 
                         MySqlCommand updateCmd = new MySqlCommand(sql, connection);
                         cmd.ExecuteNonQuery();
+
                     }
 
                 }
@@ -255,7 +266,7 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
                     if (!ser.bloginLock)
                     {
                         // 目前只有账号信息和当前longin id放入ZooKeeper.
-                        string dt = info.account + "," + mCoApp.NodeIdStr;
+                        string dt = info.account + "," + mCoApp.NodeIdStr + "," + info.tokenId.ToString() + "," + info.accountId.ToString();
                         info.gateId = ser.id;
                         mCoApp.getZk().awriteData(ser.loginNode, dt , null);
                         EbLog.Note("send to gate node :" + ser.loginNode + ",account:" + dt);
@@ -301,20 +312,23 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
                     //反馈消息给client.
                     //if (info.peer.Connected)// todo，判定session是否处于连接状态
                     {
-                        Dictionary<byte, object> p = new Dictionary<byte, object>();
-                        p[0] = curState.ToString();
-                        if (curState == eLoginStatus.online)
-                        {
-                            var list = mGateInfo.Where(gt => gt.Value.id.Equals(info.gateId));
-                            p[1] = list.First().Value.ipport;
-                            p[2] = info.tokenId;
-                        }
-                        else
-                        {
-                            p[1] = info.result.ToString();
-                        }
+                        //Dictionary<byte, object> p = new Dictionary<byte, object>();
+                        //p[0] = curState.ToString();
+                        //if (curState == eLoginStatus.online)
+                        //{
+                        //    var list = mGateInfo.Where(gt => gt.Value.id.Equals(info.gateId));
+                        //    p[1] = list.First().Value.ipport;
+                        //    p[2] = info.tokenId;
+                        //}
+                        //else
+                        //{
+                        //    p[1] = info.result.ToString();
+                        //}
 
                         // todo，添加session发送任意数据的方法
+                        LoginUCenterSession<DefUCenterSession> se = info.session as LoginUCenterSession<DefUCenterSession> ;
+                        se.login2ClientLogin(curState.ToString(), info.tokenId , info.param );
+                        
                         //OperationResponse operation_response = new OperationResponse(1, p);
                         //SendResult r = info.peer.SendOperationResponse(operation_response, new SendParameters { ChannelId = 0 });
                         ////info.session.getRpcPeer().sendEntityRpcData()
@@ -379,11 +393,12 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
     /// </summary>
     /// <param name="account">玩家账号</param>
     /// <param name="result">结果</param>
-    public void gateBackPlayerLoginResult(string account, string result)
+    public void gateBackPlayerLoginResult(string account, string result , Dictionary<byte , object> param)
     {
         ClientLoginInfo player = null;
         if (mLoginPlayerQueue.TryGetValue(account, out player))
         {
+            player.param = param;
             if (result == "success")
             {
                 player.state = eLogingState.gateBackSuccess;
@@ -413,7 +428,7 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
     /// <param name="password">密码</param>
     /// <param name="chanel">渠道</param>
     /// <returns></returns>
-    public bool addLoginPlayer(string account, string password, string chanel, RpcSession s)
+    public bool addLoginPlayer(string account, string password, string chanel, IComponent s)
     {
         if (mLoginPlayerQueue.ContainsKey(account)) return false;
         ClientLoginInfo player = new ClientLoginInfo();

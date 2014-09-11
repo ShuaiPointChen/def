@@ -62,7 +62,24 @@ public class LoginUCenterSession<T> : Component<T> where T : DefUCenterSession, 
        string channel = (string)map_param[3];
 
       LoginApp<ComponentDef> login = EntityMgr.findFirstEntity("EtApp").getComponent<LoginApp<ComponentDef>>();
-      login.addLoginPlayer(serverGroup, account, password, channel ,  s);
+      login.addLoginPlayer(serverGroup, account, password, channel ,  this);
 
+    }
+    //-------------------------------------------------------------------------
+    // 反馈登陆请求
+    public void login2ClientLogin(string result , string token , Dictionary<byte , object> map_param)
+    {
+        EbLog.Note("LoginUCenterSession.client2LoginLogin()");
+
+        Dictionary<byte, object> map_ret = new Dictionary<byte, object>();
+        map_ret[0] = result;
+        map_ret[1] = token;
+        map_ret[2] = (byte)map_param.Count;
+        for (byte idx = 0; idx < map_param.Count; idx++ )
+        {
+            map_ret[(byte)(3 + idx)] = map_param[idx];
+        }
+            
+        rpcOne(1, 1001 , map_ret);
     }
 }

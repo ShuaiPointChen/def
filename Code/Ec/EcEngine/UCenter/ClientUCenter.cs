@@ -5,8 +5,12 @@ using Eb;
 
 public class ClientUCenter<T> : Component<T>, RpcSessionListener where T : ComponentDef, new()
 {
+    public delegate void login2ClientOnLoginHandler(string result, string token, Dictionary<byte, object> map_param);
     //-------------------------------------------------------------------------
     Ec.PhotonClientPeer mPeer;
+
+    //-------------------------------------------------------------------------
+    private login2ClientOnLoginHandler mlogin2ClientHandler = null;
 
     //-------------------------------------------------------------------------
     public override void init()
@@ -81,5 +85,20 @@ public class ClientUCenter<T> : Component<T>, RpcSessionListener where T : Compo
         string ipport = ip + ":" + port;
         EbLog.Note("ClientUCenter.login() " + ipport);
         mPeer.Connect(ipport, "EsUCenter");
+    }
+
+    public void setonLoginHnadler(login2ClientOnLoginHandler handler)
+    {
+        mlogin2ClientHandler = handler;
+    }
+
+    //public login2ClientOnLoginHandler getLoginHandler()
+    //{
+    //    return mlogin2ClientHandler;
+    //}
+
+    internal void _onLogin(string result, string token, Dictionary<byte, object> map_param)
+    {
+        mlogin2ClientHandler(result,token,map_param);
     }
 }

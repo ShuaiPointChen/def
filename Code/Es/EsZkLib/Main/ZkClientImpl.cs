@@ -357,19 +357,37 @@ namespace Zk
             {
                 zkHandlerParam hp;
                 _childListener.TryGetValue(path, out hp);
-                awatchForChilds(path, hp.handler , hp.param);
+                if(hp != null)
+                {
+                    awatchForChilds(path, hp.handler, hp.param);
+                }
+                else
+                {
+                    awatchForChilds(path, null);
+                }
+                
             }
             if (_dataListener.ContainsKey(path))
             {
                 zkHandlerParam hp;
                 _childListener.TryGetValue(path, out hp);
-                areadData(path, true, hp.handler, hp.param);
+                if(hp!=null)
+                {
+                    areadData(path, true, hp.handler, hp.param);
+                }
+                else 
+                {
+                    areadData(path, true, null);
+                }
             }
             if (_existsListener.ContainsKey(path))
             {
                 zkHandlerParam hp;
                 _childListener.TryGetValue(path, out hp);
-                aexists(path, true, hp.handler, hp.param);
+                if(hp != null)
+                {
+                    aexists(path, true, hp.handler, hp.param);
+                }
             }
 
             WatchedEvent ev = new WatchedEvent(state, type, path);
