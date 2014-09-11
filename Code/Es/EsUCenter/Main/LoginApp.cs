@@ -166,7 +166,7 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
 
 
     //-------------------------------------------------------------------------
-    public bool addLoginPlayer(string serverGroup, string account, string password, string channel, RpcSession s)
+    public bool addLoginPlayer(string serverGroup, string account, string password, string channel, IComponent s)
     {
         LoginNode<ComponentDef> serverinfo;
         if (mServerGroup.TryGetValue(serverGroup, out serverinfo))
@@ -177,12 +177,12 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
     }
 
     //-------------------------------------------------------------------------
-    public void onGateBack(string server, string account, string result)
+    public void onGateBack(string server, string account, string result , Dictionary<byte , object> param)
     {
         LoginNode<ComponentDef> serverinfo;
         if (mServerGroup.TryGetValue(server, out serverinfo))
         {
-            serverinfo.gateBackPlayerLoginResult(account, result);
+            serverinfo.gateBackPlayerLoginResult(account, result, param);
         }
     }
 }

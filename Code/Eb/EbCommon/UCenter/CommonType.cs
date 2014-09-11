@@ -40,4 +40,13 @@ namespace Eb
         public readonly static string UCenterProjectName = "UCenter";
         public readonly static string UCenterNodeName = "UCenter";
     }
+    //-------------------------------------------------------------------------
+    public struct _tLoginResponseInfo
+    {
+        public string acc;
+        public string server_group;
+        public string result;
+        public Dictionary<byte, object> map_userdata;
+    }
+
 }
