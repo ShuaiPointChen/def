@@ -18,14 +18,6 @@ public class ClientUCenterSession<T> : Component<T> where T : ComponentDef, new(
         // 设置session
         RpcSession session = (RpcSession)Entity.getCacheData("RemoteSession");
         Entity.setSession((byte)_eUCenterNodeType.UCenter, session);
-
-        // 发送登陆请求
-        Dictionary<byte, object> map_param = new Dictionary<byte, object>();
-        map_param[0] = "test1001";
-        map_param[1] = "1";
-        map_param[2] = "Dragon";
-        map_param[3] = "app_channel";
-        rpcOne((byte)_eUCenterNodeType.UCenter, (ushort)_eUCenterMethodType.client2LoginLogin, map_param);
     }
 
     //-------------------------------------------------------------------------
@@ -70,6 +62,22 @@ public class ClientUCenterSession<T> : Component<T> where T : ComponentDef, new(
         }
 
         mCoUCenter._onLogin(result, token, param);
+    }
+
+    //-------------------------------------------------------------------------
+    public void login(string acc, string pwd, string project_name, string channel_name)
+    {
+        // 发送登陆请求
+        Dictionary<byte, object> map_param = new Dictionary<byte, object>();
+        map_param[0] = acc;
+        map_param[1] = pwd;
+        map_param[2] = project_name;
+        map_param[3] = channel_name;
+        //map_param[0] = "test1001";
+        //map_param[1] = "1";
+        //map_param[2] = "Dragon";
+        //map_param[3] = "app_channel";
+        rpcOne((byte)_eUCenterNodeType.UCenter, (ushort)_eUCenterMethodType.client2LoginLogin, map_param);
     }
 
     //-------------------------------------------------------------------------
