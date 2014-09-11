@@ -24,25 +24,35 @@ namespace Eb
     public class EntityEventPublisher
     {
         //---------------------------------------------------------------------
-        EntityMgr mEntityMgr;
         public event EntityEventHandler Handler;
+        EntityMgr mEntityMgr;
+        string mPublisherName = "";
 
         //---------------------------------------------------------------------
         public EntityEventPublisher(EntityMgr entity_mgr)
         {
             mEntityMgr = entity_mgr;
+            mPublisherName = GetType().Name;
         }
 
         //-------------------------------------------------------------------------
         public void addHandler(Entity entity)
         {
-            Handler += entity._handleEvent;
+            if (!entity._existEvPublisher(mPublisherName))
+            {
+                Handler += entity._handleEvent;
+                entity._addEvPublisher(mPublisherName);
+            }
         }
 
         //-------------------------------------------------------------------------
         public void removeHandler(Entity entity)
         {
-            Handler -= entity._handleEvent;
+            if (entity._existEvPublisher(mPublisherName))
+            {
+                Handler -= entity._handleEvent;
+                entity._removeEvPublisher(mPublisherName);
+            }
         }
 
         //---------------------------------------------------------------------

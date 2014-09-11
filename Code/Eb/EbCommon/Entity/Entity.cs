@@ -18,6 +18,7 @@ namespace Eb
         private Dictionary<byte, RpcSession> mMapSessionOne2One = new Dictionary<byte, RpcSession>();
         private Dictionary<byte, Dictionary<ulong, Entity>> mMapSessionN2One = null;
         private Dictionary<string, IComponent> mMapComponent = new Dictionary<string, IComponent>();
+        private List<string> mListEventPublisher;
 
         //---------------------------------------------------------------------
         public EntityMgr EntityMgr { get; private set; }
@@ -599,6 +600,37 @@ namespace Eb
                     return;
                 }
             }
+        }
+
+        //---------------------------------------------------------------------
+        internal void _addEvPublisher(string ev_handler_name)
+        {
+            if (mListEventPublisher == null)
+            {
+                mListEventPublisher = new List<string>();
+            }
+
+            mListEventPublisher.Add(ev_handler_name);
+        }
+
+        //---------------------------------------------------------------------
+        internal void _removeEvPublisher(string ev_publisher_name)
+        {
+            if (mListEventPublisher != null)
+            {
+                mListEventPublisher.Remove(ev_publisher_name);
+            }
+        }
+
+        //---------------------------------------------------------------------
+        internal bool _existEvPublisher(string ev_publisher_name)
+        {
+            if (mListEventPublisher != null)
+            {
+                return mListEventPublisher.Contains(ev_publisher_name);
+            }
+
+            return false;
         }
 
         //---------------------------------------------------------------------

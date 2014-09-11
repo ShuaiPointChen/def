@@ -171,7 +171,13 @@ namespace Eb
 
                 EntityMgrListener listener = mEntityMgr._getListener();
                 if (listener == null) return;
-                listener.onRpcEntityCreateRemote(data.session_recv, entity_data, data.method_id == 0 ? false : true);
+                Entity et_new = listener.onRpcEntityCreateRemote(data.session_recv, 
+                    entity_data, data.method_id == 0 ? false : true);
+                
+                var ev = mEntityMgr.getDefaultEventPublisher().genEvent<EvEntityCreateRemote>();
+                ev.entity = et_new;
+                ev.entity_data = entity_data;
+                ev.send(null);
             }
             else if (cmd_id == (byte)_eRpcCmd.EntityDestroy)
             {

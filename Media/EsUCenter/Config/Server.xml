@@ -1,0 +1,5 @@
+<!-- PhotonApp Config -->
+<Server>
+	<ZkInfo IpPort="121.40.153.103:2181" ServerNodePath="/Login/LoginServer/" />
+	<ServerInfo ProjectName="UCenter" NodeType="255" NodeTypeString="UCenter" NodePort="5880" />
+</Server>

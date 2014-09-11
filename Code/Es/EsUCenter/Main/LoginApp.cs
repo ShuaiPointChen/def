@@ -11,15 +11,14 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
 {
     //-------------------------------------------------------------------------
     public Dictionary<string, LoginNode<ComponentDef>> mServerGroup = new Dictionary<string, LoginNode<ComponentDef>>();
-    // 读配置文件.
-    //public readonly static string mLoginNodeInfoPath = "/LoginServices";
     UCenterApp mUCenterApp = (UCenterApp)ApplicationBase.Instance;
     UCenterZkWatcher mZkWatcher;
-
     public string mServersPath = "";
+
     //-------------------------------------------------------------------------
     public uint NodeId { get { return mUCenterApp.NodeId; } }
     public string NodeIdStr { get { return mUCenterApp.NodeIdStr; } }
+
     //-------------------------------------------------------------------------
     public override void init()
     {
@@ -62,7 +61,8 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
                 // 连接消息
                 Dictionary<string, object> cache_data = new Dictionary<string, object>();
                 cache_data["RemoteSession"] = ev.Se.session;
-                Entity et_ucentersession = EntityMgr.createEmptyEntity("EtUCenterSession", cache_data, Entity);
+                Entity et_ucentersession = EntityMgr.createEmptyEntity(
+                    _eUCenterEtType.EtUCenterSession.ToString(), cache_data, Entity);
                 et_ucentersession.addComponent<LoginUCenterSession<DefUCenterSession>>();
             }
             else
@@ -71,35 +71,6 @@ public class LoginApp<T> : Component<T> where T : ComponentDef, new()
 
                 // do nothing
             }
-
-            //if (localType == (byte)_ePartType.Login && remoteType == (byte)_ePartType.Client)
-            //{
-            //    string accountName = (string)(vec_param[2]);
-            //    string password = (string)(vec_param[3]);
-            //    string server = (string)(vec_param[4]);
-
-            //    //Es.CPhotonServerPeerS peer = (Es.CPhotonServerPeerS)vec_param[5];
-            //    //mLog.InfoFormat("player loging , account:{0},password:{1},server:{2}"
-            //    //    , accountName, password, server);
-
-            //    if (accountName == "" || password == "" || server == "")
-            //    {
-            //        //mLog.ErrorFormat("player loging , account:{0},password:{1},server:{2}"
-            //        //, accountName, password, server);
-            //        return;
-            //    }
-
-            //    ClientLoginInfo loginInfo = new ClientLoginInfo();
-            //    loginInfo.account = accountName;
-            //    loginInfo.password = password;
-            //    loginInfo.server = server;
-            //    loginInfo.peer = peer;
-
-            //    if (!addLoginPlayer(loginInfo))
-            //    {
-            //        //mLog.ErrorFormat("{0} not exists! ", server);
-            //    }
-            //}
         }
     }
 

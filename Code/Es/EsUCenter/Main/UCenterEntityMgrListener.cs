@@ -21,7 +21,8 @@ public class UCenterEntityMgrListener : EntityMgrListener
     }
 
     //-------------------------------------------------------------------------
-    public void onRpcEntityCreateRemote(RpcSession session, EntityData entity_data, bool from_db)
+    public Entity onRpcEntityCreateRemote(RpcSession session, EntityData entity_data, bool from_db)
     {
+        return null;
     }
 }
