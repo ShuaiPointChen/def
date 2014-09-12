@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EbCommon", "Eb\EbCommon\EbCommon.csproj", "{4A1A0894-DC8E-4D16-B920-064B77C9E781}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EbJson", "Eb\EbJson\EbJson.csproj", "{0407C8AF-6D69-4765-8417-883C395552A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EbSqlite", "Eb\EbSqlite\EbSqlite.csproj", "{47B5D60F-BE8D-4CCF-8125-800B991A6502}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EbTest", "Eb\EbTest\EbTest.csproj", "{ABE088BF-8858-4920-8E06-002CE2658BC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A1A0894-DC8E-4D16-B920-064B77C9E781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1A0894-DC8E-4D16-B920-064B77C9E781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1A0894-DC8E-4D16-B920-064B77C9E781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1A0894-DC8E-4D16-B920-064B77C9E781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0407C8AF-6D69-4765-8417-883C395552A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0407C8AF-6D69-4765-8417-883C395552A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0407C8AF-6D69-4765-8417-883C395552A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0407C8AF-6D69-4765-8417-883C395552A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47B5D60F-BE8D-4CCF-8125-800B991A6502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B5D60F-BE8D-4CCF-8125-800B991A6502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B5D60F-BE8D-4CCF-8125-800B991A6502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B5D60F-BE8D-4CCF-8125-800B991A6502}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABE088BF-8858-4920-8E06-002CE2658BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE088BF-8858-4920-8E06-002CE2658BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE088BF-8858-4920-8E06-002CE2658BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABE088BF-8858-4920-8E06-002CE2658BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = EbCommon\EbCommon.csproj
+	EndGlobalSection
+EndGlobal

@@ -78,7 +78,8 @@
     <Compile Include="BehaviorTree\Decorators\DecoratorInverter.cs" />
     <Compile Include="BehaviorTree\Decorators\DecoratorRandom.cs" />
     <Compile Include="BehaviorTree\Decorators\DecoratorTimer.cs" />
-    <Compile Include="UCenter\CommonType.cs" />
+    <Compile Include="UCenter\EbCommonEv.cs" />
+    <Compile Include="UCenter\EbCommonType.cs" />
     <Compile Include="Data\EbData.cs" />
     <Compile Include="Data\EbDataInfo.cs" />
     <Compile Include="Data\EbDataMgr.cs" />

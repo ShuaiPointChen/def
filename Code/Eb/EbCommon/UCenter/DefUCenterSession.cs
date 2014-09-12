@@ -8,7 +8,7 @@ public class DefUCenterSession : ComponentDef
     //-------------------------------------------------------------------------
     public override ushort getComponentId()
     {
-        return (ushort)1001;
+        return (ushort)_eUCenterCoType.Session;
     }
 
     //-------------------------------------------------------------------------

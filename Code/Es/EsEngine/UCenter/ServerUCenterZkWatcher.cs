@@ -43,23 +43,16 @@ public class ServerUCenterZkWatcher
                return true;
            }
         }
-        
+
+        if ((int)ZOO_EVENT.CREATED_EVENT_DEF == eve.Type)
+        {
+            if (mCoUCenter.onLockNodeCreate(eve.Path))
+            {
+                return true;
+            }
+        }
+
         //mCoUCenter.OnLoginNodeChange(path, (int)ZOO_EVENT.CREATED_EVENT_DEF == eve.Type, null);
         return false;
     }
-
-    //-------------------------------------------------------------------------
-    //public void onGet(string path, int result, string data)
-    //{
-    //    mCoUCenter.OnLoginNodeChange(path, false, data);
-    //}
-
-    //-------------------------------------------------------------------------
-    //public void onGetChildren(string path, int result, string[] chdn)
-    //{
-    //    if (mCoUCenter.mLoginPath == path)
-    //    {
-    //        mCoUCenter.OnLoginServerList(chdn);
-    //    }
-    //}
 }

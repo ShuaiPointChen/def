@@ -260,7 +260,7 @@ namespace Zk
                 hp.handler = handler;
                 hp.param = param;
                 _childListener.Add(path , hp);
-                awatchForChilds(path, handler);
+                awatchForChilds(path, handler , param);
                 EbLog.Note("Subscribed child changes for:" + path);
             }
         }
@@ -285,7 +285,7 @@ namespace Zk
                 hp.handler = handler;
                 hp.param = param;
                 _dataListener.Add(path, hp);
-                areadData(path, true);
+                areadData(path, true , handler , param);
             }
         }
 
@@ -309,7 +309,7 @@ namespace Zk
                 hp.handler = handler;
                 hp.param = param;
                 _existsListener.Add(path, hp);
-                aexists(path, true);
+                aexists(path, true , handler  , param);
             }
         }
 
@@ -357,19 +357,37 @@ namespace Zk
             {
                 zkHandlerParam hp;
                 _childListener.TryGetValue(path, out hp);
-                awatchForChilds(path, hp.handler , hp.param);
+                if(hp != null)
+                {
+                    awatchForChilds(path, hp.handler, hp.param);
+                }
+                else
+                {
+                    awatchForChilds(path, null);
+                }
+                
             }
             if (_dataListener.ContainsKey(path))
             {
                 zkHandlerParam hp;
                 _childListener.TryGetValue(path, out hp);
-                areadData(path, true, hp.handler, hp.param);
+                if(hp!=null)
+                {
+                    areadData(path, true, hp.handler, hp.param);
+                }
+                else 
+                {
+                    areadData(path, true, null);
+                }
             }
             if (_existsListener.ContainsKey(path))
             {
                 zkHandlerParam hp;
                 _childListener.TryGetValue(path, out hp);
-                aexists(path, true, hp.handler, hp.param);
+                if(hp != null)
+                {
+                    aexists(path, true, hp.handler, hp.param);
+                }
             }
 
             WatchedEvent ev = new WatchedEvent(state, type, path);

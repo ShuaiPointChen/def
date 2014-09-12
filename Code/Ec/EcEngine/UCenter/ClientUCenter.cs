@@ -6,14 +6,22 @@ using Eb;
 public class ClientUCenter<T> : Component<T>, RpcSessionListener where T : ComponentDef, new()
 {
     //-------------------------------------------------------------------------
+    public delegate void login2ClientOnLoginHandler(string result, string token, Dictionary<byte, object> map_param);
     Ec.PhotonClientPeer mPeer;
+    login2ClientOnLoginHandler mlogin2ClientHandler = null;
+    string mAcc = "";
+    string mPwd = "";
+    string mProjectName = "";
+    string mChannelName = "";
 
     //-------------------------------------------------------------------------
     public override void init()
     {
         EbLog.Note("ClientUCenter.init()");
 
-        mPeer = new Ec.PhotonClientPeer(EntityMgr, (byte)255, (RpcSessionListener)this);
+        EntityMgr.getDefaultEventPublisher().addHandler(Entity);
+
+        mPeer = new Ec.PhotonClientPeer(EntityMgr, (byte)_eUCenterNodeType.UCenter, (RpcSessionListener)this);
     }
 
     //-------------------------------------------------------------------------
@@ -47,32 +55,38 @@ public class ClientUCenter<T> : Component<T>, RpcSessionListener where T : Compo
     //-------------------------------------------------------------------------
     public override void handleEvent(object sender, EntityEvent e)
     {
+        if (e is EvEntityCreateRemote)
+        {
+            EvEntityCreateRemote ev = (EvEntityCreateRemote)e;
+            if (ev.entity != null && ev.entity_data.entity_type == _eUCenterEtType.EtUCenterSession.ToString())
+            {
+                var co_ucentersession = ev.entity.getComponent<ClientUCenterSession<ComponentDef>>();
+                co_ucentersession.setCoUCenter(this);
+                co_ucentersession.login(mAcc, mPwd, mProjectName, mChannelName);
+            }
+        }
     }
 
-    //---------------------------------------------------------------------
+    //-------------------------------------------------------------------------
     public void onSessionConnect(byte node_type_local, byte node_type_remote, RpcSession session)
     {
         EbLog.Note("ClientUCenter.onSessionConnect()");
-
-        // 发送login请求
-        //ushort methdo_id = 2;
-        //Dictionary<byte, object> map_param = new Dictionary<byte, object>();
-        //map_param[0] = "acc";
-        //map_param[1] = "pwd";
-        //map_param[2] = "app_name";
-        //map_param[3] = "app_channel";
-        //EntityMgr.rpc(session, (byte)255, (ushort)methdo_id, map_param);
     }
 
-    //---------------------------------------------------------------------
+    //-------------------------------------------------------------------------
     public void onSessionDisconnect(byte node_type_local, byte node_type_remote, RpcSession session)
     {
         EbLog.Note("ClientUCenter.onSessionDisconnect()");
     }
 
-    //---------------------------------------------------------------------
-    public void login(string ip, int port, string acc, string pwd)
+    //-------------------------------------------------------------------------
+    public void login(string ip, int port, string acc, string pwd, string project_name, string channel_name)
     {
+        mAcc = acc;
+        mPwd = pwd;
+        mProjectName = project_name;
+        mChannelName = channel_name;
+
         if (mPeer.PeerState != ExitGames.Client.Photon.PeerStateValue.Disconnected)
         {
             return;
@@ -80,6 +94,26 @@ public class ClientUCenter<T> : Component<T>, RpcSessionListener where T : Compo
 
         string ipport = ip + ":" + port;
         EbLog.Note("ClientUCenter.login() " + ipport);
+
         mPeer.Connect(ipport, "EsUCenter");
+    }
+
+    //-------------------------------------------------------------------------
+    public void setonLoginHnadler(login2ClientOnLoginHandler handler)
+    {
+        mlogin2ClientHandler = handler;
+    }
+
+    //-------------------------------------------------------------------------
+    internal void _onLogin(string result, string token, Dictionary<byte, object> map_param)
+    {
+        if (mlogin2ClientHandler != null)
+        {
+            mlogin2ClientHandler(result, token, map_param);
+        }
+        else
+        {
+            EbLog.Error("ClientUCenter._onLogin() mlogin2ClientHandler==null");
+        }
     }
 }

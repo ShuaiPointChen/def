@@ -15,16 +15,12 @@ using Eb;
 using Es;
 using Zk;
 
-public class ServerInfo
-{
-    public string Id;     // ZooKeeper 的唯一id
-    public string Ip;     // server的ip
-    public string Port;   // server的port
-}
 
 public class LoginServerInfo
 {
     public string id;
+    public string ip;
+    public string port;
     public string loginLockNode;       // Login --> Gate
     public string loginLockComNode;    // Gate --> Login
     public string loginNode;       // Login --> Gate
@@ -35,8 +31,6 @@ public class LoginServerInfo
     public bool bloginLock = false;
     public bool bloginComLock = false;
     public bool bofflineLock = false;
-    public string ip;
-    public string port;
 }
 
 public class LoginPlayer
@@ -44,12 +38,14 @@ public class LoginPlayer
     public string Account;   // 玩家账号.
     public string LoginNodeId; // Send LoginServer zk id.
     public string ServerGroup; // 服务器组.
+    public string TokenId;
+    public int AccountId;
 }
 
 public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
 {
     //------------------------------------------------------------------------------------
-    public delegate void delegateOnLogin(string acc, string token);
+    public delegate Dictionary<byte , object> delegateOnLogin(string acc, int accId , string token,out string result);
     delegateOnLogin mFuncOnLogin;
     ServerUCenterZkWatcher mZkWatcher;
     // 这两个参数从配置文件读取.
@@ -82,21 +78,14 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
         photon_app.ZkClient.addHandler(mZkWatcher.handler);
         ProjectName = photon_app.ProjectName;
 
-        string preStr = string.Format("{0}{1}{2}{3}{4}{5}{6}" , "/" , _eUCenter.UCenterProjectName.ToString() , "/" , _eConstLoginNode.LoginServices.ToString() + "/" 
-                                     + ProjectName + "/" );
+        string preStr = string.Format("{0}{1}{2}{3}{4}{5}{6}" , "/" , _eUCenter.UCenterProjectName.ToString() , "/" , _eConstLoginNode.LoginServices.ToString() , "/" 
+                                     , ProjectName , "/" );
         mCurLoginNodePath = preStr + _eConstLoginNode.LoginQueue + "/";
         mCurLoginLockPath = preStr + _eConstLoginNode.LoginQueueLock + "/";
         mCurLoginCompleteNodePath = preStr + _eConstLoginNode.LoginCompleteQueue + "/";
         mCurLoginCompleteLockPath = preStr + _eConstLoginNode.LoginCompleteQueueLock + "/";
         mCurOfflineNodePath = preStr + _eConstLoginNode.PlayerOfflineNode + "/";
         mCurOfflineLockPath = preStr + _eConstLoginNode.PlayerOfflineLock + "/";
-
-        // get login server
-        //string data = getZkClient().sread(mLoginNodeInfoPath, true);
-        //if (null != data)
-        //{
-        //    _onGetNodeInfo(data);
-        //}
 
         string loginServerNodePath = "/" + _eUCenter.UCenterProjectName + "/" + _eUCenter.UCenterNodeName;
         mLoginPath = loginServerNodePath;
@@ -122,13 +111,25 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
                 List<string> del = new List<string>();
                 foreach (var player in playerList)
                 {
-                    // 创建 EtPlayerLogin........
-                    string singleInfo = string.Format("{0}:{1}:{2}:", player.Value.Account, player.Value.ServerGroup, "success");
-                    LoginResult += singleInfo;
-                    del.Add(player.Key);
-
                     // 将登陆结果通知应用层
-                    if (mFuncOnLogin != null) mFuncOnLogin(player.Key, "token123");
+                    string result = "";
+                    Dictionary<byte, object> rt = null;
+                    if (mFuncOnLogin != null)
+                    {
+                        rt = mFuncOnLogin(player.Key, player.Value.AccountId , player.Value.TokenId, out result);
+                    } 
+
+                    _tLoginResponseInfo info;
+                    info.acc = player.Key;
+                    info.server_group = player.Value.ServerGroup;
+                    info.result = "success";
+                    info.map_userdata = rt;
+                    string seri = EbJsonHelper.serialize(info);
+
+                    //string singleInfo = string.Format("{0}:{1}:{2}:", player.Value.Account, player.Value.ServerGroup, "success");
+                    LoginResult += seri;
+                    del.Add(player.Key);
+                    break;
                 }
 
                 foreach (var sigl in del)
@@ -138,7 +139,7 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
 
                 if (LoginResult != "")
                 {
-                    LoginResult = LoginResult.Substring(0, LoginResult.Length - 1); // 去掉多余的分号.
+                    //LoginResult = LoginResult.Substring(0, LoginResult.Length - 1); // 去掉多余的分号.
                     EbLog.Note("LoginResult:" + LoginResult);
                     getZkClient().awriteData(svr.Value.loginComNode, LoginResult, null);
                     getZkClient().acreate(svr.Value.loginLockComNode, "", ZK_CONST.ZOO_EPHEMERAL, null);
@@ -201,6 +202,12 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
     // servers, 当前zookeeper中的 Loginserver的所有结点.
     internal void _onLoginServerList(int result, string data, string[] servers, Dictionary<string, object> param)
     {
+        if (result != 0) return;
+        if(servers == null)
+        {
+            servers = new string[0];
+        }
+
         List<string> remoteServer = servers.ToList();
         List<string> localServer = mLoginServer.Keys.ToList<string>();
         IEnumerable<string> add = remoteServer.Except(localServer);
@@ -229,9 +236,9 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
             string offlineNode = string.Format("{0}{1},{2}", mCurOfflineNodePath, info.id, photon_app.NodeIdStr);
 
             // 以下两个结点用来watch，create.
-            string ctlqLock = string.Format("{0}{1},{2}", mCurLoginLockPath, info.id, photon_app.NodeId);
-            string ctlcqLock = string.Format("{0}{1},{2}", mCurLoginCompleteLockPath, info.id, photon_app.NodeId);
-            string offlineLock = string.Format("{0}{1},{2}", mCurOfflineLockPath, info.id, photon_app.NodeId);
+            string ctlqLock = string.Format("{0}{1},{2}", mCurLoginLockPath, info.id, photon_app.NodeIdStr);
+            string ctlcqLock = string.Format("{0}{1},{2}", mCurLoginCompleteLockPath, info.id, photon_app.NodeIdStr);
+            string offlineLock = string.Format("{0}{1},{2}", mCurOfflineLockPath, info.id, photon_app.NodeIdStr);
 
             info.loginNode = ctlqNode;
             info.loginComNode = ctlcqNode;
@@ -240,11 +247,11 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
             info.offlineLock = offlineLock;
             info.offlineNode = offlineNode;
 
-            Dictionary<string, object> pa = new Dictionary<string, object>();
-            param["LoginServerInfo"] = info;
-            getZkClient().subscribeExists(info.loginLockNode, _onLoginLockChange, pa);
-
+            //Dictionary<string, object> pa = new Dictionary<string, object>();
+            //pa["LoginServerInfo"] = info;
+            //getZkClient().subscribeExists(info.loginLockNode, _onLoginLockChange, pa);
             getZkClient().subscribeExists(info.loginLockNode, null);
+
             getZkClient().subscribeExists(info.loginLockComNode, null);
             getZkClient().subscribeExists(info.offlineLock, null);
 
@@ -256,42 +263,14 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
         {
             LoginServerInfo info = null;
             mLoginServer.TryGetValue(ser, out info);
-            //getZkClient().adelete(info.loginNode, null);
-            //getZkClient().adelete(info.loginComNode, null);
 
-            // 如果是Login server removed , loginLockNode 肯定也会随之消失.
-            //if (info.bloginComLock)
-            //{
-            //    getZkClient().adelete(info.loginLockComNode, null);
-            //}
+            getZkClient().unsubscribeExists(info.loginLockComNode);
+            getZkClient().unsubscribeExists(info.offlineLock);
+
             mLoginServer.Remove(ser);
         }
     }
-
     //------------------------------------------------------------------------------------
-    //void _onGetNodeInfo(string data)
-    //{
-    //    XmlDocument doc = new XmlDocument();
-    //    doc.LoadXml(data);
-    //    XmlNodeList chd = doc.SelectSingleNode("ServerGroups").ChildNodes;
-    //    if (null != chd)
-    //    {
-    //        foreach (XmlNode child in chd)
-    //        {
-    //            if (ProjectName != child.Name) continue;
-
-    //            mCurLoginNodePath = child.Attributes["LoginQueue"].Value;
-    //            mCurLoginLockPath = child.Attributes["LoginQueueLock"].Value;
-    //            mCurLoginCompleteNodePath = child.Attributes["LoginCompleteQueue"].Value;
-    //            mCurLoginCompleteLockPath = child.Attributes["LoginCompleteQueueLock"].Value;
-    //            mCurOfflineNodePath = child.Attributes["PlayerOfflineNode"].Value;
-    //            mCurOfflineLockPath = child.Attributes["PlayerOfflineLock"].Value;
-
-    //            //mZonePath = child.Attributes["ZoneServer"].Value;
-    //        }
-    //    }
-    //}
-
     public bool onLockNodeDel(string path )
     {
         foreach(var lg in mLoginServer)
@@ -311,32 +290,64 @@ public class ServerUCenter<T> : Component<T> where T : ComponentDef, new()
     }
 
     //------------------------------------------------------------------------------------
-    void _onLoginLockChange(int result, string data, string[] chdn, Dictionary<string, object> param)
+    public bool onLockNodeCreate(string path)
     {
-        LoginServerInfo info = param["LoginServerInfo"] as LoginServerInfo;
-        info.bloginLock = true;
-        getZkClient().areadData(info.loginNode, false, _onLoginNodeData);
+        foreach (var lg in mLoginServer)
+        {
+            if (path == lg.Value.loginLockNode)
+            {
+                lg.Value.bloginLock = true;
+                Dictionary<string, object> pa = new Dictionary<string, object>();
+                pa["LoginServerInfo"] = lg.Value;
+                getZkClient().areadData(lg.Value.loginNode, false, _onLoginNodeData, pa);
+                return true;
+            }
+        }
+        return false;
     }
+
+    //------------------------------------------------------------------------------------
+    //void _onLoginLockChange(int result, string data, string[] chdn, Dictionary<string, object> param)
+    //{
+    //    if (result != 0) return;
+    //    LoginServerInfo info = param["LoginServerInfo"] as LoginServerInfo;
+    //    info.bloginLock = true;
+    //    getZkClient().areadData(info.loginNode, false, _onLoginNodeData, param);
+    //}
 
     //------------------------------------------------------------------------------------
     // 解析login传过来的登陆数据
     void _onLoginNodeData(int result, string data, string[] chdn, Dictionary<string, object> param)
     {
-        if (data == null) return;
+
+        LoginServerInfo info = param["LoginServerInfo"] as LoginServerInfo;
+        if (info.bloginLock)
+        {
+            getZkClient().adelete(info.loginLockNode, null);
+            info.bloginLock = false;
+        }
+        if (data == null || data == "")
+        {
+            return;
+        }
         // 处理玩家登陆.
         // LoginNodeId
         string[] resul;
         char[] charSeparators = new char[] { ',', ':' };
         resul = data.Split(charSeparators);
-        if (resul.Length != 2)
+        if (resul.Length != 4)
         {
             EbLog.Error("Error format , the correct format should be 000000006,000000005 -> (accountId,LoginId) ");
             return;
         }
 
         LoginPlayer player = new LoginPlayer();
+
         player.Account = resul[0];
         player.LoginNodeId = resul[1];
+        player.TokenId = resul[2];
+        player.AccountId = int.Parse(resul[3]);
+
         player.ServerGroup = ProjectName;
         mLoginPlayer.Add(player.Account, player);
     }

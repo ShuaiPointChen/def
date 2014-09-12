@@ -15,23 +15,9 @@ using Eb;
 using Es;
 using Zk;
 
-enum eSERVER
-{
-    GATE_SERVER = 0,
-    ZONE_SERVER,
-    DB_SERVER,
-    MAX_SERVER_TYPE_COUNT = 3,
-}
-
-// server ip ,port ,id(在zk产生的唯一id)
-public class ServerInfo
-{
-    public string Id;     // ZooKeeper 的唯一id
-    public string Ip;     // server的ip
-    public string Port;   // server的port
-}
-
-// 登陆状态, 离线，登录中，在线，登出中.写入数据库.
+/// <summary>
+/// 登陆状态, 离线，登录中，在线，登出中.写入数据库.
+/// </summary>
 enum eLoginStatus
 {
     offline = 0,
@@ -40,7 +26,9 @@ enum eLoginStatus
     logout,
 }
 
-// 登陆流程状态.
+/// <summary>
+/// 登陆流程状态.
+/// </summary>
 public enum eLogingState : byte
 {
     connect = 0,         // 客户端连接
@@ -52,10 +40,11 @@ public enum eLogingState : byte
     backToClient,         // 反馈玩家登陆的信息给客户端.
 
     loginError,           // 玩家登录失败.
-    //disconnected,       // 在玩家登录过程中连接丢失.
 }
 
-// 登陆错误状态.
+/// <summary>
+/// 登陆错误状态.
+/// </summary>
 public enum eLoginResult
 {
     success = 0,                 // 登录成功
@@ -66,24 +55,28 @@ public enum eLoginResult
     unknow,                      // 未知错误.
 }
 
-// 玩家登录信息.
+/// <summary>
+/// 玩家登录信息.
+/// </summary>
 public class ClientLoginInfo
 {
     public string account;
     public string password;
     public string server;
     public string chanel;
-    public RpcSession session;
+    public IComponent session;
     public string gateId = "";
     public eLogingState state = eLogingState.connect;
     public eLoginResult result = eLoginResult.unknow;
+    public Int64 accountId = 0;
     public string tokenId = "";
-    //public bool updateDb = false;  //是否已向db写入登录信息.
-    //public bool updateZk = false; // 是否已向zk中写入登录信息,等待gate的反馈.
-    //public bool updateDbOnline = false; //是否已向db写入在线信息.
+    public Dictionary<byte, object> param = null;
 }
 
-// Gate Server 状态信息.
+/// <summary>
+/// Gate Server 状态信息.
+/// 
+/// </summary>
 public class GateInfo
 {
     public string id;                  // zk 结点id, 格式是10位的10进制数:(000000005)
@@ -102,7 +95,10 @@ public class GateInfo
     public bool bofflineLock = false;
 }
 
-// 处理一组服务器的用户登录逻辑
+/// <summary>
+/// 处理一组服务器的用户登录逻辑和
+/// </summary>
+/// <typeparam name="T"></typeparam>
 public class LoginNode<T> : Component<T> where T : ComponentDef, new()
 {
     //-------------------------------------------------------------------------
@@ -116,12 +112,14 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
     public string LoginOfflineQueueLock;
     private string mServerGroupName = "";
     private string DbConnectionStr;
+
     // 服务器组响应登陆的服务器节点
     public string LoginNodePath;
+
     private MySqlConnection connection = null;
-    //public string[] ServerPath = new string[(int)eSERVER.MAX_SERVER_TYPE_COUNT];
-    //public Dictionary<string, ServerInfo>[] ServerInfo = new Dictionary<string, ServerInfo>[(int)eSERVER.MAX_SERVER_TYPE_COUNT];
-    // 走登录流程的用户列表.
+    /// <summary>
+    /// 走登录流程的用户列表.
+    /// </summary>
     private ConcurrentDictionary<string, ClientLoginInfo> mLoginPlayerQueue = new ConcurrentDictionary<string, ClientLoginInfo>();
     // Login Server间接与GateServer通讯(玩家登陆),需要额外信息.
     public Dictionary<string, GateInfo> mGateInfo = new Dictionary<string, GateInfo>();
@@ -135,8 +133,8 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
 
         string projName = (string)Entity.getCacheData("ProjectName");
         mServerGroupName = (string)Entity.getCacheData("ServerGroupName");
-        string preStr = "/" + projName + "/" + _eConstLoginNode.LoginServices.ToString()
-            + "/" + mServerGroupName + "/";
+        string preStr = "/" + projName +"/"+ _eConstLoginNode.LoginServices.ToString() 
+            +"/"+ mServerGroupName + "/";
 
         LoginQueue = preStr + _eConstLoginNode.LoginQueue.ToString() + "/";
         LoginCompleteQueue = preStr + _eConstLoginNode.LoginCompleteQueue.ToString() + "/";
@@ -144,17 +142,20 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
         LoginCompleteQueueLock = preStr + _eConstLoginNode.LoginCompleteQueueLock.ToString() + "/";
         LoginOfflineQueue = preStr + _eConstLoginNode.PlayerOfflineNode.ToString() + "/";
         LoginOfflineQueueLock = preStr + _eConstLoginNode.PlayerOfflineLock.ToString() + "/";
-
-        //DbConnectionStr = (string)Entity.getCacheData("DbConnectionStr");
-
+        
         mCoApp.mServerGroup.Add(mServerGroupName, this as LoginNode<ComponentDef>);
-        //OnInitSingleServer(mServerGroupName);
     }
 
     //-------------------------------------------------------------------------
     public override void release()
     {
         EbLog.Note("CellApp.release() EntityType=" + Entity.getEntityType() + " EntityRpcId=" + Entity.getEntityRpcId());
+    }
+
+    private static int _IncreaseId = 0;
+    private static int generateId()
+    {
+        return Interlocked.Increment(ref _IncreaseId);
     }
 
     //-------------------------------------------------------------------------
@@ -165,7 +166,6 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
 
         foreach (var player in mLoginPlayerQueue)
         {
-            //ClientLoginInfo info = mLoginPlayerQueue.Dequeue();
             ClientLoginInfo info = player.Value;
             if (null == info) continue;
 
@@ -183,7 +183,7 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
             if (info.state == eLogingState.connect)
             {
                 eLoginResult rtCode = eLoginResult.accountNotExists;
-                string sql = string.Format("SELECT AccountName, Password , LoginStatus FROM Account WHERE AccountName='{0}';", info.account);
+                string sql = string.Format("SELECT AccountName, Password , LoginStatus , AccountId FROM Account WHERE AccountName='{0}';", info.account);
 
                 EbLog.Note("Login SQL STR :" + sql);
 
@@ -206,6 +206,8 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
                         {
                             // 登录成功.
                             rtCode = eLoginResult.success;
+                            info.tokenId = generateId().ToString();
+                            info.accountId = (long)rdr["AccountId"];
                         }
                         info.result = rtCode;
                     }
@@ -226,11 +228,12 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
 
                         MySqlCommand updateCmd = new MySqlCommand(sql, connection);
                         cmd.ExecuteNonQuery();
+
                     }
+
                 }
                 catch (Exception ex)
                 {
-                    //mLog.ErrorFormat("accoundName:{0}, password:{1} ", info.account, info.password);
                     EbLog.Error(ex.ToString());
                 }
                 finally
@@ -251,30 +254,26 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
 
                 if (rtCode == ((byte)eLoginResult.success))
                 {
-                    //info.updateDb = true;
                     info.state = eLogingState.updateLoging2Db;
                 }
             }
 
             if (info.state == eLogingState.updateLoging2Db)
             {
-                //mLoginPlayerWaitQueue.Add(info.account, info);
-
                 foreach (var gate in mGateInfo)
                 {
                     GateInfo ser = gate.Value;
                     if (!ser.bloginLock)
                     {
                         // 目前只有账号信息和当前longin id放入ZooKeeper.
-                        string dt = info.account + "," + mCoApp.NodeIdStr;
+                        string dt = info.account + "," + mCoApp.NodeIdStr + "," + info.tokenId.ToString() + "," + info.accountId.ToString();
                         info.gateId = ser.id;
-                        mCoApp.getZk().awriteData(ser.loginNode, dt, null);
+                        mCoApp.getZk().awriteData(ser.loginNode, dt , null);
                         EbLog.Note("send to gate node :" + ser.loginNode + ",account:" + dt);
                         mCoApp.getZk().acreate(ser.loginLockNode, "", ZK_CONST.ZOO_EPHEMERAL, null);
                         EbLog.Note("set remote lock :" + ser.loginLockNode + ",account:" + dt);
 
                         ser.bloginLock = true;
-                        //info.updateZk = true;
                         info.state = eLogingState.updateZk2Gate;
                         break;
                     }
@@ -313,20 +312,23 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
                     //反馈消息给client.
                     //if (info.peer.Connected)// todo，判定session是否处于连接状态
                     {
-                        Dictionary<byte, object> p = new Dictionary<byte, object>();
-                        p[0] = curState.ToString();
-                        if (curState == eLoginStatus.online)
-                        {
-                            var list = mGateInfo.Where(gt => gt.Value.id.Equals(info.gateId));
-                            p[1] = list.First().Value.ipport;
-                            p[2] = info.tokenId;
-                        }
-                        else
-                        {
-                            p[1] = info.result.ToString();
-                        }
+                        //Dictionary<byte, object> p = new Dictionary<byte, object>();
+                        //p[0] = curState.ToString();
+                        //if (curState == eLoginStatus.online)
+                        //{
+                        //    var list = mGateInfo.Where(gt => gt.Value.id.Equals(info.gateId));
+                        //    p[1] = list.First().Value.ipport;
+                        //    p[2] = info.tokenId;
+                        //}
+                        //else
+                        //{
+                        //    p[1] = info.result.ToString();
+                        //}
 
                         // todo，添加session发送任意数据的方法
+                        LoginUCenterSession<DefUCenterSession> se = info.session as LoginUCenterSession<DefUCenterSession> ;
+                        se.login2ClientLogin(curState.ToString(), info.tokenId , info.param );
+                        
                         //OperationResponse operation_response = new OperationResponse(1, p);
                         //SendResult r = info.peer.SendOperationResponse(operation_response, new SendParameters { ChannelId = 0 });
                         ////info.session.getRpcPeer().sendEntityRpcData()
@@ -387,46 +389,16 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
 
     //-------------------------------------------------------------------------
     /// <summary>
-    /// 初始化Login Server.
-    /// 1. 监听服务器组的其他服务器是否介入.
-    /// </summary>
-    /// <param name="server"></param>
-    //private void OnInitSingleServer(string server)
-    //{
-    //    //ZkOnOpeResult result = (ZkOnOpeResult)mCoApp.getZk().getZkOpeResult();
-    //    mCoApp.getZk().subscribeChildChanges(ServerPath[(int)eSERVER.GATE_SERVER] , null , null);
-    //    mCoApp.getZk().subscribeChildChanges(ServerPath[(int)eSERVER.ZONE_SERVER], null, null);
-    //    mCoApp.getZk().subscribeChildChanges(ServerPath[(int)eSERVER.DB_SERVER], null, null);
-    //    EbLog.Note("DB connection , server: " + server + "connection string :" + DbConnectionStr);
-    //    connection = new MySqlConnection(DbConnectionStr);
-
-    //    try
-    //    {
-    //        connection.Open();
-    //    }
-    //    catch (System.Exception ex)
-    //    {
-    //        EbLog.Error("DB connection , server: " + server + " connection failed !");
-    //        EbLog.Error("reason:" + ex);
-    //    }
-
-    //    if (connection.State == ConnectionState.Open)
-    //    {
-    //        EbLog.Note("DB connection , server: " + server + " connection successed !");
-    //    }
-    //}
-
-    //-------------------------------------------------------------------------
-    /// <summary>
     /// gate server 通过zk反馈的登陆结果.
     /// </summary>
     /// <param name="account">玩家账号</param>
     /// <param name="result">结果</param>
-    public void gateBackPlayerLoginResult(string account, string result)
+    public void gateBackPlayerLoginResult(string account, string result , Dictionary<byte , object> param)
     {
         ClientLoginInfo player = null;
         if (mLoginPlayerQueue.TryGetValue(account, out player))
         {
+            player.param = param;
             if (result == "success")
             {
                 player.state = eLogingState.gateBackSuccess;
@@ -456,7 +428,7 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
     /// <param name="password">密码</param>
     /// <param name="chanel">渠道</param>
     /// <returns></returns>
-    public bool addLoginPlayer(string account, string password, string chanel, RpcSession s)
+    public bool addLoginPlayer(string account, string password, string chanel, IComponent s)
     {
         if (mLoginPlayerQueue.ContainsKey(account)) return false;
         ClientLoginInfo player = new ClientLoginInfo();
@@ -468,18 +440,6 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
         return mLoginPlayerQueue.TryAdd(account, player);
     }
 
-    //-------------------------------------------------------------------------
-    private void _onLoginNodeAdd(int result, string data, string[] chdn, Dictionary<string, object> param)
-    {
-    }
-
-    //-------------------------------------------------------------------------
-    public void _onLoginServerChildren(int result, string data, string[] chdn, Dictionary<string, object> param)
-    {
-        if (result != 0) return;
-    }
-
-    //-------------------------------------------------------------------------
     /// <summary>
     /// 获取服务器组响应节点信息和账号数据库连接信息.
     /// </summary>
@@ -488,6 +448,7 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
     public void onGetLoginInfo(string lgNode, string connStr)
     {
         LoginNodePath = lgNode;
+        DbConnectionStr = connStr;
         EbLog.Note("DB connection , server: " + mServerGroupName + "connection string :" + DbConnectionStr);
         connection = new MySqlConnection(DbConnectionStr);
         try
@@ -505,4 +466,5 @@ public class LoginNode<T> : Component<T> where T : ComponentDef, new()
             EbLog.Note("DB connection , server: " + mServerGroupName + " connection successed !");
         }
     }
+
 }
